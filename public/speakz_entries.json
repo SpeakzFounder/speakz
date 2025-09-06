@@ -1,0 +1,5 @@
+[
+  { "term": "Bagnole", "definition": "Voiture", "slug": "bagnole", "category": "transport" },
+  { "term": "Thune", "definition": "Argent", "slug": "thune", "category": "argent" },
+  { "term": "Fringues", "definition": "Vêtements", "slug": "fringues", "category": "style" }
+]
