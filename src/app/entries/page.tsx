@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getAllEntries, slugify } from '@/lib/entries.server';
+export const revalidate = 0; // force la régénération à chaque requête (temporaire)
 
-export const revalidate = 86400; // ISR: 24h
 
 export default async function EntriesPage() {
   const entries = await getAllEntries();
