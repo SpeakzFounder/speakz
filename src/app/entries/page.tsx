@@ -2,14 +2,14 @@
 import Link from 'next/link';
 import { getAllEntries, slugify } from '@/lib/entries.server';
 
-// ⛔️ Pas de cache, pas d'ISR (temporaire pour vérifier)
+// ✅ Rendu dynamique (voit les ajouts du JSON GitHub sans redeployer)
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function EntriesPage() {
   let entries = await getAllEntries();
 
-  // Tri optionnel pour stabilité (alpha)
+  // Tri alpha pour un affichage stable
   entries = entries.sort((a, b) => a.term.localeCompare(b.term, 'fr'));
 
   return (
