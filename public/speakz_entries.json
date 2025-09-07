@@ -1,0 +1,22 @@
+[
+  { "term": "Bagnole", "definition": "Voiture", "slug": "bagnole", "category": "transport" },
+  { "term": "Thune", "definition": "Argent", "slug": "thune", "category": "argent" },
+  { "term": "Fringues", "definition": "Vêtements", "slug": "fringues", "category": "style" },
+  { "term": "Teuf", "definition": "Fête, soirée", "slug": "teuf", "category": "loisir" },
+  { "term": "Meuf", "definition": "Fille, femme", "slug": "meuf", "category": "personnes" },
+  { "term": "Keuf", "definition": "Policier", "slug": "keuf", "category": "autorité" },
+  { "term": "Godasse", "definition": "Chaussure", "slug": "godasse", "category": "style" },
+  { "term": "Taf", "definition": "Travail, emploi", "slug": "taf", "category": "travail" },
+  { "term": "Baratin", "definition": "Discours trompeur, mensonge", "slug": "baratin", "category": "langage" },
+  { "term": "Pote", "definition": "Ami, copain", "slug": "pote", "category": "relations" },
+  { "term": "Blé", "definition": "Argent", "slug": "ble", "category": "argent" },
+  { "term": "Resto", "definition": "Restaurant", "slug": "resto", "category": "lieux" },
+  { "term": "Boulot", "definition": "Travail", "slug": "boulot", "category": "travail" },
+  { "term": "Zik", "definition": "Musique", "slug": "zik", "category": "loisir" },
+  { "term": "Gosse", "definition": "Enfant", "slug": "gosse", "category": "personnes" },
+  { "term": "Baraque", "definition": "Maison", "slug": "baraque", "category": "lieux" },
+  { "term": "Flotte", "definition": "Eau, pluie", "slug": "flotte", "category": "nature" },
+  { "term": "Gratte", "definition": "Guitare", "slug": "gratte", "category": "musique" },
+  { "term": "Rencard", "definition": "Rendez-vous amoureux", "slug": "rencard", "category": "relations" },
+  { "term": "Clopes", "definition": "Cigarettes", "slug": "clopes", "category": "habitudes" }
+]
