@@ -1,5 +1,9 @@
-import { promises as fs } from 'node:fs';
-import path from 'node:path';
+// src/lib/entries.server.ts
+
+// 👉 tu peux surcharger l’URL via une var d’env si besoin
+const RAW_URL =
+  process.env.SPEAKZ_RAW_URL ||
+  'https://raw.githubusercontent.com/SpeakzFounder/Speakz/main/public/speakz_entries.json';
 
 export type Entry = {
   term: string;
@@ -17,21 +21,19 @@ export function slugify(input: string) {
     .replace(/(^-|-$)/g, '');
 }
 
-async function readJsonRaw(): Promise<any> {
-  try {
-    const filePath = path.join(process.cwd(), 'public', 'speakz_entries.json');
-    const raw = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(raw);
-  } catch {
-    // Pas de fichier ou JSON invalide → on retourne un tableau vide
-    return [];
-  }
+async function fetchJson(): Promise<any[]> {
+  const res = await fetch(RAW_URL, {
+    // ⏱ rafraîchi côté serveur sans rebuild (tu peux mettre 300s si tu veux)
+    next: { revalidate: 60 }
+  });
+  if (!res.ok) return [];
+  const data = await res.json();
+  return Array.isArray(data) ? data : Array.isArray((data as any).entries) ? (data as any).entries : [];
 }
 
 export async function getAllEntries(): Promise<Entry[]> {
-  const data = await readJsonRaw();
-  const arr: any[] = Array.isArray(data) ? data : Array.isArray(data?.entries) ? data.entries : [];
-  return arr.map((item) => {
+  const arr = await fetchJson();
+  return arr.map((item: any) => {
     const term = String(item?.term ?? item?.mot ?? '').trim();
     const slug = item?.slug ? String(item.slug) : slugify(term);
     return {
@@ -45,9 +47,5 @@ export async function getAllEntries(): Promise<Entry[]> {
 
 export async function getEntryBySlug(slug: string): Promise<Entry | null> {
   const list = await getAllEntries();
-  return (
-    list.find((e) => e.slug === slug) ||
-    list.find((e) => slugify(e.term) === slug) ||
-    null
-  );
+  return list.find((e) => e.slug === slug || slugify(e.term) === slug) ?? null;
 }
