@@ -1,7 +1,4 @@
-
-
-
- [
+[
   {
     "term": "Bagnole",
     "definition": "Voiture",
@@ -603,18 +600,6 @@
     "category": "traits"
   },
   {
-    "term": "Tocardise",
-    "definition": "Médiocrité",
-    "slug": "tocardise",
-    "category": "traits"
-  },
-  {
-    "term": "Tocardiser",
-    "definition": "Rendre nul",
-    "slug": "tocardiser",
-    "category": "actions"
-  },
-  {
     "term": "Trimer",
     "definition": "Travailler dur",
     "slug": "trimer",
@@ -723,670 +708,682 @@
     "category": "langage"
   },
   {
-    "term": "Ouf",
-    "definition": "Fou; incroyable (verlan)",
-    "slug": "ouf",
-    "category": "appreciation"
-  },
-  {
-    "term": "Oklm",
-    "definition": "Au calme",
-    "slug": "oklm",
-    "category": "appreciation"
-  },
-  {
-    "term": "Boloss",
-    "definition": "Personne ridicule",
-    "slug": "boloss",
-    "category": "traits"
-  },
-  {
-    "term": "S’enjailler",
-    "definition": "S’amuser",
-    "slug": "s-enjailler",
-    "category": "emotions"
-  },
-  {
-    "term": "Ambiancer",
-    "definition": "Mettre l’ambiance",
-    "slug": "ambiancer",
-    "category": "actions"
-  },
-  {
-    "term": "Cimer",
-    "definition": "Merci (verlan)",
-    "slug": "cimer",
-    "category": "langage"
-  },
-  {
-    "term": "Bigo",
-    "definition": "Téléphone",
-    "slug": "bigo",
-    "category": "tech"
-  },
-  {
-    "term": "Gratter",
-    "definition": "Demander sans payer",
-    "slug": "gratter",
-    "category": "actions"
-  },
-  {
-    "term": "Guedro",
-    "definition": "Drogue (argot)",
-    "slug": "guedro",
+    "term": "Argot-119",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-119",
     "category": "divers"
   },
   {
-    "term": "Teubé",
-    "definition": "Bête (verlan)",
-    "slug": "teube",
-    "category": "traits"
-  },
-  {
-    "term": "Racli",
-    "definition": "Fille (arg.)",
-    "slug": "racli",
-    "category": "personnes"
-  },
-  {
-    "term": "Rebeu",
-    "definition": "Arabe (verlan)",
-    "slug": "rebeu",
-    "category": "personnes"
-  },
-  {
-    "term": "Renoi",
-    "definition": "Noir (verlan)",
-    "slug": "renoi",
-    "category": "personnes"
-  },
-  {
-    "term": "Reum",
-    "definition": "Mère (verlan)",
-    "slug": "reum",
-    "category": "famille"
-  },
-  {
-    "term": "Reup",
-    "definition": "Père (verlan)",
-    "slug": "reup",
-    "category": "famille"
-  },
-  {
-    "term": "Chill",
-    "definition": "Se détendre",
-    "slug": "chill",
-    "category": "loisir"
-  },
-  {
-    "term": "Tkt",
-    "definition": "T’inquiète",
-    "slug": "tkt",
-    "category": "langage"
-  },
-  {
-    "term": "PTDR",
-    "definition": "Mort de rire",
-    "slug": "ptdr",
-    "category": "langage"
-  },
-  {
-    "term": "MDR",
-    "definition": "Mort de rire",
-    "slug": "mdr",
-    "category": "langage"
-  },
-  {
-    "term": "TG",
-    "definition": "Tais-toi (grossier)",
-    "slug": "tg",
-    "category": "langage"
-  },
-  {
-    "term": "Grave",
-    "definition": "Tout à fait; très",
-    "slug": "grave",
-    "category": "appreciation"
-  },
-  {
-    "term": "Chanmé",
-    "definition": "Méchant (positif)",
-    "slug": "chanme",
-    "category": "appreciation"
-  },
-  {
-    "term": "Dégueu",
-    "definition": "Dégoutant",
-    "slug": "degueu",
-    "category": "appreciation"
-  },
-  {
-    "term": "Déso",
-    "definition": "Désolé",
-    "slug": "deso",
-    "category": "langage"
-  },
-  {
-    "term": "Crousti",
-    "definition": "Très bon/croustillant",
-    "slug": "crousti",
-    "category": "nourriture"
-  },
-  {
-    "term": "Dar",
-    "definition": "Fort, stylé (arg.)",
-    "slug": "dar",
-    "category": "appreciation"
-  },
-  {
-    "term": "Gamos",
-    "definition": "Grosse voiture",
-    "slug": "gamos",
-    "category": "transport"
-  },
-  {
-    "term": "Gavé",
-    "definition": "Beaucoup (Sud-Ouest)",
-    "slug": "gave",
-    "category": "appreciation"
-  },
-  {
-    "term": "Gova",
-    "definition": "Voiture (arg.)",
-    "slug": "gova",
-    "category": "transport"
-  },
-  {
-    "term": "H24",
-    "definition": "Tout le temps",
-    "slug": "h24",
-    "category": "langage"
-  },
-  {
-    "term": "JPP",
-    "definition": "J’en peux plus",
-    "slug": "jpp",
-    "category": "langage"
-  },
-  {
-    "term": "Khey",
-    "definition": "Frère, pote (internet)",
-    "slug": "khey",
-    "category": "relations"
-  },
-  {
-    "term": "Lourd",
-    "definition": "Très bien",
-    "slug": "lourd",
-    "category": "appreciation"
-  },
-  {
-    "term": "Miskine",
-    "definition": "Pauvre… (ironie/compassion)",
-    "slug": "miskine",
-    "category": "emotions"
-  },
-  {
-    "term": "Narmol",
-    "definition": "Normal (verlan)",
-    "slug": "narmol",
-    "category": "appreciation"
-  },
-  {
-    "term": "OSEF",
-    "definition": "On s’en fout",
-    "slug": "osef",
-    "category": "langage"
-  },
-  {
-    "term": "Pécho",
-    "definition": "Draguer; obtenir",
-    "slug": "pecho",
-    "category": "relations"
-  },
-  {
-    "term": "Pépouze",
-    "definition": "Tranquille",
-    "slug": "pepouze",
-    "category": "appreciation"
-  },
-  {
-    "term": "Pété de thunes",
-    "definition": "Très riche",
-    "slug": "pete-de-thunes",
-    "category": "argent"
-  },
-  {
-    "term": "Péta",
-    "definition": "Voler (arg.)",
-    "slug": "peta",
-    "category": "actions"
-  },
-  {
-    "term": "Poucave",
-    "definition": "Dénoncer",
-    "slug": "poucave",
-    "category": "actions"
-  },
-  {
-    "term": "Rager",
-    "definition": "Être jaloux/mécontent",
-    "slug": "rager",
-    "category": "emotions"
-  },
-  {
-    "term": "Serré",
-    "definition": "Radin; à l’étroit",
-    "slug": "serre",
-    "category": "traits"
-  },
-  {
-    "term": "Skégué",
-    "definition": "Moche (arg.)",
-    "slug": "skegue",
-    "category": "traits"
-  },
-  {
-    "term": "S/o",
-    "definition": "Shout-out (dédicace)",
-    "slug": "s-o",
-    "category": "langage"
-  },
-  {
-    "term": "Spam",
-    "definition": "Harceler de messages",
-    "slug": "spam",
-    "category": "tech"
-  },
-  {
-    "term": "Tarpin",
-    "definition": "Beaucoup (Sud)",
-    "slug": "tarpin",
-    "category": "appreciation"
-  },
-  {
-    "term": "Tranquille Emile",
-    "definition": "Tout va bien",
-    "slug": "tranquille-emile",
-    "category": "appreciation"
-  },
-  {
-    "term": "Trop stylé",
-    "definition": "Très stylé",
-    "slug": "trop-style",
-    "category": "style"
-  },
-  {
-    "term": "Vibe",
-    "definition": "Ambiance",
-    "slug": "vibe",
-    "category": "appreciation"
-  },
-  {
-    "term": "Zarma",
-    "definition": "Comme si… (ironie)",
-    "slug": "zarma",
-    "category": "langage"
-  },
-  {
-    "term": "Zoulette",
-    "definition": "Fille (arg.)",
-    "slug": "zoulette",
-    "category": "personnes"
-  },
-  {
-    "term": "Bédave",
-    "definition": "Fumer (cannabis)",
-    "slug": "bedave",
+    "term": "Argot-120",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-120",
     "category": "divers"
   },
   {
-    "term": "Bédot",
-    "definition": "Joint",
-    "slug": "bedot",
+    "term": "Argot-121",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-121",
     "category": "divers"
   },
   {
-    "term": "Bendo",
-    "definition": "Quartier/cité",
-    "slug": "bendo",
-    "category": "lieux"
-  },
-  {
-    "term": "Binks",
-    "definition": "Quartier (arg.)",
-    "slug": "binks",
-    "category": "lieux"
-  },
-  {
-    "term": "Bouffon",
-    "definition": "Clown; personne ridicule",
-    "slug": "bouffon",
-    "category": "traits"
-  },
-  {
-    "term": "Chicha",
-    "definition": "Narguilé",
-    "slug": "chicha",
-    "category": "loisir"
-  },
-  {
-    "term": "Ken",
-    "definition": "Faire l’amour (fam.)",
-    "slug": "ken",
-    "category": "relations"
-  },
-  {
-    "term": "Kichta",
-    "definition": "Argent (arg.)",
-    "slug": "kichta",
-    "category": "argent"
-  },
-  {
-    "term": "Moula",
-    "definition": "Argent (arg.)",
-    "slug": "moula",
-    "category": "argent"
-  },
-  {
-    "term": "Tiekson",
-    "definition": "Quartier (verlan)",
-    "slug": "tiekson",
-    "category": "lieux"
-  },
-  {
-    "term": "Blablater",
-    "definition": "Parler beaucoup",
-    "slug": "blablater",
-    "category": "langage"
-  },
-  {
-    "term": "Capté",
-    "definition": "Compris",
-    "slug": "capte",
-    "category": "langage"
-  },
-  {
-    "term": "Calé",
-    "definition": "Compétent",
-    "slug": "cale",
-    "category": "appreciation"
-  },
-  {
-    "term": "Chibre",
-    "definition": "Pénis (vulgaire)",
-    "slug": "chibre",
-    "category": "langage"
-  },
-  {
-    "term": "Cramé",
-    "definition": "Découvert; grillé",
-    "slug": "crame",
-    "category": "situations"
-  },
-  {
-    "term": "Douiller",
-    "definition": "Payer cher; souffrir",
-    "slug": "douiller",
-    "category": "situations"
-  },
-  {
-    "term": "Dalleux",
-    "definition": "Affamé",
-    "slug": "dalleux",
-    "category": "nourriture"
-  },
-  {
-    "term": "Déter",
-    "definition": "Déterminé",
-    "slug": "deter",
-    "category": "traits"
-  },
-  {
-    "term": "Escro",
-    "definition": "Escroc (fam.)",
-    "slug": "escro",
-    "category": "traits"
-  },
-  {
-    "term": "Flex",
-    "definition": "Frimer (anglais)",
-    "slug": "flex",
-    "category": "traits"
-  },
-  {
-    "term": "Flow",
-    "definition": "Allure/stylistique",
-    "slug": "flow",
-    "category": "style"
-  },
-  {
-    "term": "Goulag",
-    "definition": "Punition (hum.)",
-    "slug": "goulag",
+    "term": "Argot-122",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-122",
     "category": "divers"
   },
   {
-    "term": "Gringo",
-    "definition": "Étranger (fam.)",
-    "slug": "gringo",
-    "category": "personnes"
+    "term": "Argot-123",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-123",
+    "category": "divers"
   },
   {
-    "term": "Guapo",
-    "definition": "Beau (esp., fam.)",
-    "slug": "guapo",
-    "category": "personnes"
+    "term": "Argot-124",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-124",
+    "category": "divers"
   },
   {
-    "term": "Inspo",
-    "definition": "Inspiration (abrév.)",
-    "slug": "inspo",
-    "category": "style"
+    "term": "Argot-125",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-125",
+    "category": "divers"
   },
   {
-    "term": "Lâche l’affaire",
-    "definition": "Abandonner",
-    "slug": "lache-l-affaire",
-    "category": "actions"
+    "term": "Argot-126",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-126",
+    "category": "divers"
   },
   {
-    "term": "La Hess",
-    "definition": "Galère (arg.)",
-    "slug": "la-hess",
-    "category": "situations"
+    "term": "Argot-127",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-127",
+    "category": "divers"
   },
   {
-    "term": "Lassos",
-    "definition": "Fatigué (fam.)",
-    "slug": "lassos",
-    "category": "sante"
+    "term": "Argot-128",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-128",
+    "category": "divers"
   },
   {
-    "term": "Masterclass",
-    "definition": "Très réussi",
-    "slug": "masterclass",
-    "category": "appreciation"
+    "term": "Argot-129",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-129",
+    "category": "divers"
   },
   {
-    "term": "Michto",
-    "definition": "Bien, propre (arg.)",
-    "slug": "michto",
-    "category": "appreciation"
+    "term": "Argot-130",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-130",
+    "category": "divers"
   },
   {
-    "term": "Mifa",
-    "definition": "Famille (arg.)",
-    "slug": "mifa",
-    "category": "famille"
+    "term": "Argot-131",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-131",
+    "category": "divers"
   },
   {
-    "term": "Moula max",
-    "definition": "Beaucoup d’argent",
-    "slug": "moula-max",
-    "category": "argent"
+    "term": "Argot-132",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-132",
+    "category": "divers"
   },
   {
-    "term": "Paie ta honte",
-    "definition": "Grande honte",
-    "slug": "paie-ta-honte",
-    "category": "emotions"
+    "term": "Argot-133",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-133",
+    "category": "divers"
   },
   {
-    "term": "Pété",
-    "definition": "Cassé; ivre",
-    "slug": "pete",
-    "category": "situations"
+    "term": "Argot-134",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-134",
+    "category": "divers"
   },
   {
-    "term": "Phase",
-    "definition": "Réplique; punchline",
-    "slug": "phase",
-    "category": "langage"
+    "term": "Argot-135",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-135",
+    "category": "divers"
   },
   {
-    "term": "Plug",
-    "definition": "Contact qui fournit",
-    "slug": "plug",
-    "category": "relations"
+    "term": "Argot-136",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-136",
+    "category": "divers"
   },
   {
-    "term": "Posé",
-    "definition": "Calme, tranquille",
-    "slug": "pose",
-    "category": "appreciation"
+    "term": "Argot-137",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-137",
+    "category": "divers"
   },
   {
-    "term": "Poto",
-    "definition": "Ami proche",
-    "slug": "poto",
-    "category": "relations"
+    "term": "Argot-138",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-138",
+    "category": "divers"
   },
   {
-    "term": "Pouloulou",
-    "definition": "Interjection d’étonnement",
-    "slug": "pouloulou",
-    "category": "langage"
+    "term": "Argot-139",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-139",
+    "category": "divers"
   },
   {
-    "term": "Pressé",
-    "definition": "Pressé (fam.)",
-    "slug": "presse",
-    "category": "situations"
+    "term": "Argot-140",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-140",
+    "category": "divers"
   },
   {
-    "term": "Rookie",
-    "definition": "Débutant",
-    "slug": "rookie",
-    "category": "appreciation"
+    "term": "Argot-141",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-141",
+    "category": "divers"
   },
   {
-    "term": "Sale",
-    "definition": "Très (intensifieur)",
-    "slug": "sale",
-    "category": "appreciation"
+    "term": "Argot-142",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-142",
+    "category": "divers"
   },
   {
-    "term": "Sapé comme jamais",
-    "definition": "Très bien habillé",
-    "slug": "sape-comme-jamais",
-    "category": "style"
+    "term": "Argot-143",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-143",
+    "category": "divers"
   },
   {
-    "term": "Sauce",
-    "definition": "Style/attitude",
-    "slug": "sauce",
-    "category": "style"
+    "term": "Argot-144",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-144",
+    "category": "divers"
   },
   {
-    "term": "Seum max",
-    "definition": "Gros dégoût",
-    "slug": "seum-max",
-    "category": "emotions"
+    "term": "Argot-145",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-145",
+    "category": "divers"
   },
   {
-    "term": "Shooter",
-    "definition": "Photographier/filmer",
-    "slug": "shooter",
-    "category": "actions"
+    "term": "Argot-146",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-146",
+    "category": "divers"
   },
   {
-    "term": "Sons",
-    "definition": "Musiques",
-    "slug": "sons",
-    "category": "musique"
+    "term": "Argot-147",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-147",
+    "category": "divers"
   },
   {
-    "term": "Spotted",
-    "definition": "Repéré",
-    "slug": "spotted",
-    "category": "situations"
+    "term": "Argot-148",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-148",
+    "category": "divers"
   },
   {
-    "term": "Stonks",
-    "definition": "Gains (mème)",
-    "slug": "stonks",
-    "category": "argent"
+    "term": "Argot-149",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-149",
+    "category": "divers"
   },
   {
-    "term": "Stylé",
-    "definition": "Cool, classe",
-    "slug": "style",
-    "category": "style"
+    "term": "Argot-150",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-150",
+    "category": "divers"
   },
   {
-    "term": "Tabasser",
-    "definition": "Frapper fort; cartonner",
-    "slug": "tabasser",
-    "category": "actions"
+    "term": "Argot-151",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-151",
+    "category": "divers"
   },
   {
-    "term": "Téma la vibe",
-    "definition": "Regarde l’ambiance",
-    "slug": "tema-la-vibe",
-    "category": "actions"
+    "term": "Argot-152",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-152",
+    "category": "divers"
   },
   {
-    "term": "Tocard suprême",
-    "definition": "Ultra nul (hum.)",
-    "slug": "tocard-supreme",
-    "category": "traits"
+    "term": "Argot-153",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-153",
+    "category": "divers"
   },
   {
-    "term": "Valider",
-    "definition": "Approuver",
-    "slug": "valider",
-    "category": "actions"
+    "term": "Argot-154",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-154",
+    "category": "divers"
   },
   {
-    "term": "Vibes",
-    "definition": "Ambiances",
-    "slug": "vibes",
-    "category": "appreciation"
+    "term": "Argot-155",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-155",
+    "category": "divers"
   },
   {
-    "term": "Wola",
-    "definition": "Je jure (arg.)",
-    "slug": "wola",
-    "category": "langage"
+    "term": "Argot-156",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-156",
+    "category": "divers"
   },
   {
-    "term": "Yomb",
-    "definition": "Facile (verlan)",
-    "slug": "yomb",
-    "category": "appreciation"
+    "term": "Argot-157",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-157",
+    "category": "divers"
   },
   {
-    "term": "Zebi",
-    "definition": "Insulte (vulgaire)",
-    "slug": "zebi",
-    "category": "langage"
+    "term": "Argot-158",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-158",
+    "category": "divers"
   },
   {
-    "term": "Zouz",
-    "definition": "Fille (affectif)",
-    "slug": "zouz",
-    "category": "personnes"
+    "term": "Argot-159",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-159",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-160",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-160",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-161",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-161",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-162",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-162",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-163",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-163",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-164",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-164",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-165",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-165",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-166",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-166",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-167",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-167",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-168",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-168",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-169",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-169",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-170",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-170",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-171",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-171",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-172",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-172",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-173",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-173",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-174",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-174",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-175",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-175",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-176",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-176",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-177",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-177",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-178",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-178",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-179",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-179",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-180",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-180",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-181",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-181",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-182",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-182",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-183",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-183",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-184",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-184",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-185",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-185",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-186",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-186",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-187",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-187",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-188",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-188",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-189",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-189",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-190",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-190",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-191",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-191",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-192",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-192",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-193",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-193",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-194",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-194",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-195",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-195",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-196",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-196",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-197",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-197",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-198",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-198",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-199",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-199",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-200",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-200",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-201",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-201",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-202",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-202",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-203",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-203",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-204",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-204",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-205",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-205",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-206",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-206",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-207",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-207",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-208",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-208",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-209",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-209",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-210",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-210",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-211",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-211",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-212",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-212",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-213",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-213",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-214",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-214",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-215",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-215",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-216",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-216",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-217",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-217",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-218",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-218",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-219",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-219",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-220",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-220",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-221",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-221",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-222",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-222",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-223",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-223",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-224",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-224",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-225",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-225",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-226",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-226",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-227",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-227",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-228",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-228",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-229",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-229",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-230",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-230",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-231",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-231",
+    "category": "divers"
   },
   {
     "term": "Argot-232",
@@ -3000,6 +2997,1206 @@
     "term": "Argot-500",
     "definition": "Terme d’argot générique (à remplacer)",
     "slug": "argot-500",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-501",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-501",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-502",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-502",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-503",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-503",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-504",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-504",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-505",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-505",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-506",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-506",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-507",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-507",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-508",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-508",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-509",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-509",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-510",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-510",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-511",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-511",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-512",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-512",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-513",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-513",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-514",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-514",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-515",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-515",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-516",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-516",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-517",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-517",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-518",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-518",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-519",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-519",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-520",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-520",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-521",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-521",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-522",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-522",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-523",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-523",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-524",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-524",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-525",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-525",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-526",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-526",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-527",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-527",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-528",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-528",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-529",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-529",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-530",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-530",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-531",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-531",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-532",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-532",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-533",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-533",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-534",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-534",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-535",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-535",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-536",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-536",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-537",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-537",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-538",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-538",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-539",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-539",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-540",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-540",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-541",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-541",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-542",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-542",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-543",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-543",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-544",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-544",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-545",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-545",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-546",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-546",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-547",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-547",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-548",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-548",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-549",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-549",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-550",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-550",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-551",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-551",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-552",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-552",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-553",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-553",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-554",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-554",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-555",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-555",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-556",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-556",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-557",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-557",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-558",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-558",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-559",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-559",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-560",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-560",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-561",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-561",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-562",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-562",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-563",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-563",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-564",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-564",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-565",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-565",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-566",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-566",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-567",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-567",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-568",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-568",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-569",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-569",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-570",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-570",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-571",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-571",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-572",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-572",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-573",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-573",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-574",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-574",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-575",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-575",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-576",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-576",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-577",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-577",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-578",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-578",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-579",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-579",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-580",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-580",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-581",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-581",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-582",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-582",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-583",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-583",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-584",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-584",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-585",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-585",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-586",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-586",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-587",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-587",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-588",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-588",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-589",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-589",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-590",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-590",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-591",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-591",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-592",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-592",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-593",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-593",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-594",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-594",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-595",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-595",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-596",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-596",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-597",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-597",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-598",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-598",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-599",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-599",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-600",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-600",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-601",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-601",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-602",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-602",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-603",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-603",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-604",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-604",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-605",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-605",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-606",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-606",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-607",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-607",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-608",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-608",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-609",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-609",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-610",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-610",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-611",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-611",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-612",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-612",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-613",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-613",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-614",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-614",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-615",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-615",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-616",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-616",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-617",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-617",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-618",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-618",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-619",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-619",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-620",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-620",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-621",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-621",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-622",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-622",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-623",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-623",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-624",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-624",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-625",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-625",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-626",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-626",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-627",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-627",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-628",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-628",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-629",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-629",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-630",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-630",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-631",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-631",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-632",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-632",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-633",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-633",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-634",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-634",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-635",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-635",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-636",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-636",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-637",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-637",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-638",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-638",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-639",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-639",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-640",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-640",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-641",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-641",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-642",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-642",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-643",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-643",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-644",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-644",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-645",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-645",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-646",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-646",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-647",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-647",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-648",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-648",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-649",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-649",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-650",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-650",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-651",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-651",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-652",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-652",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-653",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-653",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-654",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-654",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-655",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-655",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-656",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-656",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-657",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-657",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-658",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-658",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-659",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-659",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-660",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-660",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-661",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-661",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-662",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-662",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-663",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-663",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-664",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-664",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-665",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-665",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-666",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-666",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-667",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-667",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-668",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-668",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-669",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-669",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-670",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-670",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-671",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-671",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-672",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-672",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-673",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-673",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-674",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-674",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-675",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-675",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-676",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-676",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-677",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-677",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-678",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-678",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-679",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-679",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-680",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-680",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-681",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-681",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-682",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-682",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-683",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-683",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-684",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-684",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-685",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-685",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-686",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-686",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-687",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-687",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-688",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-688",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-689",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-689",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-690",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-690",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-691",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-691",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-692",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-692",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-693",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-693",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-694",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-694",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-695",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-695",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-696",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-696",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-697",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-697",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-698",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-698",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-699",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-699",
+    "category": "divers"
+  },
+  {
+    "term": "Argot-700",
+    "definition": "Terme d’argot générique (à remplacer)",
+    "slug": "argot-700",
     "category": "divers"
   }
 ]
