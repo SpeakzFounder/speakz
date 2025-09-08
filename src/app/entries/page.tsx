@@ -1,42 +1,53 @@
-// src/app/entries/page.tsx
-import Link from 'next/link';
-import { getAllEntries, slugify } from '@/lib/entries.server';
+// app/entries/page.tsx
+import type { Metadata } from "next";
 
-// ✅ Rendu dynamique (voit les ajouts du JSON GitHub sans redeployer)
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+const RAW_JSON_URL = "/speakz_entries.json"; // ton fichier JSON dans /public
 
-export default async function EntriesPage() {
-  let entries = await getAllEntries();
+type Entry = {
+  term: string;
+  slug: string;
+  definition?: string;
+  categories?: string[];
+};
 
-  // Tri alpha pour un affichage stable
-  entries = entries.sort((a, b) => a.term.localeCompare(b.term, 'fr'));
+async function getEntries(): Promise<Entry[]> {
+  const res = await fetch(RAW_JSON_URL, { cache: "no-store" });
+  if (!res.ok) throw new Error("Impossible de charger le dictionnaire");
+  return (await res.json()) as Entry[];
+}
+
+export const metadata: Metadata = {
+  title: "Dictionnaire d’argot & verlan • Speakz",
+  description:
+    "Découvrez plus de 800 mots d’argot, verlan et expressions françaises. Définitions claires et navigation rapide.",
+};
+
+export default async function Page() {
+  const entries = await getEntries();
+  const total = entries.length;
 
   return (
-    <main style={{ maxWidth: 960, margin: '0 auto', padding: '2rem' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1rem' }}>
-        Lexique d’argot – Entries
+    <main className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-3xl md:text-4xl font-bold">
+        Dictionnaire d’argot & verlan
       </h1>
-
-      <p style={{ marginBottom: '1rem' }}>
-        <strong>{entries.length}</strong> mots chargés
+      <p className="mt-2 text-neutral-600">
+        {total} mots recensés dans le dictionnaire Speakz.
       </p>
 
-      <ul style={{ display: 'grid', gap: '0.5rem', listStyle: 'none', padding: 0 }}>
-        {entries.map((e) => {
-          const slug = e.slug || slugify(e.term);
-          return (
-            <li
-              key={slug}
-              style={{ padding: '0.5rem 0.75rem', border: '1px solid #eee', borderRadius: 8 }}
-            >
-              <Link href={`/mot/${slug}`} style={{ fontWeight: 600, textDecoration: 'none' }}>
-                {e.term}
-              </Link>
-              {e.definition && <> – <span>{e.definition}</span></>}
-            </li>
-          );
-        })}
+      <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {entries.map((e) => (
+          <li key={e.slug} className="border rounded-lg p-3 hover:bg-neutral-50">
+            <a href={`/mot/${e.slug}`} className="font-medium">
+              {e.term}
+            </a>
+            {e.definition && (
+              <p className="text-sm text-neutral-700 mt-1 line-clamp-2">
+                {e.definition}
+              </p>
+            )}
+          </li>
+        ))}
       </ul>
     </main>
   );
