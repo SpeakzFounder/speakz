@@ -1,8 +1,7 @@
 // src/app/categories/page.tsx
-import path from "path";
-import { promises as fs } from "fs";
+import { headers } from "next/headers";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic"; // pas de prerender -> plus d'erreur build
 
 type Entry = {
   term: string;
@@ -12,27 +11,22 @@ type Entry = {
 };
 
 async function getEntries(): Promise<Entry[]> {
-  // Lecture directe du JSON dans /public (marche en build & en prod)
-  const file = path.join(process.cwd(), "public", "speakz_entries.json");
-  try {
-    const raw = await fs.readFile(file, "utf8");
-    const data = JSON.parse(raw);
-    return Array.isArray(data) ? data : [];
-  } catch (e) {
-    // Fallback éventuel si vous définissez NEXT_PUBLIC_SITE_URL
-    const base = process.env.NEXT_PUBLIC_SITE_URL;
-    if (!base) throw e;
-    const res = await fetch(new URL("/speakz_entries.json", base).toString(), {
-      next: { revalidate },
-    });
-    if (!res.ok) return [];
-    return (await res.json()) as Entry[];
-  }
+  // Construit l'URL absolue à partir de la requête (host + proto)
+  const h = headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("host");
+  if (!host) return [];
+
+  const url = `${proto}://${host}/speakz_entries.json`;
+  const res = await fetch(url, { cache: "no-store" }); // toujours frais, et marche en prod
+  if (!res.ok) return [];
+  const data = (await res.json()) as Entry[];
+  return Array.isArray(data) ? data : [];
 }
 
-function buildCategoryIndex(entries: Entry[]) {
+function buildCategoryIndex(items: Entry[]) {
   const map = new Map<string, number>();
-  for (const e of entries) {
+  for (const e of items) {
     const cats = Array.isArray(e.categories) ? e.categories : [];
     for (const c of cats) {
       if (!c) continue;
