@@ -1,7 +1,10 @@
 // src/app/categories/page.tsx
-import { headers } from "next/headers";
+import path from "path";
+import { promises as fs } from "fs";
 
-export const dynamic = "force-dynamic"; // pas de prerender -> plus d'erreur build
+// Empêche l’Edge runtime (qui n’a pas fs) et force l’exécution côté Node
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 type Entry = {
   term: string;
@@ -11,17 +14,11 @@ type Entry = {
 };
 
 async function getEntries(): Promise<Entry[]> {
-  // Construit l'URL absolue à partir de la requête (host + proto)
-  const h = headers();
-  const proto = h.get("x-forwarded-proto") ?? "https";
-  const host = h.get("host");
-  if (!host) return [];
-
-  const url = `${proto}://${host}/speakz_entries.json`;
-  const res = await fetch(url, { cache: "no-store" }); // toujours frais, et marche en prod
-  if (!res.ok) return [];
-  const data = (await res.json()) as Entry[];
-  return Array.isArray(data) ? data : [];
+  // Lecture directe du fichier dans /public
+  const filePath = path.join(process.cwd(), "public", "speakz_entries.json");
+  const raw = await fs.readFile(filePath, "utf8");
+  const data = JSON.parse(raw);
+  return Array.isArray(data) ? (data as Entry[]) : [];
 }
 
 function buildCategoryIndex(items: Entry[]) {
