@@ -1,5 +1,8 @@
+
 // src/app/categories/page.tsx
 "use client";
+
+export const dynamic = "force-dynamic"; // ⚡ Next ne fait plus de prerender, il laisse au client
 
 import { useEffect, useState } from "react";
 
@@ -27,12 +30,11 @@ function buildCategoryIndex(items: Entry[]): Row[] {
 }
 
 export default function CategoriesPage() {
-  const [rows, setRows] = useState<Row[] | null>(null);
+  const [rows, setRows] = useState<Row[]>([]);
   const [total, setTotal] = useState<number>(0);
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
-    // ⚠️ fetch côté navigateur uniquement (pas au build)
     fetch("/speakz_entries.json")
       .then((r) => {
         if (!r.ok) throw new Error("HTTP " + r.status);
@@ -50,7 +52,7 @@ export default function CategoriesPage() {
     <main className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl md:text-4xl font-bold">Catégories</h1>
 
-      {!rows && !err && (
+      {!rows.length && !err && (
         <p className="mt-2 text-neutral-600">Chargement…</p>
       )}
 
@@ -60,7 +62,7 @@ export default function CategoriesPage() {
         </p>
       )}
 
-      {rows && (
+      {rows.length > 0 && (
         <>
           <p className="mt-2 text-neutral-600">
             {rows.length} catégories, {total} mots au total.
@@ -68,14 +70,19 @@ export default function CategoriesPage() {
 
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {rows.map(({ category, count }) => (
-              <li key={category} className="border rounded-lg p-3 hover:bg-neutral-50">
+              <li
+                key={category}
+                className="border rounded-lg p-3 hover:bg-neutral-50"
+              >
                 <a
                   href={`/categorie/${encodeURIComponent(category)}`}
                   className="font-medium"
                 >
                   #{category}
                 </a>
-                <span className="ml-2 text-sm text-neutral-600">({count})</span>
+                <span className="ml-2 text-sm text-neutral-600">
+                  ({count})
+                </span>
               </li>
             ))}
           </ul>
