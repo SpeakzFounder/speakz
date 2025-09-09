@@ -1,5 +1,8 @@
 // src/app/categories/page.tsx
-export const revalidate = 3600; // revalidation côté serveur (1h)
+import path from "path";
+import { promises as fs } from "fs";
+
+export const revalidate = 3600;
 
 type Entry = {
   term: string;
@@ -8,26 +11,36 @@ type Entry = {
   categories?: string[];
 };
 
-const JSON_URL = "/speakz_entries.json"; // ton fichier JSON dans /public
-
 async function getEntries(): Promise<Entry[]> {
-  const res = await fetch(JSON_URL, { next: { revalidate } });
-  if (!res.ok) return [];
-  const data = (await res.json()) as Entry[];
-  return Array.isArray(data) ? data : [];
+  // Lecture directe du JSON dans /public (marche en build & en prod)
+  const file = path.join(process.cwd(), "public", "speakz_entries.json");
+  try {
+    const raw = await fs.readFile(file, "utf8");
+    const data = JSON.parse(raw);
+    return Array.isArray(data) ? data : [];
+  } catch (e) {
+    // Fallback éventuel si vous définissez NEXT_PUBLIC_SITE_URL
+    const base = process.env.NEXT_PUBLIC_SITE_URL;
+    if (!base) throw e;
+    const res = await fetch(new URL("/speakz_entries.json", base).toString(), {
+      next: { revalidate },
+    });
+    if (!res.ok) return [];
+    return (await res.json()) as Entry[];
+  }
 }
 
 function buildCategoryIndex(entries: Entry[]) {
-  const map = new Map<string, { count: number }>();
+  const map = new Map<string, number>();
   for (const e of entries) {
     const cats = Array.isArray(e.categories) ? e.categories : [];
     for (const c of cats) {
       if (!c) continue;
-      map.set(c, { count: (map.get(c)?.count ?? 0) + 1 });
+      map.set(c, (map.get(c) ?? 0) + 1);
     }
   }
   return Array.from(map.entries())
-    .map(([category, { count }]) => ({ category, count }))
+    .map(([category, count]) => ({ category, count }))
     .sort((a, b) => (b.count - a.count) || a.category.localeCompare(b.category));
 }
 
@@ -55,4 +68,3 @@ export default async function CategoriesPage() {
     </main>
   );
 }
-
