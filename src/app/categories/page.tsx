@@ -1,10 +1,4 @@
-
 // src/app/categories/page.tsx
-"use client";
-
-export const dynamic = "force-dynamic"; // ⚡ Next ne fait plus de prerender, il laisse au client
-
-import { useEffect, useState } from "react";
 
 type Entry = {
   term: string;
@@ -13,9 +7,13 @@ type Entry = {
   categories?: string[];
 };
 
-type Row = { category: string; count: number };
+// ✅ Import statique du JSON (zéro fetch, compatible export statique)
+//    Chemin relatif : on part de src/app/categories/page.tsx → remonte à la racine (../../..)
+//    puis va dans public/speakz_entries.json
+import entriesData from "../../../public/speakz_entries.json";
+const entries = (entriesData as Entry[]) ?? [];
 
-function buildCategoryIndex(items: Entry[]): Row[] {
+function buildCategoryIndex(items: Entry[]) {
   const map = new Map<string, number>();
   for (const e of items) {
     const cats = Array.isArray(e.categories) ? e.categories : [];
@@ -30,64 +28,25 @@ function buildCategoryIndex(items: Entry[]): Row[] {
 }
 
 export default function CategoriesPage() {
-  const [rows, setRows] = useState<Row[]>([]);
-  const [total, setTotal] = useState<number>(0);
-  const [err, setErr] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch("/speakz_entries.json")
-      .then((r) => {
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        return r.json();
-      })
-      .then((data: Entry[]) => {
-        if (!Array.isArray(data)) throw new Error("Format JSON inattendu");
-        setTotal(data.length);
-        setRows(buildCategoryIndex(data));
-      })
-      .catch((e: any) => setErr(String(e?.message || e)));
-  }, []);
+  const index = buildCategoryIndex(entries);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl md:text-4xl font-bold">Catégories</h1>
+      <p className="mt-2 text-neutral-600">
+        {index.length} catégories, {entries.length} mots au total.
+      </p>
 
-      {!rows.length && !err && (
-        <p className="mt-2 text-neutral-600">Chargement…</p>
-      )}
-
-      {err && (
-        <p className="mt-2 text-red-600">
-          Oups 😬 Impossible de charger le dictionnaire ({err}).
-        </p>
-      )}
-
-      {rows.length > 0 && (
-        <>
-          <p className="mt-2 text-neutral-600">
-            {rows.length} catégories, {total} mots au total.
-          </p>
-
-          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {rows.map(({ category, count }) => (
-              <li
-                key={category}
-                className="border rounded-lg p-3 hover:bg-neutral-50"
-              >
-                <a
-                  href={`/categorie/${encodeURIComponent(category)}`}
-                  className="font-medium"
-                >
-                  #{category}
-                </a>
-                <span className="ml-2 text-sm text-neutral-600">
-                  ({count})
-                </span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {index.map(({ category, count }) => (
+          <li key={category} className="border rounded-lg p-3 hover:bg-neutral-50">
+            <a href={`/categorie/${encodeURIComponent(category)}`} className="font-medium">
+              #{category}
+            </a>
+            <span className="ml-2 text-sm text-neutral-600">({count})</span>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }
