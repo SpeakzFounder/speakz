@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00ffff;
+    margin: 0;
+}
+
+.search-box {
+    margin-bottom: 30px;
+}
+
+#search {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: 2px solid #00ffff;
+    background: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.word-card {
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.word-title {
+    font-size: 1.5em;
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.word-definition {
+    color: #ffffff;
+    line-height: 1.5;
+}
