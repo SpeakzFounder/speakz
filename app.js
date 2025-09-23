@@ -27,7 +27,7 @@ function displayWords(words) {
     words.slice(0, 50).forEach(word => {
         html += `
             <div class="word-card">
-                <div class="word-title">${word.word}</div>
+                <div class="word-title">${word.term}</div>
                 <div class="word-definition">${word.definition}</div>
             </div>
         `;
@@ -46,7 +46,7 @@ document.getElementById('search').addEventListener('input', function(e) {
     }
     
     const filtered = dictionary.filter(word => 
-        word.word.toLowerCase().includes(searchTerm) ||
+        word.term.toLowerCase().includes(searchTerm) ||
         word.definition.toLowerCase().includes(searchTerm)
     );
     
