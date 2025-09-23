@@ -1,0 +1,695 @@
+[
+  {
+    "term": "Abouler",
+    "definition": "Donner, apporter",
+    "category": "argot",
+    "example": "Aboule le fric!"
+  },
+  {
+    "term": "Askip",
+    "definition": "À ce qu'il paraît",
+    "category": "jeunes",
+    "example": "Askip il sort avec elle"
+  },
+  {
+    "term": "Bail",
+    "definition": "Plan, truc, affaire",
+    "category": "cités",
+    "example": "C'est quoi le bail?"
+  },
+  {
+    "term": "Balec",
+    "definition": "On s'en fiche",
+    "category": "jeunes",
+    "example": "Balec de ses histoires"
+  },
+  {
+    "term": "Baltringue",
+    "definition": "Personne peu fiable, lâche",
+    "category": "argot",
+    "example": "Quelle baltringue celui-là"
+  },
+  {
+    "term": "Bader",
+    "definition": "Déprimer, avoir le cafard",
+    "category": "jeunes",
+    "example": "Je bade depuis hier"
+  },
+  {
+    "term": "Belek",
+    "definition": "Fais attention",
+    "category": "cités",
+    "example": "Belek aux keufs"
+  },
+  {
+    "term": "BG",
+    "definition": "Beau gosse",
+    "category": "jeunes",
+    "example": "Il se prend pour un BG"
+  },
+  {
+    "term": "Bicrave",
+    "definition": "Vendre de la drogue",
+    "category": "cités",
+    "example": "Il bicrave au quartier"
+  },
+  {
+    "term": "Bif",
+    "definition": "Argent",
+    "category": "argot",
+    "example": "J'ai plus de bif"
+  },
+  {
+    "term": "Biloute",
+    "definition": "Mon ami (Nord)",
+    "category": "nord",
+    "example": "Ça va biloute?"
+  },
+  {
+    "term": "Blase",
+    "definition": "Nom, prénom",
+    "category": "argot",
+    "example": "C'est quoi ton blase?"
+  },
+  {
+    "term": "Bled",
+    "definition": "Pays d'origine, village",
+    "category": "cités",
+    "example": "Je retourne au bled"
+  },
+  {
+    "term": "Boloss",
+    "definition": "Personne naïve, victime",
+    "category": "jeunes",
+    "example": "T'es un boloss"
+  },
+  {
+    "term": "Boug",
+    "definition": "Mec, type",
+    "category": "cités",
+    "example": "C'est qui ce boug?"
+  },
+  {
+    "term": "Cagole",
+    "definition": "Fille vulgaire (Marseille)",
+    "category": "marseille",
+    "example": "Quelle cagole celle-là"
+  },
+  {
+    "term": "Charbonner",
+    "definition": "Travailler dur",
+    "category": "cités",
+    "example": "Je charbonne tous les jours"
+  },
+  {
+    "term": "Charo",
+    "definition": "Dragueur lourd",
+    "category": "jeunes",
+    "example": "Arrête de faire le charo"
+  },
+  {
+    "term": "Chelou",
+    "definition": "Louche, bizarre",
+    "category": "verlan",
+    "example": "C'est chelou cette histoire"
+  },
+  {
+    "term": "Cheum",
+    "definition": "Moche",
+    "category": "verlan",
+    "example": "Cette fringue est cheum"
+  },
+  {
+    "term": "Chill",
+    "definition": "Se détendre",
+    "category": "anglais",
+    "example": "On chill ce soir"
+  },
+  {
+    "term": "Chouf",
+    "definition": "Guetteur",
+    "category": "cités",
+    "example": "Le chouf fait le guet"
+  },
+  {
+    "term": "Cimer",
+    "definition": "Merci",
+    "category": "verlan",
+    "example": "Cimer frérot"
+  },
+  {
+    "term": "Crush",
+    "definition": "Personne qui nous plaît",
+    "category": "anglais",
+    "example": "C'est mon crush"
+  },
+  {
+    "term": "Dar",
+    "definition": "Beaucoup, fort",
+    "category": "cités",
+    "example": "Il y a dar de monde"
+  },
+  {
+    "term": "Daron",
+    "definition": "Père",
+    "category": "argot",
+    "example": "Mon daron rentre"
+  },
+  {
+    "term": "Daronne",
+    "definition": "Mère",
+    "category": "argot",
+    "example": "Ma daronne cuisine"
+  },
+  {
+    "term": "Dead",
+    "definition": "Mort de rire, épuisé",
+    "category": "jeunes",
+    "example": "Je suis dead"
+  },
+  {
+    "term": "Déglingué",
+    "definition": "Cassé, défoncé",
+    "category": "argot",
+    "example": "Il est déglingué"
+  },
+  {
+    "term": "Dégun",
+    "definition": "Personne (Marseille)",
+    "category": "marseille",
+    "example": "Y'a dégun ici"
+  },
+  {
+    "term": "Déter",
+    "definition": "Déterminé",
+    "category": "jeunes",
+    "example": "Je suis déter à réussir"
+  },
+  {
+    "term": "Drache",
+    "definition": "Pluie forte (Nord/Belgique)",
+    "category": "belgique",
+    "example": "Il drache dehors"
+  },
+  {
+    "term": "Emboucaner",
+    "definition": "Embêter (Marseille)",
+    "category": "marseille",
+    "example": "Arrête de m'emboucaner"
+  },
+  {
+    "term": "Escagasser",
+    "definition": "Écraser, abîmer (Marseille)",
+    "category": "marseille",
+    "example": "Tu vas l'escagasser"
+  },
+  {
+    "term": "Fada",
+    "definition": "Fou (Marseille)",
+    "category": "marseille",
+    "example": "T'es fada ou quoi?"
+  },
+  {
+    "term": "Faire le djo",
+    "definition": "Faire le malin",
+    "category": "cités",
+    "example": "Arrête de faire le djo"
+  },
+  {
+    "term": "Fenotte",
+    "definition": "Femme (Lyon)",
+    "category": "lyon",
+    "example": "Cette fenotte est belle"
+  },
+  {
+    "term": "Feuj",
+    "definition": "Juif",
+    "category": "verlan",
+    "example": "Il est feuj"
+  },
+  {
+    "term": "Flex",
+    "definition": "Se vanter, frimer",
+    "category": "anglais",
+    "example": "Il flex avec sa caisse"
+  },
+  {
+    "term": "Flow",
+    "definition": "Style, allure",
+    "category": "anglais",
+    "example": "Il a du flow"
+  },
+  {
+    "term": "Flouze",
+    "definition": "Argent",
+    "category": "argot",
+    "example": "J'ai plus de flouze"
+  },
+  {
+    "term": "Frappe",
+    "definition": "Personne impressionnante",
+    "category": "cités",
+    "example": "C'est une frappe"
+  },
+  {
+    "term": "Frérot",
+    "definition": "Frère, ami proche",
+    "category": "cités",
+    "example": "Salut frérot"
+  },
+  {
+    "term": "Gadjo",
+    "definition": "Mec, homme",
+    "category": "argot",
+    "example": "Ce gadjo est cool"
+  },
+  {
+    "term": "Galère",
+    "definition": "Situation difficile",
+    "category": "argot",
+    "example": "C'est la galère"
+  },
+  {
+    "term": "Ghoster",
+    "definition": "Ignorer soudainement",
+    "category": "anglais",
+    "example": "Il m'a ghosté"
+  },
+  {
+    "term": "Go",
+    "definition": "Fille, copine",
+    "category": "cités",
+    "example": "C'est ma go"
+  },
+  {
+    "term": "Gole-ri",
+    "definition": "Rigolo",
+    "category": "verlan",
+    "example": "T'es gole-ri toi"
+  },
+  {
+    "term": "Gône",
+    "definition": "Enfant (Lyon)",
+    "category": "lyon",
+    "example": "Les gônes jouent dehors"
+  },
+  {
+    "term": "Grailler",
+    "definition": "Manger",
+    "category": "argot",
+    "example": "On va grailler"
+  },
+  {
+    "term": "Grave",
+    "definition": "Beaucoup, très",
+    "category": "jeunes",
+    "example": "C'est grave bien"
+  },
+  {
+    "term": "Hass",
+    "definition": "Haine, méchanceté",
+    "category": "cités",
+    "example": "Il a la hass"
+  },
+  {
+    "term": "Heja",
+    "definition": "Cannabis",
+    "category": "cités",
+    "example": "Il fume de la heja"
+  },
+  {
+    "term": "Hess",
+    "definition": "Misère, galère",
+    "category": "cités",
+    "example": "C'est la hess"
+  },
+  {
+    "term": "Hlel",
+    "definition": "Licite, halal",
+    "category": "cités",
+    "example": "C'est hlel ça"
+  },
+  {
+    "term": "Igo",
+    "definition": "Mec, pote",
+    "category": "cités",
+    "example": "Salut igo"
+  },
+  {
+    "term": "Iench",
+    "definition": "Chien",
+    "category": "verlan",
+    "example": "Sale iench"
+  },
+  {
+    "term": "Ient-cli",
+    "definition": "Client",
+    "category": "verlan",
+    "example": "J'attends un ient-cli"
+  },
+  {
+    "term": "Ken",
+    "definition": "Baiser, niquer",
+    "category": "cités",
+    "example": "Il veut la ken"
+  },
+  {
+    "term": "Keuf",
+    "definition": "Flic",
+    "category": "verlan",
+    "example": "Les keufs arrivent"
+  },
+  {
+    "term": "Keus",
+    "definition": "Sac, sacoche",
+    "category": "verlan",
+    "example": "Passe-moi le keus"
+  },
+  {
+    "term": "Khey",
+    "definition": "Frère, mec",
+    "category": "cités",
+    "example": "Wesh khey"
+  },
+  {
+    "term": "Kiffer",
+    "definition": "Aimer, apprécier",
+    "category": "cités",
+    "example": "Je kiffe cette musique"
+  },
+  {
+    "term": "Lascar",
+    "definition": "Mec de la rue",
+    "category": "argot",
+    "example": "C'est un vrai lascar"
+  },
+  {
+    "term": "Maille",
+    "definition": "Argent",
+    "category": "argot",
+    "example": "Faut faire de la maille"
+  },
+  {
+    "term": "Mater",
+    "definition": "Regarder",
+    "category": "argot",
+    "example": "Mate cette voiture"
+  },
+  {
+    "term": "MDR",
+    "definition": "Mort de rire",
+    "category": "internet",
+    "example": "MDR t'es fou"
+  },
+  {
+    "term": "Meuf",
+    "definition": "Femme, fille",
+    "category": "verlan",
+    "example": "Cette meuf est belle"
+  },
+  {
+    "term": "Mifa",
+    "definition": "Famille",
+    "category": "verlan",
+    "example": "Toute la mifa est là"
+  },
+  {
+    "term": "Minot",
+    "definition": "Enfant (Marseille)",
+    "category": "marseille",
+    "example": "Les minots jouent"
+  },
+  {
+    "term": "Miskine",
+    "definition": "Le pauvre",
+    "category": "arabe",
+    "example": "Miskine il s'est fait avoir"
+  },
+  {
+    "term": "Moula",
+    "definition": "Argent",
+    "category": "cités",
+    "example": "J'ai de la moula"
+  },
+  {
+    "term": "Mytho",
+    "definition": "Menteur",
+    "category": "jeunes",
+    "example": "T'es un mytho"
+  },
+  {
+    "term": "Nawak",
+    "definition": "N'importe quoi",
+    "category": "jeunes",
+    "example": "C'est nawak"
+  },
+  {
+    "term": "OKLM",
+    "definition": "Au calme, tranquille",
+    "category": "internet",
+    "example": "Je suis OKLM"
+  },
+  {
+    "term": "Oseille",
+    "definition": "Argent",
+    "category": "argot",
+    "example": "J'ai plus d'oseille"
+  },
+  {
+    "term": "Ouf",
+    "definition": "Fou",
+    "category": "verlan",
+    "example": "C'est ouf!"
+  },
+  {
+    "term": "Pastaga",
+    "definition": "Pastis",
+    "category": "marseille",
+    "example": "Un pastaga bien frais"
+  },
+  {
+    "term": "Pécho",
+    "definition": "Choper, attraper",
+    "category": "verlan",
+    "example": "J'ai pécho son num"
+  },
+  {
+    "term": "Pègue",
+    "definition": "Colle, poisse (Marseille)",
+    "category": "marseille",
+    "example": "Quelle pègue!"
+  },
+  {
+    "term": "Pélo",
+    "definition": "Mec (Lyon)",
+    "category": "lyon",
+    "example": "Ce pélo est sympa"
+  },
+  {
+    "term": "Peuchère",
+    "definition": "Le pauvre (Marseille)",
+    "category": "marseille",
+    "example": "Peuchère, il est tombé"
+  },
+  {
+    "term": "PLS",
+    "definition": "Position latérale de sécurité, KO",
+    "category": "internet",
+    "example": "Je suis en PLS"
+  },
+  {
+    "term": "Poto",
+    "definition": "Pote, ami",
+    "category": "cités",
+    "example": "C'est mon poto"
+  },
+  {
+    "term": "Poucave",
+    "definition": "Balance, dénonciateur",
+    "category": "cités",
+    "example": "C'est une poucave"
+  },
+  {
+    "term": "PTDR",
+    "definition": "Pété de rire",
+    "category": "internet",
+    "example": "PTDR j'en peux plus"
+  },
+  {
+    "term": "Rebeu",
+    "definition": "Arabe",
+    "category": "verlan",
+    "example": "Il est rebeu"
+  },
+  {
+    "term": "Relou",
+    "definition": "Lourd, chiant",
+    "category": "verlan",
+    "example": "T'es relou"
+  },
+  {
+    "term": "Renoi",
+    "definition": "Noir",
+    "category": "verlan",
+    "example": "Il est renoi"
+  },
+  {
+    "term": "Reuf",
+    "definition": "Frère",
+    "category": "verlan",
+    "example": "Mon reuf arrive"
+  },
+  {
+    "term": "Reum",
+    "definition": "Mère",
+    "category": "verlan",
+    "example": "Ma reum m'appelle"
+  },
+  {
+    "term": "Reup",
+    "definition": "Père",
+    "category": "verlan",
+    "example": "Mon reup rentre"
+  },
+  {
+    "term": "Sah",
+    "definition": "Vraiment, sérieux",
+    "category": "arabe",
+    "example": "Sah t'es sérieux?"
+  },
+  {
+    "term": "Sape",
+    "definition": "Vêtements, style",
+    "category": "argot",
+    "example": "Belle sape!"
+  },
+  {
+    "term": "Seum",
+    "definition": "Rage, dégoût",
+    "category": "jeunes",
+    "example": "J'ai le seum"
+  },
+  {
+    "term": "Starfoullah",
+    "definition": "Mon Dieu (arabe)",
+    "category": "arabe",
+    "example": "Starfoullah c'est chaud"
+  },
+  {
+    "term": "Stylé",
+    "definition": "Cool, classe",
+    "category": "jeunes",
+    "example": "C'est stylé"
+  },
+  {
+    "term": "Swag",
+    "definition": "Style, classe",
+    "category": "anglais",
+    "example": "Il a du swag"
+  },
+  {
+    "term": "Taf",
+    "definition": "Travail",
+    "category": "argot",
+    "example": "Je vais au taf"
+  },
+  {
+    "term": "Tarpin",
+    "definition": "Beaucoup (Marseille)",
+    "category": "marseille",
+    "example": "Il y a tarpin de monde"
+  },
+  {
+    "term": "Tchoin",
+    "definition": "Fille facile",
+    "category": "cités",
+    "example": "C'est une tchoin"
+  },
+  {
+    "term": "Téma",
+    "definition": "Regarde",
+    "category": "verlan",
+    "example": "Téma la taille du rat"
+  },
+  {
+    "term": "Ter-ter",
+    "definition": "Territoire, quartier",
+    "category": "cités",
+    "example": "C'est mon ter-ter"
+  },
+  {
+    "term": "Tess",
+    "definition": "Cité, quartier",
+    "category": "verlan",
+    "example": "Dans ma tess"
+  },
+  {
+    "term": "Teuf",
+    "definition": "Fête",
+    "category": "verlan",
+    "example": "Y'a teuf ce soir"
+  },
+  {
+    "term": "Thune",
+    "definition": "Argent",
+    "category": "argot",
+    "example": "J'ai plus de thune"
+  },
+  {
+    "term": "Tise",
+    "definition": "Alcool",
+    "category": "jeunes",
+    "example": "On prend de la tise"
+  },
+  {
+    "term": "Tiser",
+    "definition": "Boire de l'alcool",
+    "category": "jeunes",
+    "example": "On va tiser"
+  },
+  {
+    "term": "TKT",
+    "definition": "T'inquiète",
+    "category": "internet",
+    "example": "TKT je gère"
+  },
+  {
+    "term": "Traboule",
+    "definition": "Passage secret (Lyon)",
+    "category": "lyon",
+    "example": "On passe par la traboule"
+  },
+  {
+    "term": "Turfu",
+    "definition": "Futur",
+    "category": "verlan",
+    "example": "C'est le turfu"
+  },
+  {
+    "term": "Vénère",
+    "definition": "Énervé",
+    "category": "verlan",
+    "example": "Je suis vénère"
+  },
+  {
+    "term": "Wallah",
+    "definition": "Je jure",
+    "category": "arabe",
+    "example": "Wallah c'est vrai"
+  },
+  {
+    "term": "Wassingue",
+    "definition": "Serpillière (Nord)",
+    "category": "nord",
+    "example": "Passe la wassingue"
+  },
+  {
+    "term": "Wesh",
+    "definition": "Salut, quoi",
+    "category": "cités",
+    "example": "Wesh alors?"
+  },
+  {
+    "term": "Zarbi",
+    "definition": "Bizarre",
+    "category":
