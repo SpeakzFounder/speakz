@@ -5,336 +5,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeakZ - Dictionnaire d'Argot</title>
     <style>
-        body {
-            background: black;
-            color: white;
-            font-family: Arial;
-            padding: 20px;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000000;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
         h1 {
-            color: cyan;
-            font-size: 4rem;
+            font-size: clamp(4rem, 12vw, 10rem);
+            font-weight: 900;
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
+            background: linear-gradient(45deg, #0080ff, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
+            animation: glow 2s ease-in-out infinite alternate;
         }
-        h2 {
-            color: cyan;
+        
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(0, 128, 255, 0.8)); }
+            to { filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8)); }
+        }
+        
+        .fire-badge {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff1493;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 0 auto 30px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
+            animation: pulse 2s infinite;
             text-align: center;
+            position: relative;
         }
+        
+        .fire-badge::before,
+        .fire-badge::after {
+            content: '🔥';
+            margin: 0 10px;
+            animation: spin 3s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
         .nav {
-            text-align: center;
-            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
         }
-        button {
-            background: cyan;
+        
+        .nav button {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
             color: black;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 12px 25px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
         }
-        button:hover {
-            background: #00ffff;
-            transform: scale(1.05);
+        
+        .nav button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+            background: linear-gradient(45deg, #00ffff, #0080ff);
         }
-        button.active {
-            background: #ff00ff;
+        
+        .nav button.active {
+            background: linear-gradient(45deg, #00ffff, #0080ff);
             color: white;
         }
+        
         .page {
             display: none;
             text-align: center;
             padding: 20px;
+            animation: fadeIn 0.5s;
         }
+        
         .page.active {
             display: block;
         }
-        .word {
-            background: #222;
-            padding: 15px;
-            margin: 10px auto;
-            border-radius: 10px;
-            max-width: 500px;
-            text-align: left;
-            border: 2px solid #333;
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .word:hover {
-            border-color: cyan;
+        
+        h2 {
+            font-size: 2.5rem;
+            color: #00ffff;
+            text-align: center;
+            margin: 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
-        .word strong {
-            color: cyan;
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #ffb3da;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 15px 30px;
+            margin: 0 auto 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .subtitle:hover {
+            transform: translateY(-3px);
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.7);
+            border: 2px solid #ff1493;
+        }
+        
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            font-size: 1.1rem;
+            border: 2px solid #ff00ff;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            border-color: #00ffff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        
+        .search-input::placeholder {
+            color: #888;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ff00ff;
             font-size: 1.2rem;
         }
-        #searchBox {
-            padding: 10px;
-            margin: 20px;
-            width: 300px;
-            border-radius: 20px;
-            border: 2px solid cyan;
-            background: #111;
-            color: white;
+        
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
         }
-        .badge {
-            background: #ff00ff;
+        
+        .category-btn {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff00ff;
             color: white;
             padding: 10px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            margin: 10px;
-            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
-        .card {
-            background: #222;
-            border: 2px solid #444;
+        
+        .category-btn:hover {
+            transform: translateY(-3px);
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+            border-color: #00ffff;
+        }
+        
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .word {
+            background: rgba(0, 0, 0, 0.9);
             border-radius: 15px;
             padding: 20px;
+            border: 2px solid #ff00ff;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        
+        .word:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.4);
+            border-color: #00ffff;
+        }
+        
+        .word strong {
+            font-size: 1.5rem;
+            color: #ffffff;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .word-category {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .word-definition {
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .word-example {
+            font-style: italic;
+            color: #cccccc;
+            background: rgba(255, 0, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            border-left: 3px solid #ff00ff;
+        }
+        
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px;
             margin: 20px auto;
             max-width: 600px;
+            border: 2px solid #ff00ff;
+            box-shadow: 0 15px 35px rgba(255, 0, 255, 0.2);
+            transition: all 0.3s ease;
         }
-        .game-btn {
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 0, 255, 0.3);
+        }
+        
+        .game-card {
+            background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(0, 255, 255, 0.2));
+            border: 2px solid #8b5cf6;
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
+        }
+        
+        .game-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .play-btn {
             background: linear-gradient(45deg, #ff00ff, #00ffff);
             color: white;
             padding: 15px 30px;
-            margin: 10px;
             border: none;
             border-radius: 25px;
-            font-size: 1.1rem;
             cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .play-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
         }
     </style>
 </head>
 <body>
-    <h1>SPEAKZ</h1>
-    <div class="badge">🔥 ULTRA FIRE DICTIONARY 🔥</div>
-    
-    <div class="nav">
-        <button onclick="showPage('accueil', this)" class="active">ACCUEIL</button>
-        <button onclick="showPage('dictionnaire', this)">DICTIONNAIRE</button>
-        <button onclick="showPage('jeux', this)">JEUX</button>
-        <button onclick="showPage('inscription', this)">INSCRIPTION</button>
-        <button onclick="showPage('communaute', this)">COMMUNAUTÉ</button>
-        <button onclick="showPage('profil', this)">PROFIL</button>
-    </div>
-
-    <!-- PAGE ACCUEIL -->
-    <div id="accueil" class="page active">
-        <h2>L'argot qui déchire tout</h2>
-        <p style="font-size: 1.2rem; margin: 30px auto; max-width: 600px;">
-            Plus de 730 mots d'argot authentiques répartis en 15 catégories 
-            couvrant 12 régions francophones !
-        </p>
+    <div class="container">
+        <h1>SPEAKZ</h1>
+        <center><div class="fire-badge">ULTRA FIRE DICTIONARY</div></center>
         
-        <div class="card">
-            <h3 style="color: #ff00ff;">✨ MOT DU JOUR ✨</h3>
-            <div style="font-size: 2rem; color: cyan; margin: 20px;">Stylé</div>
-            <p>Cool, bien habillé</p>
-            <p style="font-style: italic;">"T'es stylé avec cette veste !"</p>
+        <div class="nav">
+            <button onclick="showPage('accueil', this)" class="active">ACCUEIL</button>
+            <button onclick="showPage('dictionnaire', this)">DICTIONNAIRE</button>
+            <button onclick="showPage('jeux', this)">JEUX</button>
+            <button onclick="showPage('inscription', this)">INSCRIPTION</button>
+            <button onclick="showPage('communaute', this)">COMMUNAUTÉ</button>
+            <button onclick="showPage('profil', this)">PROFIL</button>
         </div>
 
-        <input type="text" id="searchHome" placeholder="Recherche rapide..." style="padding: 10px; width: 300px; border-radius: 20px; border: 2px solid cyan; background: #111; color: white;">
-    </div>
+        <!-- PAGE ACCUEIL -->
+        <div id="accueil" class="page active">
+            <div class="subtitle">L'argot qui déchire tout</div>
+            
+            <p style="font-size: 1.2rem; color: white; margin: 30px auto; max-width: 800px; line-height: 1.6;">
+                Plus de 730 mots d'argot authentiques répartis en 15 catégories 
+                couvrant 12 régions francophones ! Découvrez l'argot des jeunes, 
+                des cités, le verlan, et l'argot régional de toute la francophonie.
+            </p>
+            
+            <div class="search-container">
+                <div class="search-icon">🔍</div>
+                <input type="text" class="search-input" placeholder="Recherche rapide..." id="searchHome">
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #ff00ff; font-size: 1.8rem; margin-bottom: 20px;">🔥 MOT DU JOUR 🔥</h3>
+                <div style="font-size: 2.5rem; font-weight: bold; color: #ffffff; margin: 20px 0;">Stylé</div>
+                <div class="word-category">JEUNES</div>
+                <p style="color: white; font-size: 1.1rem; margin: 15px 0;">Cool, bien habillé, qui a du style</p>
+                <div style="background: rgba(0,255,255,0.1); padding: 15px; border-radius: 10px; border-left: 3px solid #00ffff;">
+                    <em style="color: #cccccc;">"T'es stylé avec cette veste !"</em>
+                </div>
+            </div>
+        </div>
 
-    <!-- PAGE DICTIONNAIRE -->
-    <div id="dictionnaire" class="page">
-        <h2>DICTIONNAIRE D'ARGOT</h2>
-        
-        <div style="margin: 20px;">
-            <button onclick="filterCategory('tous')">TOUS</button>
-            <button onclick="filterCategory('jeunes')">JEUNES</button>
-            <button onclick="filterCategory('verlan')">VERLAN</button>
-            <button onclick="filterCategory('marseille')">MARSEILLE</button>
-        </div>
-        
-        <input type="text" id="searchBox" placeholder="Chercher un mot...">
-        
-        <div id="mots">
-            <div class="word" data-category="jeunes">
-                <strong>Kiffer</strong><br>
-                Aimer quelque chose<br>
-                <em>"Je kiffe cette musique!"</em>
+        <!-- PAGE DICTIONNAIRE -->
+        <div id="dictionnaire" class="page">
+            <h2>DICTIONNAIRE D'ARGOT</h2>
+            
+            <div class="search-container">
+                <div class="search-icon">🔍</div>
+                <input type="text" class="search-input" placeholder="Cherche un mot d'argot..." id="searchBox">
             </div>
-            <div class="word" data-category="jeunes">
-                <strong>Stylé</strong><br>
-                Cool, bien habillé<br>
-                <em>"T'es stylé!"</em>
+            
+            <div class="categories">
+                <button class="category-btn" onclick="filterCategory('tous')">TOUS (20+)</button>
+                <button class="category-btn" onclick="filterCategory('jeunes')">JEUNES</button>
+                <button class="category-btn" onclick="filterCategory('verlan')">VERLAN</button>
+                <button class="category-btn" onclick="filterCategory('marseille')">MARSEILLE</button>
+                <button class="category-btn" onclick="filterCategory('cite')">CITÉ</button>
             </div>
-            <div class="word" data-category="jeunes">
-                <strong>Wesh</strong><br>
-                Salut familier<br>
-                <em>"Wesh, ça va?"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Seum</strong><br>
-                Dégoût, frustration<br>
-                <em>"J'ai le seum!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Boloss</strong><br>
-                Personne naïve<br>
-                <em>"Fait pas le boloss!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Grave</strong><br>
-                Beaucoup, très<br>
-                <em>"C'est grave bien!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Ouf</strong><br>
-                Fou, incroyable<br>
-                <em>"C'est ouf ce truc!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>BG</strong><br>
-                Beau gosse<br>
-                <em>"Il est BG ce mec"</em>
-            </div>
-            <div class="word" data-category="verlan">
-                <strong>Meuf</strong><br>
-                Femme (verlan)<br>
-                <em>"Cette meuf est sympa"</em>
-            </div>
-            <div class="word" data-category="verlan">
-                <strong>Keuf</strong><br>
-                Flic (verlan)<br>
-                <em>"Attention aux keufs!"</em>
-            </div>
-            <div class="word" data-category="verlan">
-                <strong>Chelou</strong><br>
-                Louche (verlan)<br>
-                <em>"C'est chelou cette histoire"</em>
-            </div>
-            <div class="word" data-category="verlan">
-                <strong>Relou</strong><br>
-                Lourd (verlan)<br>
-                <em>"Il est relou ce mec"</em>
-            </div>
-            <div class="word" data-category="verlan">
-                <strong>Téma</strong><br>
-                Regarde, mate<br>
-                <em>"Téma cette voiture!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Poto</strong><br>
-                Ami, copain<br>
-                <em>"C'est mon poto"</em>
-            </div>
-            <div class="word" data-category="marseille">
-                <strong>Cagole</strong><br>
-                Fille vulgaire (Marseille)<br>
-                <em>"Cette cagole fait du bruit"</em>
-            </div>
-            <div class="word" data-category="marseille">
-                <strong>Fada</strong><br>
-                Fou (Marseille)<br>
-                <em>"Il est complètement fada"</em>
-            </div>
-            <div class="word" data-category="marseille">
-                <strong>Dégun</strong><br>
-                Personne (Marseille)<br>
-                <em>"Il y a dégun"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Wallah</strong><br>
-                Je jure (arabe)<br>
-                <em>"Wallah c'est vrai!"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Bicrave</strong><br>
-                Dealer, vendre<br>
-                <em>"Il bicrave au coin"</em>
-            </div>
-            <div class="word" data-category="jeunes">
-                <strong>Chiller</strong><br>
-                Se détendre<br>
-                <em>"On va chiller"</em>
+            
+            <div class="word-grid" id="mots">
+                <div class="word" data-category="jeunes">
+                    <strong>Kiffer</strong>
+                    <div class="word-category">JEUNES</div>
+                    <div class="word-definition">Aimer, apprécier quelque chose</div>
+                    <div class="word-example">"Je kiffe grave cette musique!"</div>
+                </div>
+                <div class="word" data-category="jeunes">
+                    <strong>Stylé</strong>
+                    <div class="word-category">JEUNES</div>
+                    <div class="word-definition">Cool, bien habillé</div>
+                    <div class="word-example">"T'es stylé avec cette veste!"</div>
+                </div>
+                <div class="word" data-category="jeunes">
+                    <strong>Wesh</strong>
+                    <div class="word-category">JEUNES</div>
+                    <div class="word-definition">Salut, expression familière</div>
+                    <div class="word-example">"Wesh, ça va?"</div>
+                </div>
+                <div class="word" data-category="jeunes">
+                    <strong>Grave</strong>
+                    <div class="word-category">JEUNES</div>
+                    <div class="word-definition">Beaucoup, très</div>
+                    <div class="word-example">"C'est grave bien!"</div>
+                </div>
+                <div class="word" data-category="jeunes">
+                    <strong>Ouf</strong>
+                    <div class="word-category">JEUNES</div>
+                    <div class="word-definition">Fou, incroyable</div>
+                    <div class="word-example">"C'est ouf ce truc!"</div>
+                </div>
+                <div class="word" data-category="cite">
+                    <strong>Seum</strong>
+                    <div class="word-category">CITÉ</div>
+                    <div class="word-definition">Dégoût, frustration</div>
+                    <div class="word-example">"J'ai le seum de pas avoir réussi"</div>
+                </div>
+                <div class="word" data-category="cite">
+                    <strong>Boloss</strong>
+                    <div class="word-category">CITÉ</div>
+                    <div class="word-definition">Personne naïve</div>
+                    <div class="word-example">"Ne fais pas le boloss"</div>
+                </div>
+                <div class="word" data-category="verlan">
+                    <strong>Meuf</strong>
+                    <div class="word-category">VERLAN</div>
+                    <div class="word-definition">Femme (verlan de femme)</div>
+                    <div class="word-example">"Cette meuf est sympa"</div>
+                </div>
+                <div class="word" data-category="verlan">
+                    <strong>Keuf</strong>
+                    <div class="word-category">VERLAN</div>
+                    <div class="word-definition">Flic (verlan de flic)</div>
+                    <div class="word-example">"Attention aux keufs!"</div>
+                </div>
+                <div class="word" data-category="verlan">
+                    <strong>Chelou</strong>
+                    <div class="word-category">VERLAN</div>
+                    <div class="word-definition">Louche (verlan de louche)</div>
+                    <div class="word-example">"Ce type est chelou"</div>
+                </div>
+                <div class="word" data-category="verlan">
+                    <strong>Relou</strong>
+                    <div class="word-category">VERLAN</div>
+                    <div class="word-definition">Lourd (verlan de lourd)</div>
+                    <div class="word-example">"Il est relou ce mec"</div>
+                </div>
+                <div class="word" data-category="marseille">
+                    <strong>Cagole</strong>
+                    <div class="word-category">MARSEILLE</div>
+                    <div class="word-definition">Fille un peu vulgaire</div>
+                    <div class="word-example">"Cette cagole fait du bruit"</div>
+                </div>
+                <div class="word" data-category="marseille">
+                    <strong>Fada</strong>
+                    <div class="word-category">MARSEILLE</div>
+                    <div class="word-definition">Fou</div>
+                    <div class="word-example">"Il est complètement fada"</div>
+                </div>
+                <div class="word" data-category="marseille">
+                    <strong>Dégun</strong>
+                    <div class="word-category">MARSEILLE</div>
+                    <div class="word-definition">Personne</div>
+                    <div class="word-example">"Il y a dégun"</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- PAGE JEUX -->
-    <div id="jeux" class="page">
-        <h2>JEUX & QUIZ</h2>
-        <p>Teste tes connaissances et gagne des points !</p>
-        
-        <div class="card">
-            <h3 style="color: cyan;">🔄 Quiz Verlan</h3>
-            <p>Teste tes connaissances en verlan</p>
-            <button class="game-btn">JOUER</button>
+        <!-- PAGE JEUX -->
+        <div id="jeux" class="page">
+            <h2>JEUX & QUIZ</h2>
+            <p style="color: #cccccc; font-size: 1.2rem; margin-bottom: 30px;">Teste tes connaissances et gagne des points !</p>
+            
+            <div class="game-card">
+                <div class="game-icon">🔄</div>
+                <h3 style="color: white; font-size: 1.5rem;">Quiz Verlan</h3>
+                <p style="color: #cccccc;">Teste tes connaissances en verlan</p>
+                <button class="play-btn">JOUER</button>
+            </div>
+            
+            <div class="game-card" style="border-color: #06b6d4;">
+                <div class="game-icon">🌍</div>
+                <h3 style="color: white; font-size: 1.5rem;">Quiz Régional</h3>
+                <p style="color: #cccccc;">Découvre l'argot des régions</p>
+                <button class="play-btn">JOUER</button>
+            </div>
+            
+            <div class="game-card" style="border-color: #f59e0b;">
+                <div class="game-icon">🏆</div>
+                <h3 style="color: white; font-size: 1.5rem;">Quiz Expert</h3>
+                <p style="color: #cccccc;">Pour les vrais connaisseurs</p>
+                <button class="play-btn">JOUER</button>
+            </div>
         </div>
-        
-        <div class="card">
-            <h3 style="color: cyan;">🌍 Quiz Régional</h3>
-            <p>Découvre l'argot des régions</p>
-            <button class="game-btn">JOUER</button>
-        </div>
-        
-        <div class="card">
-            <h3 style="color: cyan;">🏆 Quiz Expert</h3>
-            <p>Pour les vrais connaisseurs</p>
-            <button class="game-btn">JOUER</button>
-        </div>
-    </div>
 
-    <!-- PAGE INSCRIPTION -->
-    <div id="inscription" class="page">
-        <h2>INSCRIPTION</h2>
-        <div class="card">
-            <p>Rejoins la communauté SpeakZ !</p>
-            <p>🚀 Accès au classement quotidien</p>
-            <p>⭐ Sauvegarde de ta progression</p>
-            <p>🎯 Nouveaux défis chaque semaine</p>
-            <br>
-            <p style="color: cyan;">Bientôt disponible !</p>
+        <!-- AUTRES PAGES -->
+        <div id="inscription" class="page">
+            <h2>INSCRIPTION</h2>
+            <div class="card">
+                <h3 style="color: #00ffff; margin-bottom: 20px;">Rejoins la communauté SpeakZ !</h3>
+                <p style="margin: 10px 0;">🚀 Accès au classement quotidien</p>
+                <p style="margin: 10px 0;">📊 Sauvegarde de ta progression</p>
+                <p style="margin: 10px 0;">🏆 Nouveaux défis chaque semaine</p>
+                <p style="margin: 10px 0;">⭐ Badges et récompenses exclusifs</p>
+                <br>
+                <p style="color: #ff00ff; font-size: 1.2rem;">Bientôt disponible !</p>
+            </div>
         </div>
-    </div>
 
-    <!-- PAGE COMMUNAUTÉ -->
-    <div id="communaute" class="page">
-        <h2>COMMUNAUTÉ</h2>
-        <div class="card">
-            <h3>🏆 Hall of Fame</h3>
-            <p>🥇 ArgotMaster2024 - 9,847 pts</p>
-            <p>🥈 VerlaNinja - 8,932 pts</p>
-            <p>🥉 CiteKing - 7,651 pts</p>
+        <div id="communaute" class="page">
+            <h2>COMMUNAUTÉ SPEAKZ</h2>
+            <div class="card">
+                <h3 style="color: #ff00ff; margin-bottom: 20px;">🏆 HALL OF FAME</h3>
+                <p style="margin: 10px 0;">🥇 ArgotMaster2024 - 9,847 pts</p>
+                <p style="margin: 10px 0;">🥈 VerlaNinja - 8,932 pts</p>
+                <p style="margin: 10px 0;">🥉 CiteKing - 7,651 pts</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #00ffff; margin-bottom: 20px;">📊 STATISTIQUES</h3>
+                <p>2,847 membres actifs</p>
+                <p>15,294 parties jouées</p>
+                <p>736 mots d'argot</p>
+            </div>
         </div>
-        <div class="card">
-            <p style="color: cyan;">Plus de fonctionnalités bientôt !</p>
-        </div>
-    </div>
 
-    <!-- PAGE PROFIL -->
-    <div id="profil" class="page">
-        <h2>MON PROFIL</h2>
-        <div class="card">
-            <p>👤 Connecte-toi pour accéder à ton profil</p>
-            <p>📊 Statistiques personnalisées</p>
-            <p>🏅 Badges et récompenses</p>
-            <br>
-            <p style="color: cyan;">Bientôt disponible !</p>
+        <div id="profil" class="page">
+            <h2>MON PROFIL</h2>
+            <div class="card">
+                <h3 style="color: #ff00ff; margin-bottom: 20px;">👤 CONNEXION REQUISE</h3>
+                <p style="margin: 10px 0;">Connecte-toi pour accéder à :</p>
+                <p style="margin: 10px 0;">📊 Tes statistiques personnalisées</p>
+                <p style="margin: 10px 0;">🏅 Tes badges et récompenses</p>
+                <p style="margin: 10px 0;">📈 Ta progression</p>
+                <br>
+                <p style="color: #00ffff; font-size: 1.2rem;">Bientôt disponible !</p>
+            </div>
         </div>
     </div>
 
     <script>
-        // Navigation entre pages
+        // Navigation
         function showPage(pageId, btn) {
-            // Cacher toutes les pages
             document.querySelectorAll('.page').forEach(page => {
                 page.classList.remove('active');
             });
-            // Montrer la page demandée
             document.getElementById(pageId).classList.add('active');
             
-            // Mettre à jour les boutons
             document.querySelectorAll('.nav button').forEach(button => {
                 button.classList.remove('active');
             });
             btn.classList.add('active');
         }
         
-        // Recherche dans le dictionnaire
+        // Recherche
         document.getElementById('searchBox').addEventListener('keyup', function() {
             var recherche = this.value.toLowerCase();
             var mots = document.querySelectorAll('.word');
