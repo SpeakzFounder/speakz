@@ -54,3 +54,26 @@ h1 {
     color: #ffffff;
     line-height: 1.5;
 }
+/* Fix pour l'affichage des sections */
+#dictionnaire, #jeux, #inscription, #communaute, #profil {
+    display: none !important;
+}
+
+#accueil {
+    display: block !important;
+}
+
+.section.active {
+    display: block !important;
+}
+
+/* Fix pour les boutons */
+.nav-btn {
+    color: black !important;
+}
+
+/* Fix pour le titre */
+.hero-title {
+    color: #00ffff !important;
+    -webkit-text-fill-color: transparent !important;
+}
