@@ -1608,5 +1608,241 @@
     "definition": "Faire l'idiot",
     "categories": ["argot"],
     "examples": ["Arrête de faire le guignol"]
-  }
-]
+  },
+  {
+    "term": "A+",
+    "slug": "a",
+    "definition": "À plus",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Ace",
+    "slug": "ace",
+    "definition": "Éliminer toute l'équipe adverse",
+    "categories": ["gaming"],
+    "examples": ["Il a fait un ace"]
+  },
+  {
+    "term": "AFK",
+    "slug": "afk",
+    "definition": "Absent du clavier",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "AFK",
+    "slug": "afk-2",
+    "definition": "Absent du clavier",
+    "categories": ["gaming", "internet"],
+    "examples": ["Je suis afk 5 min"]
+  },
+  {
+    "term": "Alpha",
+    "slug": "alpha",
+    "definition": "Dominant, leader",
+    "categories": ["internet", "slang"],
+    "examples": ["Mentalité alpha"]
+  },
+  {
+    "term": "App",
+    "slug": "app",
+    "definition": "Application mobile",
+    "categories": ["argot", "tech"],
+    "examples": ["Cette app est géniale"]
+  },
+  {
+    "term": "Ate",
+    "slug": "ate",
+    "definition": "Parfaitement réussi",
+    "categories": ["slang", "anglais"],
+    "examples": ["Elle ate avec ce look"]
+  },
+  {
+    "term": "Ate and left no crumbs",
+    "slug": "ate-left-no-crumbs",
+    "definition": "Réussite totale",
+    "categories": ["internet", "recent"],
+    "examples": ["Elle ate and left no crumbs"]
+  },
+  {
+    "term": "Awesome",
+    "slug": "awesome",
+    "definition": "Génial, incroyable",
+    "categories": ["slang", "anglais"],
+    "examples": ["Cette soirée était awesome !"]
+  },
+  {
+    "term": "Backstab",
+    "slug": "backstab",
+    "definition": "Attaquer par derrière",
+    "categories": ["gaming"],
+    "examples": ["Il m'a backstab"]
+  },
+  {
+    "term": "Badass",
+    "slug": "badass",
+    "definition": "Trop cool, impressionnant",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il a un style badass"]
+  },
+  {
+    "term": "Bae",
+    "slug": "bae",
+    "definition": "Copain/copine",
+    "examples": ["Je sors avec ma bae."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Based",
+    "slug": "based",
+    "definition": "Assumé, validé",
+    "categories": ["internet", "slang"]
+  },
+  {
+    "term": "Based and redpilled",
+    "slug": "based-and-redpilled",
+    "definition": "Authentique et éveillé",
+    "categories": ["internet", "recent"],
+    "examples": ["Cette opinion est based and redpilled"]
+  },
+  {
+    "term": "BCP",
+    "slug": "bcp",
+    "definition": "Beaucoup (abrév.)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Beef",
+    "slug": "beef-2",
+    "definition": "Conflit, embrouille",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il y a du beef entre eux"]
+  },
+  {
+    "term": "Bet",
+    "slug": "bet-2",
+    "definition": "D'accord, pari tenu",
+    "categories": ["slang", "anglais"],
+    "examples": ["Bet, on fait ça"]
+  },
+  {
+    "term": "Bet bet",
+    "slug": "bet-bet",
+    "definition": "D'accord",
+    "categories": ["internet", "recent"],
+    "examples": ["Bet bet on y va"]
+  },
+  {
+    "term": "Beta",
+    "slug": "beta",
+    "definition": "Soumis, suiveur",
+    "categories": ["internet", "slang"],
+    "examples": ["Comportement beta"]
+  },
+  {
+    "term": "BGFDP",
+    "slug": "bgfdp",
+    "definition": "Insulte multi-abrév. (vulgaire)",
+    "categories": ["internet", "argot"]
+  },
+  {
+    "term": "BJR",
+    "slug": "bjr",
+    "definition": "Bonjour",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "BLC",
+    "slug": "blc",
+    "definition": "Abrév. de 'bat les couilles' (désintérêt)",
+    "categories": ["argot", "internet"]
+  },
+  {
+    "term": "Boost",
+    "slug": "boost",
+    "definition": "Propulser / améliorer (jeu)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Brainrot",
+    "slug": "brainrot",
+    "definition": "Obsession internet",
+    "categories": ["internet"]
+  },
+  {
+    "term": "BRB",
+    "slug": "brb",
+    "definition": "Je reviens",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Bro",
+    "slug": "bro",
+    "definition": "Frère, pote",
+    "categories": ["slang", "anglais"],
+    "examples": ["Salut bro !"]
+  },
+  {
+    "term": "Bro",
+    "slug": "bro-2",
+    "definition": "Frère, pote",
+    "categories": ["internet", "recent"],
+    "examples": ["Salut bro"]
+  },
+  {
+    "term": "BSR",
+    "slug": "bsr",
+    "definition": "Bonsoir",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Buff",
+    "slug": "buff",
+    "definition": "Renforcer (jeu)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Bug",
+    "slug": "bug",
+    "definition": "Dysfonctionnement",
+    "categories": ["argot", "tech"],
+    "examples": ["Il y a un bug"]
+  },
+  {
+    "term": "Bussin",
+    "slug": "bussin",
+    "definition": "Délicieux, excellent",
+    "categories": ["slang", "anglais"],
+    "examples": ["Ce plat est bussin"]
+  },
+  {
+    "term": "Bussin",
+    "slug": "bussin-2",
+    "definition": "Délicieux, excellent (TikTok)",
+    "categories": ["internet", "slang"],
+    "examples": ["Ce plat est bussin"]
+  },
+  {
+    "term": "Bussin fr fr",
+    "slug": "bussin-fr-fr",
+    "definition": "Vraiment excellent",
+    "categories": ["internet", "recent"],
+    "examples": ["Ce plat est bussin fr fr"]
+  },
+  {
+    "term": "Cancel",
+    "slug": "cancel",
+    "definition": "Boycotter quelqu'un publiquement",
+    "categories": ["internet", "slang"],
+    "examples": ["Il risque de se faire cancel"]
+  },
+  {
+    "term": "Cap",
+    "slug": "cap",
+    "definition": "Mensonge",
+    "categories": ["internet", "slang"]
+  },
+  {
+    "term": "Cap",
+    "slug": "cap-2",
+    "definition": "Mensonge (no cap = pas de mensonge)",
+    "categories": ["slang", "anglais"],
