@@ -1,6 +1,11 @@
 // Variable pour stocker les mots
 let dictionary = [];
 
+// Fonction pour supprimer les accents
+function removeAccents(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 // Charger les mots depuis le fichier JSON
 fetch('mots.json')
     .then(response => response.json())
@@ -38,7 +43,7 @@ function displayWords(words) {
 
 // Recherche en temps réel
 document.getElementById('search').addEventListener('input', function(e) {
-    const searchTerm = e.target.value.toLowerCase();
+    const searchTerm = removeAccents(e.target.value.toLowerCase());
     
     if (searchTerm === '') {
         displayWords(dictionary);
@@ -46,8 +51,8 @@ document.getElementById('search').addEventListener('input', function(e) {
     }
     
     const filtered = dictionary.filter(word => 
-        word.term.toLowerCase().includes(searchTerm) ||
-        word.definition.toLowerCase().includes(searchTerm)
+        removeAccents(word.term.toLowerCase()).includes(searchTerm) ||
+        removeAccents(word.definition.toLowerCase()).includes(searchTerm)
     );
     
     displayWords(filtered);
