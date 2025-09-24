@@ -1,1 +1,2238 @@
 
+[
+  {
+    "term": "Ça joue",
+    "slug": "ca-joue",
+    "definition": "ça marche, d'accord (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["On se voit à 8h ? - Ça joue !"]
+  },
+  {
+    "term": "À l'arrache",
+    "slug": "a-l-arrache",
+    "definition": "Mal organisé, bâclé, fait à la va-vite",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Être au taquet",
+    "slug": "etre-au-taquet",
+    "definition": "Être motivé, prêt",
+    "categories": ["argot", "sport"],
+    "examples": ["Je suis au taquet pour l'entraînement"]
+  },
+  {
+    "term": "Être au top",
+    "slug": "etre-au-top",
+    "definition": "Être au maximum",
+    "categories": ["argot"],
+    "examples": ["Il est au top aujourd'hui"]
+  },
+  {
+    "term": "Être dans la mouise",
+    "slug": "etre-dans-la-mouise",
+    "definition": "Être dans une situation difficile",
+    "categories": ["argot"],
+    "examples": ["Il est dans la mouise"]
+  },
+  {
+    "term": "Être dans la panade",
+    "slug": "etre-dans-la-panade",
+    "definition": "Être en difficulté",
+    "categories": ["argot"],
+    "examples": ["Je suis dans la panade"]
+  },
+  {
+    "term": "Abouler",
+    "slug": "abouler",
+    "definition": "Donner",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Accoucher",
+    "slug": "accoucher",
+    "definition": "Parler, avouer",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Affranchir",
+    "slug": "affranchir",
+    "definition": "Informer, mettre au courant",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Allumeuse",
+    "slug": "allumeuse",
+    "definition": "Personne qui aguiche",
+    "categories": ["argot", "relations"]
+  },
+  {
+    "term": "Allumé",
+    "slug": "allume",
+    "definition": "Excité",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Archers",
+    "slug": "archers",
+    "definition": "La police",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Arnaque",
+    "slug": "arnaque",
+    "definition": "Escroquerie",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Arpion",
+    "slug": "arpion",
+    "definition": "Pied",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Artiche",
+    "slug": "artiche",
+    "definition": "Argent",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Asticoter",
+    "slug": "asticoter",
+    "definition": "Interroger",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Au ballon",
+    "slug": "au-ballon",
+    "definition": "En garde à vue, en prison",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Au taquet",
+    "slug": "au-taquet",
+    "definition": "Au maximum",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Babasse",
+    "slug": "babasse",
+    "definition": "Vagin",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bachoter",
+    "slug": "bachoter",
+    "definition": "Réviser (avant un examen)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baffe",
+    "slug": "baffe",
+    "definition": "Gifle",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bagnole",
+    "slug": "bagnole",
+    "definition": "Voiture",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bahut",
+    "slug": "bahut",
+    "definition": "Collège, lycée; aussi camion/taxi",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baisable",
+    "slug": "baisable",
+    "definition": "Attractive, sexy",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baiser",
+    "slug": "baiser",
+    "definition": "Avoir une relation sexuelle; piéger/voler (se faire baiser)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Balaise",
+    "slug": "balaise",
+    "definition": "Costaud; difficile",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Balance",
+    "slug": "balance",
+    "definition": "Délateur de son propre groupe",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baliser",
+    "slug": "baliser",
+    "definition": "Avoir peur",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Balle",
+    "slug": "balle",
+    "definition": "Euro",
+    "examples": ["Ça coûte 10 balles."],
+    "categories": ["argot"]
+  },
+  {
+    "term": "Ballec",
+    "slug": "ballec",
+    "definition": "S'en ficher (banlieue)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baltringue",
+    "slug": "baltringue",
+    "definition": "Lâche, qui fuit les ennuis",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Banane",
+    "slug": "banane",
+    "definition": "Imbécile, crétin",
+    "categories": ["argot"],
+    "examples": ["Quelle banane ce mec !"]
+  },
+  {
+    "term": "Bander",
+    "slug": "bander",
+    "definition": "Avoir une érection",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Banger",
+    "slug": "banger",
+    "definition": "Très bon son/contenu",
+    "categories": ["argot", "internet"]
+  },
+  {
+    "term": "Baraque",
+    "slug": "baraque",
+    "definition": "Maison",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baratin",
+    "slug": "baratin",
+    "definition": "Discours trompeur",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Barboter",
+    "slug": "barboter",
+    "definition": "Voler",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Barge",
+    "slug": "barge",
+    "definition": "Fou",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Barjo",
+    "slug": "barjo",
+    "definition": "Fou",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Barjot",
+    "slug": "barjot",
+    "definition": "Fou",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Barré",
+    "slug": "barre",
+    "definition": "Fou ou ivre",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baston",
+    "slug": "baston",
+    "definition": "Bagarre",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bastos",
+    "slug": "bastos",
+    "definition": "Projectile d'arme à feu",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bastosser",
+    "slug": "bastosser",
+    "definition": "Tirer (avec arme)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Baveux",
+    "slug": "baveux",
+    "definition": "Avocat",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Beauf",
+    "slug": "beauf",
+    "definition": "Individu conformiste, ringard",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Becter",
+    "slug": "becter",
+    "definition": "Manger",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Beigne",
+    "slug": "beigne",
+    "definition": "Coup (gifle)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Beignet",
+    "slug": "beignet",
+    "definition": "Idiot, imbécile (antillais)",
+    "categories": ["argot", "regional"],
+    "examples": ["Quel beignet celui-là !"]
+  },
+  {
+    "term": "Belek",
+    "slug": "belek",
+    "definition": "Fais attention",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bendo",
+    "slug": "bendo",
+    "definition": "Quartier, cité",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Beuh",
+    "slug": "beuh",
+    "definition": "Cannabis",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Beur",
+    "slug": "beur",
+    "definition": "Français d'origine maghrébine",
+    "categories": ["argot"]
+  },
+  {
+    "term": "BG",
+    "slug": "bg",
+    "definition": "Beau gosse",
+    "categories": ["argot"],
+    "examples": ["Il est trop BG."]
+  },
+  {
+    "term": "Bibi",
+    "slug": "bibi",
+    "definition": "Moi-même",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Biclou",
+    "slug": "biclou",
+    "definition": "Vieille bicyclette",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bicrave",
+    "slug": "bicrave",
+    "definition": "Vendre illégalement (banlieue)",
+    "categories": ["argot"],
+    "examples": ["Il bicrave dans la rue."]
+  },
+  {
+    "term": "Bidasse",
+    "slug": "bidasse",
+    "definition": "Soldat (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bide",
+    "slug": "bide",
+    "definition": "Échec; ventre",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bidoche",
+    "slug": "bidoche",
+    "definition": "Viande",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bidon",
+    "slug": "bidon",
+    "definition": "Faux, pas vrai",
+    "categories": ["argot"],
+    "examples": ["Son histoire c'est du bidon"]
+  },
+  {
+    "term": "Biffeton",
+    "slug": "biffeton",
+    "definition": "Billet de banque",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bifton",
+    "slug": "bifton",
+    "definition": "Billet de banque",
+    "categories": ["argot", "argent"],
+    "examples": ["Il a plein de biftons"]
+  },
+  {
+    "term": "Bigleux",
+    "slug": "bigleux",
+    "definition": "Malvoyant",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bignole",
+    "slug": "bignole",
+    "definition": "Concierge",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bigo",
+    "slug": "bigo",
+    "definition": "Téléphone",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bijoux de famille",
+    "slug": "bijoux-de-famille",
+    "definition": "Testicules",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Biloute",
+    "slug": "biloute",
+    "definition": "Terme affectueux pour désigner quelqu'un (Nord)",
+    "categories": ["argot", "regional"],
+    "examples": ["Salut biloute !"]
+  },
+  {
+    "term": "Binks",
+    "slug": "binks",
+    "definition": "Quartier, zone",
+    "categories": ["argot"],
+    "examples": ["Je rentre dans mes binks"]
+  },
+  {
+    "term": "Binouze",
+    "slug": "binouze",
+    "definition": "Bière",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Biroute",
+    "slug": "biroute",
+    "definition": "Pénis",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bistrot",
+    "slug": "bistrot",
+    "definition": "Café, débit de boissons",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bite",
+    "slug": "bite",
+    "definition": "Pénis (vulgaire)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Biter",
+    "slug": "biter",
+    "definition": "Comprendre",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Biture",
+    "slug": "biture",
+    "definition": "Ébriété",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Black",
+    "slug": "black",
+    "definition": "Homme de couleur noire",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blair",
+    "slug": "blair",
+    "definition": "Nez (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blaire",
+    "slug": "blaire",
+    "definition": "Nez",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blaireau",
+    "slug": "blaireau",
+    "definition": "Personne ringarde",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blanche",
+    "slug": "blanche",
+    "definition": "Héroïne (drogue)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blase",
+    "slug": "blase",
+    "definition": "Nom, surnom (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bled",
+    "slug": "bled",
+    "definition": "Pays d'origine; trou perdu",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blé",
+    "slug": "ble",
+    "definition": "Argent",
+    "categories": ["argot"],
+    "examples": ["Il a du blé."]
+  },
+  {
+    "term": "Bleu",
+    "slug": "bleu",
+    "definition": "Novice",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Block",
+    "slug": "block",
+    "definition": "Hall d'immeuble",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Blonde",
+    "slug": "blonde-quebec",
+    "definition": "Petite amie (québécois)",
+    "categories": ["argot", "quebec"],
+    "examples": ["Ma blonde est partie magasiner"]
+  },
+  {
+    "term": "Bobard",
+    "slug": "bobard",
+    "definition": "Mensonge",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Boloss",
+    "slug": "boloss",
+    "definition": "Victime, naïf",
+    "examples": ["C'est un boloss."],
+    "categories": ["argot"]
+  },
+  {
+    "term": "Boucan",
+    "slug": "boucan",
+    "definition": "Bruit, vacarme",
+    "categories": ["argot"],
+    "examples": ["Quel boucan ils font !"]
+  },
+  {
+    "term": "Bouffe",
+    "slug": "bouffe",
+    "definition": "Nourriture",
+    "categories": ["cuisine", "argot"],
+    "examples": ["La bouffe est bonne ici"]
+  },
+  {
+    "term": "Bourrasque",
+    "slug": "bourrasque",
+    "definition": "Coup de vent violent",
+    "categories": ["argot", "météo"],
+    "examples": ["Une bourrasque a cassé l'arbre"]
+  },
+  {
+    "term": "Bourrin",
+    "slug": "bourrin",
+    "definition": "Brutal, qui force",
+    "categories": ["argot"],
+    "examples": ["Il y va bourrin"]
+  },
+  {
+    "term": "Bouriner",
+    "slug": "bouriner",
+    "definition": "Forcer, y aller fort",
+    "categories": ["argot", "sport"],
+    "examples": ["Il bourine à la salle"]
+  },
+  {
+    "term": "Bouse",
+    "slug": "bouse",
+    "definition": "Œuvre de mauvaise qualité",
+    "categories": ["argot", "culture"],
+    "examples": ["Cette série est de la bouse"]
+  },
+  {
+    "term": "Branque",
+    "slug": "branque",
+    "definition": "Un peu fou, bizarre",
+    "categories": ["argot"],
+    "examples": ["Il est branque ce type"]
+  },
+  {
+    "term": "Brol",
+    "slug": "brol",
+    "definition": "Bazar, désordre (belge)",
+    "categories": ["argot", "regional"],
+    "examples": ["Quel brol dans cette chambre !"]
+  },
+  {
+    "term": "Broyer du noir",
+    "slug": "broyer-du-noir",
+    "definition": "Être déprimé",
+    "categories": ["argot"],
+    "examples": ["Il broie du noir depuis hier"]
+  },
+  {
+    "term": "Bugger",
+    "slug": "bugger",
+    "definition": "Dysfonctionner",
+    "categories": ["argot"],
+    "examples": ["Mon cerveau bugge"]
+  },
+  {
+    "term": "Bugnes",
+    "slug": "bugnes",
+    "definition": "Coups (argot lyonnais)",
+    "categories": ["argot", "regional"],
+    "examples": ["Il va prendre des bugnes"]
+  },
+  {
+    "term": "Business",
+    "slug": "business",
+    "definition": "Affaires, commerce",
+    "categories": ["argot", "travail"],
+    "examples": ["C'est du business"]
+  },
+  {
+    "term": "Buzz",
+    "slug": "buzz",
+    "definition": "Engouement médiatique",
+    "categories": ["argot", "culture"],
+    "examples": ["Ça fait le buzz"]
+  },
+  {
+    "term": "Bâcher (se faire)",
+    "slug": "bacher-se-faire",
+    "definition": "Se taire; se faire moucher",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bâtard",
+    "slug": "batard",
+    "definition": "Insulte : salaud",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bécane",
+    "slug": "becane",
+    "definition": "Moto, vélo",
+    "categories": ["argot", "transport"],
+    "examples": ["Ma bécane roule bien"]
+  },
+  {
+    "term": "Becqueter",
+    "slug": "becqueter",
+    "definition": "Manger",
+    "categories": ["cuisine", "argot"],
+    "examples": ["Qu'est-ce qu'on becquète ?"]
+  },
+  {
+    "term": "Bédave",
+    "slug": "bedave",
+    "definition": "Fumer du cannabis",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Bédo",
+    "slug": "bedo",
+    "definition": "Cigarette de haschisch",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cabot",
+    "slug": "cabot",
+    "definition": "Chien",
+    "categories": ["argot", "animaux"],
+    "examples": ["Ce cabot me suit partout"]
+  },
+  {
+    "term": "Cacou",
+    "slug": "cacou",
+    "definition": "Mauvais, nul (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Ce film est cacou"]
+  },
+  {
+    "term": "Cagole",
+    "slug": "cagole",
+    "definition": "Femme vulgaire et tapageuse (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Elle s'habille comme une cagole"]
+  },
+  {
+    "term": "Caganis",
+    "slug": "caganis",
+    "definition": "Toilettes (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Je vais aux caganis"]
+  },
+  {
+    "term": "Caillasse",
+    "slug": "caillasse",
+    "definition": "Grêle, temps froid",
+    "categories": ["argot", "météo"],
+    "examples": ["Il tombe de la caillasse"]
+  },
+  {
+    "term": "Camper",
+    "slug": "camper",
+    "definition": "Rester caché en embuscade",
+    "categories": ["gaming"],
+    "examples": ["Il campe tout le temps"]
+  },
+  {
+    "term": "Canard",
+    "slug": "canard",
+    "definition": "Journal, fausse note",
+    "categories": ["argot"],
+    "examples": ["J'ai lu ça dans le canard"]
+  },
+  {
+    "term": "Canasson",
+    "slug": "canasson",
+    "definition": "Vieux cheval",
+    "categories": ["argot", "animaux"],
+    "examples": ["Ce canasson est fatigué"]
+  },
+  {
+    "term": "Canicule",
+    "slug": "canicule",
+    "definition": "Grande chaleur",
+    "categories": ["argot", "météo"],
+    "examples": ["Quelle canicule !"]
+  },
+  {
+    "term": "Capoter",
+    "slug": "capoter",
+    "definition": "Devenir fou, s'emballer",
+    "categories": ["argot"],
+    "examples": ["Il capote complètement"]
+  },
+  {
+    "term": "Carabistouilles",
+    "slug": "carabistouilles",
+    "definition": "Mensonges, histoires inventées (belge)",
+    "categories": ["argot", "regional"],
+    "examples": ["Arrête tes carabistouilles !"]
+  },
+  {
+    "term": "Carafon",
+    "slug": "carafon",
+    "definition": "Tête, crâne",
+    "categories": ["argot"],
+    "examples": ["Il s'est cogné le carafon"]
+  },
+  {
+    "term": "Carburer",
+    "slug": "carburer",
+    "definition": "Bien fonctionner, marcher",
+    "categories": ["argot", "argent"],
+    "examples": ["Son business carbure"]
+  },
+  {
+    "term": "Carré",
+    "slug": "carre",
+    "definition": "Chambre d'étudiant",
+    "categories": ["argot", "scolaire"],
+    "examples": ["Mon carré est petit"]
+  },
+  {
+    "term": "Cartonner",
+    "slug": "cartonner",
+    "definition": "Avoir un grand succès",
+    "categories": ["argot", "culture"],
+    "examples": ["Ce film cartonne"]
+  },
+  {
+    "term": "Casbah",
+    "slug": "casbah",
+    "definition": "Maison, baraque",
+    "categories": ["argot"],
+    "examples": ["Belle casbah que tu as là "]
+  },
+  {
+    "term": "Caser",
+    "slug": "caser",
+    "definition": "Mettre en couple",
+    "categories": ["argot", "relationnel"],
+    "examples": ["Elle s'est casée"]
+  },
+  {
+    "term": "Casquer",
+    "slug": "casquer",
+    "definition": "Payer cher",
+    "categories": ["argot"],
+    "examples": ["Il a dû casquer"]
+  },
+  {
+    "term": "Casse-dédi",
+    "slug": "casse-dedi",
+    "definition": "Dédicace (banlieue)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cassos",
+    "slug": "cassos",
+    "definition": "Cas social",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Castagne",
+    "slug": "castagne",
+    "definition": "Bagarre",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cata",
+    "slug": "cata",
+    "definition": "Catastrophe (abrév.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cavaler",
+    "slug": "cavaler",
+    "definition": "Courir rapidement",
+    "categories": ["argot", "transport"],
+    "examples": ["Il faut cavaler !"]
+  },
+  {
+    "term": "Cave",
+    "slug": "cave",
+    "definition": "Naïf (ancien argot)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Chbeb",
+    "slug": "chbeb",
+    "definition": "Jeune, gamin (arabe)",
+    "categories": ["argot"],
+    "examples": ["Allez les chbebs !"]
+  },
+  {
+    "term": "Charbonner",
+    "slug": "charbonner",
+    "definition": "Travailler dur (banlieue)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Charclo",
+    "slug": "charclo",
+    "definition": "SDF (péjoratif)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Charrette",
+    "slug": "charrette",
+    "definition": "Vieille voiture",
+    "categories": ["argot", "transport"],
+    "examples": ["Sa charrette fait du bruit"]
+  },
+  {
+    "term": "Charo",
+    "slug": "charo",
+    "definition": "Profiteur",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Chaud",
+    "slug": "chaud",
+    "definition": "Difficile / impressionnant (fam.)",
+    "categories": ["argot"],
+    "examples": ["C'était un concert de ouf !"]
+  },
+  {
+    "term": "Chef",
+    "slug": "chef",
+    "definition": "Supérieur hiérarchique",
+    "categories": ["argot", "travail"],
+    "examples": ["Mon chef est cool"]
+  },
+  {
+    "term": "Chef-d'œuvre",
+    "slug": "chef-d-oeuvre",
+    "definition": "Œuvre exceptionnelle",
+    "categories": ["argot", "culture"],
+    "examples": ["Ce livre est un chef-d'œuvre"]
+  },
+  {
+    "term": "Chum",
+    "slug": "chum",
+    "definition": "Copain, petit ami (québécois)",
+    "categories": ["argot", "quebec"],
+    "examples": ["Mon chum arrive tantôt"]
+  },
+  {
+    "term": "Chouf",
+    "slug": "chouf",
+    "definition": "Guetteur (banlieue)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Chopine",
+    "slug": "chopine",
+    "definition": "Bouteille de vin (50cl en Suisse)",
+    "categories": ["argot", "regional"],
+    "examples": ["On prend une chopine ?"]
+  },
+  {
+    "term": "Chouraver",
+    "slug": "chouraver",
+    "definition": "Voler",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cibiche",
+    "slug": "cibiche",
+    "definition": "Cigarette (vieux argot)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Clandos",
+    "slug": "clandos",
+    "definition": "Sans-papiers (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Claqué",
+    "slug": "claque",
+    "definition": "Excellent (nourriture)",
+    "categories": ["cuisine", "argot"],
+    "examples": ["Ce plat est claqué !"]
+  },
+  {
+    "term": "Clash",
+    "slug": "clash",
+    "definition": "Insulter",
+    "examples": ["Ils se clashent en ce moment."],
+    "categories": ["argot"]
+  },
+  {
+    "term": "Clasher",
+    "slug": "clasher",
+    "definition": "Insulter publiquement",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Clebs",
+    "slug": "clebs",
+    "definition": "Chien",
+    "categories": ["argot", "animaux"],
+    "examples": ["Son clebs aboie fort"]
+  },
+  {
+    "term": "Clodo",
+    "slug": "clodo",
+    "definition": "Sans-abri",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Clope",
+    "slug": "clope",
+    "definition": "Cigarette",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Clou",
+    "slug": "clou",
+    "definition": "Vieille moto",
+    "categories": ["argot", "transport"],
+    "examples": ["Il roule sur un vieux clou"]
+  },
+  {
+    "term": "Coffrer",
+    "slug": "coffrer",
+    "definition": "Emprisonner (police)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Colle",
+    "slug": "colle",
+    "definition": "Retenue, punition",
+    "categories": ["argot", "scolaire"],
+    "examples": ["J'ai pris une colle"]
+  },
+  {
+    "term": "Collègue",
+    "slug": "collegue",
+    "definition": "Personne du même bureau",
+    "categories": ["argot", "travail"],
+    "examples": ["Mes collègues sont sympa"]
+  },
+  {
+    "term": "Combine",
+    "slug": "combine",
+    "definition": "Plan, système",
+    "categories": ["argot", "argent"],
+    "examples": ["J'ai une combine"]
+  },
+  {
+    "term": "Condé",
+    "slug": "conde",
+    "definition": "Policier (ancien argot)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cossard",
+    "slug": "cossard",
+    "definition": "Paresseux, flemmard",
+    "categories": ["argot"],
+    "examples": ["Quel cossard !"]
+  },
+  {
+    "term": "Crachin",
+    "slug": "crachin",
+    "definition": "Petite pluie fine",
+    "categories": ["argot", "météo"],
+    "examples": ["Un petit crachin"]
+  },
+  {
+    "term": "Crados",
+    "slug": "crados",
+    "definition": "Sale, dégoûtant",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Cradingue",
+    "slug": "cradingue",
+    "definition": "Très sale, dégueulasse",
+    "categories": ["argot"],
+    "examples": ["C'est cradingue ici"]
+  },
+  {
+    "term": "Cramer",
+    "slug": "cramer",
+    "definition": "Griller, dépasser",
+    "categories": ["argot", "sport"],
+    "examples": ["Il l'a cramé au sprint"]
+  },
+  {
+    "term": "Crash",
+    "slug": "crash",
+    "definition": "Plantage informatique",
+    "categories": ["argot", "tech"],
+    "examples": ["Le système a crash"]
+  },
+  {
+    "term": "Crevard",
+    "slug": "crevard",
+    "definition": "Profiteur, radin (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Crevé",
+    "slug": "creve",
+    "definition": "Très fatigué",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Crisse",
+    "slug": "crisse",
+    "definition": "Juron québécois (Christ déformé)",
+    "categories": ["argot", "quebec"],
+    "examples": ["Crisse, il fait frette !"]
+  },
+  {
+    "term": "Cuite",
+    "slug": "cuite",
+    "definition": "Grosse ivresse",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Câlice",
+    "slug": "calice",
+    "definition": "Juron québécois",
+    "categories": ["argot", "quebec"],
+    "examples": ["Câlice que c'est beau !"]
+  },
+  {
+    "term": "Céfran",
+    "slug": "cefran",
+    "definition": "Français (verlan)",
+    "categories": ["verlan"]
+  },
+  {
+    "term": "Dar",
+    "slug": "dar",
+    "definition": "Fort, stylé (argot)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Daron",
+    "slug": "daron",
+    "definition": "Père",
+    "categories": ["argot"],
+    "examples": ["Mon daron travaille tard."]
+  },
+  {
+    "term": "Daronne",
+    "slug": "daronne",
+    "definition": "Mère",
+    "categories": ["argot"],
+    "examples": ["Ma daronne cuisine bien."]
+  },
+  {
+    "term": "Dauber",
+    "slug": "dauber",
+    "definition": "Sentir mauvais (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Deal",
+    "slug": "deal",
+    "definition": "Marché, accord",
+    "categories": ["argot", "travail"],
+    "examples": ["On fait un deal ?"]
+  },
+  {
+    "term": "De la balle",
+    "slug": "de-la-balle",
+    "definition": "Excellent",
+    "categories": ["argot"],
+    "examples": ["Ce restau c'est de la balle"]
+  },
+  {
+    "term": "Débectant",
+    "slug": "debectant",
+    "definition": "Dégoûtant, répugnant",
+    "categories": ["argot"],
+    "examples": ["Ce truc est débectant"]
+  },
+  {
+    "term": "Débile",
+    "slug": "debile",
+    "definition": "Stupide, idiot",
+    "categories": ["argot"],
+    "examples": ["T'es débile ou quoi ?"]
+  },
+  {
+    "term": "Décaniller",
+    "slug": "decaniller",
+    "definition": "Partir vite, décamper",
+    "categories": ["argot"],
+    "examples": ["On va décaniller d'ici"]
+  },
+  {
+    "term": "Déchirer",
+    "slug": "dechirer",
+    "definition": "Être excellent",
+    "categories": ["argot"],
+    "examples": ["Ce groupe déchire"]
+  },
+  {
+    "term": "Défonce",
+    "slug": "defonce",
+    "definition": "Fête intense",
+    "categories": ["argot", "fête"],
+    "examples": ["Quelle défonce cette soirée"]
+  },
+  {
+    "term": "Déglingué",
+    "slug": "deglingue",
+    "definition": "Cassé, abîmé",
+    "categories": ["argot"],
+    "examples": ["Sa bagnole est déglinquée"]
+  },
+  {
+    "term": "Dégun",
+    "slug": "degun",
+    "definition": "Personne (Marseille)",
+    "categories": ["argot", "regional"]
+  },
+  {
+    "term": "Déguster",
+    "slug": "deguster",
+    "definition": "Subir des ennuis",
+    "categories": ["argot"],
+    "examples": ["Tu vas déguster"]
+  },
+  {
+    "term": "Dépanneur",
+    "slug": "depanneur",
+    "definition": "Épicerie de proximité (québécois)",
+    "categories": ["argot", "quebec"],
+    "examples": ["Je vais au dépanneur"]
+  },
+  {
+    "term": "Descente",
+    "slug": "descente",
+    "definition": "Fin d'effet de drogues",
+    "categories": ["argot", "fête"],
+    "examples": ["La descente est dure"]
+  },
+  {
+    "term": "Déso",
+    "slug": "deso",
+    "definition": "Désolé (abrév.)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Déso pas déso",
+    "slug": "deso-pas-deso",
+    "definition": "Pas désolé",
+    "categories": ["internet", "argot"]
+  },
+  {
+    "term": "Déter",
+    "slug": "deter",
+    "definition": "Motivé",
+    "examples": ["Il est déter pour réussir."],
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dingue",
+    "slug": "dingue",
+    "definition": "Fou, incroyable",
+    "categories": ["argot"],
+    "examples": ["C'est dingue ça !"]
+  },
+  {
+    "term": "Dinguerie",
+    "slug": "dinguerie",
+    "definition": "Chose incroyable",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Disjoncter",
+    "slug": "disjoncter",
+    "definition": "Perdre la tête",
+    "categories": ["argot"],
+    "examples": ["Il disjoncte complètement"]
+  },
+  {
+    "term": "Djambo",
+    "slug": "djambo",
+    "definition": "Salut (du swahili)",
+    "categories": ["argot", "regional"],
+    "examples": ["Djambo mon frère !"]
+  },
+  {
+    "term": "Doudou",
+    "slug": "doudou",
+    "definition": "Chéri(e), amoureux(se) (antillais)",
+    "categories": ["argot", "regional"],
+    "examples": ["Viens ici doudou"]
+  },
+  {
+    "term": "Douiller",
+    "slug": "douiller",
+    "definition": "Payer beaucoup",
+    "categories": ["argot"],
+    "examples": ["Ça va douiller"]
+  },
+  {
+    "term": "Drache",
+    "slug": "drache",
+    "definition": "Pluie battante (belge)",
+    "categories": ["argot", "regional"],
+    "examples": ["Quelle drache aujourd'hui !"]
+  },
+  {
+    "term": "Dracher",
+    "slug": "dracher",
+    "definition": "Pleuvoir fort (Nord)",
+    "categories": ["argot", "regional"],
+    "examples": ["Ça drache dehors"]
+  },
+  {
+    "term": "Du tonnerre",
+    "slug": "du-tonnerre",
+    "definition": "Formidable",
+    "categories": ["argot"],
+    "examples": ["Un concert du tonnerre"]
+  },
+  {
+    "term": "Ducasse",
+    "slug": "ducasse",
+    "definition": "Fête foraine (Nord)",
+    "categories": ["argot", "regional"],
+    "examples": ["On va à la ducasse ce soir"]
+  },
+  {
+    "term": "Dure",
+    "slug": "dure",
+    "definition": "Héroïne (arg.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dèche",
+    "slug": "deche",
+    "definition": "Misère, manque d'argent",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Débecter",
+    "slug": "debecter",
+    "definition": "Dégoûter",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Déboîte",
+    "slug": "deboite",
+    "definition": "Excellent (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Déconner",
+    "slug": "deconner",
+    "definition": "Faire des bêtises",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dégoter",
+    "slug": "degoter",
+    "definition": "Trouver",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dégueulasse",
+    "slug": "degueulasse",
+    "definition": "Sale; injuste (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dégueuler",
+    "slug": "degueuler",
+    "definition": "Vomir",
+    "categories": ["argot", "santé"],
+    "examples": ["J'ai envie de dégueulé"]
+  },
+  {
+    "term": "Démerdard",
+    "slug": "demerdard",
+    "definition": "Débrouillard",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Démerde",
+    "slug": "demerde",
+    "definition": "Système D",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dépote",
+    "slug": "depote",
+    "definition": "Très bien (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dérailler",
+    "slug": "derailler",
+    "definition": "Perdre la tête (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Dérouiller",
+    "slug": "derouiller",
+    "definition": "Prendre une raclée",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Détaler",
+    "slug": "detaler",
+    "definition": "Fuir",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Embrouille",
+    "slug": "embrouille",
+    "definition": "Conflit, histoire",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Emboucaner",
+    "slug": "emboucaner",
+    "definition": "Enfumer, empester (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Tu emboucanes toute la pièce"]
+  },
+  {
+    "term": "Emmerdes",
+    "slug": "emmerdes",
+    "definition": "Ennuis",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Emmerdeur",
+    "slug": "emmerdeur",
+    "definition": "Personne pénible",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Empaffer",
+    "slug": "empaffer",
+    "definition": "Frapper (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Enclume",
+    "slug": "enclume",
+    "definition": "Très bête (fam.)",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Engueulade",
+    "slug": "engueulade",
+    "definition": "Dispute",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Entuber",
+    "slug": "entuber",
+    "definition": "Tromper, escroquer",
+    "categories": ["argot", "argent"],
+    "examples": ["Il s'est fait entuber"]
+  },
+  {
+    "term": "Envoyer du lourd",
+    "slug": "envoyer-du-lourd",
+    "definition": "Faire quelque chose d'excellent",
+    "categories": ["argot"],
+    "examples": ["Il envoie du lourd"]
+  },
+  {
+    "term": "Esbroufe",
+    "slug": "esbroufe",
+    "definition": "Frime, bluff",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Esquicher",
+    "slug": "esquicher",
+    "definition": "Écraser, aplatir (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Attention, tu vas esquicher la tomate"]
+  },
+  {
+    "term": "Esquinter",
+    "slug": "esquinter",
+    "definition": "Abîmer, fatiguer",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Ex",
+    "slug": "ex",
+    "definition": "Ancien(ne) copain/copine",
+    "categories": ["argot", "relationnel"],
+    "examples": ["Mon ex m'appelle"]
+  },
+  {
+    "term": "Exploser",
+    "slug": "exploser",
+    "definition": "Battre largement",
+    "categories": ["argot", "sport"],
+    "examples": ["On les a explosés"]
+  },
+  {
+    "term": "Fada",
+    "slug": "fada",
+    "definition": "Fou, cinglé (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["Il est complètement fada ce mec !"]
+  },
+  {
+    "term": "Faire du bruit",
+    "slug": "faire-du-bruit",
+    "definition": "Faire parler de soi",
+    "categories": ["argot", "culture"],
+    "examples": ["Son livre fait du bruit"]
+  },
+  {
+    "term": "Faire du fric",
+    "slug": "faire-du-fric",
+    "definition": "Gagner de l'argent",
+    "categories": ["argot", "travail"],
+    "examples": ["Il fait du fric"]
+  },
+  {
+    "term": "Faire le beau",
+    "slug": "faire-le-beau",
+    "definition": "Parader",
+    "categories": ["argot"],
+    "examples": ["Il fait le beau devant les filles"]
+  },
+  {
+    "term": "Faire le guignol",
+    "slug": "faire-le-guignol",
+    "definition": "Faire l'idiot",
+    "categories": ["argot"],
+    "examples": ["Arrête de faire le guignol"]
+  },
+  {
+    "term": "A+",
+    "slug": "a-plus",
+    "definition": "À plus",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Ace",
+    "slug": "ace",
+    "definition": "Éliminer toute l'équipe adverse",
+    "categories": ["gaming"],
+    "examples": ["Il a fait un ace"]
+  },
+  {
+    "term": "AFK",
+    "slug": "afk",
+    "definition": "Absent du clavier",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Alpha",
+    "slug": "alpha",
+    "definition": "Dominant, leader",
+    "categories": ["internet", "slang"],
+    "examples": ["Mentalité alpha"]
+  },
+  {
+    "term": "App",
+    "slug": "app",
+    "definition": "Application mobile",
+    "categories": ["argot", "tech"],
+    "examples": ["Cette app est géniale"]
+  },
+  {
+    "term": "Ate",
+    "slug": "ate",
+    "definition": "Parfaitement réussi",
+    "categories": ["slang", "anglais"],
+    "examples": ["Elle ate avec ce look"]
+  },
+  {
+    "term": "Awesome",
+    "slug": "awesome",
+    "definition": "Génial, incroyable",
+    "categories": ["slang", "anglais"],
+    "examples": ["Cette soirée était awesome !"]
+  },
+  {
+    "term": "Backstab",
+    "slug": "backstab",
+    "definition": "Attaquer par derrière",
+    "categories": ["gaming"],
+    "examples": ["Il m'a backstab"]
+  },
+  {
+    "term": "Badass",
+    "slug": "badass",
+    "definition": "Trop cool, impressionnant",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il a un style badass"]
+  },
+  {
+    "term": "Bae",
+    "slug": "bae",
+    "definition": "Copain/copine",
+    "examples": ["Je sors avec ma bae."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Based",
+    "slug": "based",
+    "definition": "Assumé, validé",
+    "categories": ["internet", "slang"]
+  },
+  {
+    "term": "BCP",
+    "slug": "bcp",
+    "definition": "Beaucoup (abrév.)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Beef",
+    "slug": "beef",
+    "definition": "Conflit, embrouille",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il y a du beef entre eux"]
+  },
+  {
+    "term": "Bet",
+    "slug": "bet",
+    "definition": "D'accord, pari tenu",
+    "categories": ["slang", "anglais"],
+    "examples": ["Bet, on fait ça"]
+  },
+  {
+    "term": "Beta",
+    "slug": "beta",
+    "definition": "Soumis, suiveur",
+    "categories": ["internet", "slang"],
+    "examples": ["Comportement beta"]
+  },
+  {
+    "term": "BJR",
+    "slug": "bjr",
+    "definition": "Bonjour",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "BLC",
+    "slug": "blc",
+    "definition": "Abrév. de 'bat les couilles' (désintérêt)",
+    "categories": ["argot", "internet"]
+  },
+  {
+    "term": "Boost",
+    "slug": "boost",
+    "definition": "Propulser / améliorer (jeu)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Brainrot",
+    "slug": "brainrot",
+    "definition": "Obsession internet",
+    "categories": ["internet"]
+  },
+  {
+    "term": "BRB",
+    "slug": "brb",
+    "definition": "Je reviens",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Bro",
+    "slug": "bro",
+    "definition": "Frère, pote",
+    "categories": ["slang", "anglais"],
+    "examples": ["Salut bro !"]
+  },
+  {
+    "term": "BSR",
+    "slug": "bsr",
+    "definition": "Bonsoir",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Buff",
+    "slug": "buff",
+    "definition": "Renforcer (jeu)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Bussin",
+    "slug": "bussin",
+    "definition": "Délicieux, excellent",
+    "categories": ["slang", "anglais"],
+    "examples": ["Ce plat est bussin"]
+  },
+  {
+    "term": "Cancel",
+    "slug": "cancel",
+    "definition": "Boycotter quelqu'un publiquement",
+    "categories": ["internet", "slang"],
+    "examples": ["Il risque de se faire cancel"]
+  },
+  {
+    "term": "Cap",
+    "slug": "cap",
+    "definition": "Mensonge",
+    "categories": ["internet", "slang"],
+    "examples": ["No cap, c'est vrai"]
+  },
+  {
+    "term": "Carry",
+    "slug": "carry",
+    "definition": "Porter l'équipe",
+    "categories": ["gaming", "internet"],
+    "examples": ["Il carry toute l'équipe"]
+  },
+  {
+    "term": "Chad",
+    "slug": "chad",
+    "definition": "Homme alpha confiant",
+    "categories": ["internet", "recent"],
+    "examples": ["C'est un chad"]
+  },
+  {
+    "term": "Chill",
+    "slug": "chill",
+    "definition": "Se détendre (anglicisme)",
+    "categories": ["slang", "anglais"],
+    "examples": ["On chill chez moi ce soir."]
+  },
+  {
+    "term": "Chiller",
+    "slug": "chiller",
+    "definition": "Se détendre, se relaxer",
+    "categories": ["slang", "anglais"],
+    "examples": ["On va juste chiller"]
+  },
+  {
+    "term": "Clutch",
+    "slug": "clutch",
+    "definition": "Sauvetage in extremis",
+    "categories": ["gaming"],
+    "examples": ["Quel clutch !"]
+  },
+  {
+    "term": "Copium",
+    "slug": "copium",
+    "definition": "Rationalisation après échec",
+    "categories": ["internet"]
+  },
+  {
+    "term": "Cringe",
+    "slug": "cringe",
+    "definition": "Gênant",
+    "examples": ["Cette vidéo est trop cringe."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Crush",
+    "slug": "crush",
+    "definition": "Coup de cœur amoureux",
+    "examples": ["J'ai un crush sur elle."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Dead",
+    "slug": "dead",
+    "definition": "Trop drôle / KO",
+    "examples": ["Je suis dead de rire."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "DM",
+    "slug": "dm",
+    "definition": "Message privé",
+    "examples": ["Envoie-moi un DM."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Drip",
+    "slug": "drip",
+    "definition": "Style vestimentaire parfait",
+    "categories": ["internet", "slang"],
+    "examples": ["Il a du drip"]
+  },
+  {
+    "term": "Dude",
+    "slug": "dude",
+    "definition": "Mec, pote",
+    "categories": ["slang", "anglais"],
+    "examples": ["Salut dude !"]
+  },
+  {
+    "term": "EZ",
+    "slug": "ez",
+    "definition": "Facile (gaming)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Feed",
+    "slug": "feed",
+    "definition": "Donner des kills à l'ennemi",
+    "categories": ["gaming"],
+    "examples": ["Arrête de feed !"]
+  },
+  {
+    "term": "Fire",
+    "slug": "fire",
+    "definition": "Excellent, de qualité",
+    "categories": ["slang", "anglais"],
+    "examples": ["Ce son est fire"]
+  },
+  {
+    "term": "Fit",
+    "slug": "fit",
+    "definition": "Tenue vestimentaire",
+    "categories": ["internet", "slang"]
+  },
+  {
+    "term": "FPS",
+    "slug": "fps",
+    "definition": "Images par seconde",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "FR",
+    "slug": "fr",
+    "definition": "Vraiment",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "FYI",
+    "slug": "fyi",
+    "definition": "Pour info",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "GG",
+    "slug": "gg",
+    "definition": "Bien joué",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Ghoster",
+    "slug": "ghoster",
+    "definition": "Ignorer quelqu'un d'un coup",
+    "examples": ["Il m'a ghosté après notre rendez-vous."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "Giga",
+    "slug": "giga",
+    "definition": "Très, énorme",
+    "examples": ["C'est giga stylé !"],
+    "categories": ["internet"]
+  },
+  {
+    "term": "GOAT",
+    "slug": "goat",
+    "definition": "Le meilleur",
+    "categories": ["slang", "internet"]
+  },
+  {
+    "term": "Grind",
+    "slug": "grind",
+    "definition": "Répéter pour progresser",
+    "categories": ["gaming"],
+    "examples": ["Je grind pour le niveau 50"]
+  },
+  {
+    "term": "Headshot",
+    "slug": "headshot",
+    "definition": "Tir dans la tête",
+    "categories": ["gaming"],
+    "examples": ["Headshot !"]
+  },
+  {
+    "term": "IDC",
+    "slug": "idc",
+    "definition": "Je m'en fiche",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "IDK",
+    "slug": "idk",
+    "definition": "Je ne sais pas",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "IRL",
+    "slug": "irl",
+    "definition": "Dans la vraie vie",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "JPP",
+    "slug": "jpp",
+    "definition": "J'en peux plus (internet)",
+    "categories": ["internet", "argot"]
+  },
+  {
+    "term": "JSP",
+    "slug": "jsp",
+    "definition": "Je sais pas",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Lag",
+    "slug": "lag",
+    "definition": "Latence",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Lit",
+    "slug": "lit",
+    "definition": "Génial, incroyable",
+    "categories": ["slang", "anglais"],
+    "examples": ["Cette soirée était lit"]
+  },
+  {
+    "term": "LMAO",
+    "slug": "lmao",
+    "definition": "Mort de rire",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "LOL",
+    "slug": "lol",
+    "definition": "Rire",
+    "examples": ["LOL c'est trop drôle !"],
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Loot",
+    "slug": "loot",
+    "definition": "Récompenses, butin",
+    "categories": ["gaming"],
+    "examples": ["Quel bon loot !"]
+  },
+  {
+    "term": "MDR",
+    "slug": "mdr",
+    "definition": "Mort de rire",
+    "examples": ["MDR ce mème !"],
+    "categories": ["internet"]
+  },
+  {
+    "term": "Meme",
+    "slug": "meme",
+    "definition": "Détournement humoristique",
+    "categories": ["internet"]
+  },
+  {
+    "term": "Meta",
+    "slug": "meta",
+    "definition": "Stratégie dominante",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "Mid",
+    "slug": "mid",
+    "definition": "Moyen, pas terrible",
+    "categories": ["internet", "slang"],
+    "examples": ["Ce film est mid"]
+  },
+  {
+    "term": "Nah",
+    "slug": "nah",
+    "definition": "Non",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Nerf",
+    "slug": "nerf",
+    "definition": "Affaiblir (jeu)",
+    "categories": ["gaming", "internet"]
+  },
+  {
+    "term": "No cap",
+    "slug": "no-cap",
+    "definition": "Sans mentir",
+    "categories": ["internet", "slang"],
+    "examples": ["No cap, c'est vrai"]
+  },
+  {
+    "term": "Noob",
+    "slug": "noob",
+    "definition": "Débutant, newbie",
+    "categories": ["gaming", "internet"],
+    "examples": ["Quel noob !"]
+  },
+  {
+    "term": "NP",
+    "slug": "np",
+    "definition": "Pas de problème",
+    "examples": ["Merci mec ! — NP."],
+    "categories": ["internet"]
+  },
+  {
+    "term": "NPC",
+    "slug": "npc",
+    "definition": "Personne sans personnalité",
+    "categories": ["internet", "gaming"],
+    "examples": ["Il agit comme un NPC"]
+  },
+  {
+    "term": "NVM",
+    "slug": "nvm",
+    "definition": "Laisse tomber",
+    "examples": ["Ok nvm, laisse tomber."],
+    "categories": ["internet"]
+  },
+  {
+    "term": "Ohio",
+    "slug": "ohio",
+    "definition": "Bizarre, étrange",
+    "categories": ["internet", "recent"],
+    "examples": ["C'est tellement Ohio"]
+  },
+  {
+    "term": "OMG",
+    "slug": "omg",
+    "definition": "Oh mon dieu",
+    "examples": ["OMG j'y crois pas !"],
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "PK",
+    "slug": "pk",
+    "definition": "Pourquoi",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Planter",
+    "slug": "planter",
+    "definition": "Cesser de fonctionner",
+    "categories": ["argot"],
+    "examples": ["L'ordi a planté"]
+  },
+  {
+    "term": "PTDR",
+    "slug": "ptdr",
+    "definition": "Pété de rire",
+    "examples": ["PTDR ton histoire !"],
+    "categories": ["internet"]
+  },
+  {
+    "term": "Pwned",
+    "slug": "pwned",
+    "definition": "Dominé, écrasé",
+    "categories": ["gaming", "internet"],
+    "examples": ["Tu t'es fait pwned"]
+  },
+  {
+    "term": "Rage quit",
+    "slug": "rage-quit",
+    "definition": "Quitter énervé",
+    "categories": ["gaming"],
+    "examples": ["Il a fait un rage quit"]
+  },
+  {
+    "term": "Ratio",
+    "slug": "ratio",
+    "definition": "Commentaire qui dépasse l'original en likes",
+    "categories": ["internet"],
+    "examples": ["Il s'est fait ratio"]
+  },
+  {
+    "term": "Reboot",
+    "slug": "reboot",
+    "definition": "Redémarrer",
+    "categories": ["argot", "tech"],
+    "examples": ["Je reboot mon PC"]
+  },
+  {
+    "term": "Respawn",
+    "slug": "respawn",
+    "definition": "Réapparaître (jeu)",
+    "categories": ["gaming"],
+    "examples": ["Je vais respawn"]
+  },
+  {
+    "term": "Rizz",
+    "slug": "rizz",
+    "definition": "Charisme, pouvoir de séduction",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il a du rizz ce mec"]
+  },
+  {
+    "term": "RN",
+    "slug": "rn",
+    "definition": "En ce moment",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Rush",
+    "slug": "rush",
+    "definition": "Attaquer rapidement",
+    "categories": ["gaming"],
+    "examples": ["On rush B !"]
+  },
+  {
+    "term": "Salty",
+    "slug": "salty",
+    "definition": "Amer, vexé",
+    "categories": ["slang", "anglais"],
+    "examples": ["Il est salty depuis qu'il a perdu"]
+  },
+  {
+    "term": "Savage",
+    "slug": "savage",
+    "definition": "Sans pitié, brutal (positivement)",
+    "categories": ["slang", "anglais"],
+    "examples": ["Cette réponse était savage"]
+  },
+  {
+    "term": "Sheesh",
+    "slug": "sheesh",
+    "definition": "Exclamation d'admiration",
+    "categories": ["internet", "slang"],
+    "examples": ["Sheesh, quel style !"]
+  },
+  {
+    "term": "Sigma",
+    "slug": "sigma",
+    "definition": "Homme alpha indépendant",
+    "categories": ["internet", "slang"],
+    "examples": ["Il se prend pour un sigma"]
+  },
+  {
+    "term": "Simp",
+    "slug": "simp",
+    "definition": "Personne qui fait trop d'efforts",
+    "categories": ["slang", "anglais"],
+    "examples": ["C'est un simp"]
+  },
+  {
+    "term": "Slay",
+    "slug": "slay",
+    "definition": "Réussir parfaitement",
+    "categories": ["slang", "anglais"],
+    "examples": ["Elle a slay sa présentation"]
+  },
+  {
+    "term": "SLT",
+    "slug": "slt",
+    "definition": "Salut",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Smartphone",
+    "slug": "smartphone",
+    "definition": "Téléphone intelligent",
+    "categories": ["argot", "tech"],
+    "examples": ["Mon smartphone bug"]
+  },
+  {
+    "term": "Spam",
+    "slug": "spam",
+    "definition": "Message indésirable",
+    "categories": ["argot", "tech"],
+    "examples": ["C'est du spam"]
+  },
+  {
+    "term": "Spoil",
+    "slug": "spoil",
+    "definition": "Révéler l'intrigue",
+    "categories": ["argot", "tech"],
+    "examples": ["Ne me spoil pas !"]
+  },
+  {
+    "term": "Squad",
+    "slug": "squad",
+    "definition": "Groupe d'amis proches",
+    "categories": ["slang", "anglais"],
+    "examples": ["Ma squad arrive"]
+  },
+  {
+    "term": "Stan",
+    "slug": "stan",
+    "definition": "Fan absolu",
+    "categories": ["internet", "slang"]
+  },
+  {
+    "term": "Sus",
+    "slug": "sus",
+    "definition": "Suspect, louche",
+    "categories": ["slang", "internet"]
+  },
+  {
+    "term": "Swag",
+    "slug": "swag",
+    "definition": "Style, allure",
+    "examples": ["Il a trop de swag."],
+    "categories": ["slang", "anglais"]
+  },
+  {
+    "term": "TBH",
+    "slug": "tbh",
+    "definition": "Pour être honnête",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "Thirsty",
+    "slug": "thirsty",
+    "definition": "Désespéré (pour l'attention)",
+    "categories": ["slang", "anglais"],
+    "examples": ["Elle est thirsty sur Instagram"]
+  },
+  {
+    "term": "Throw",
+    "slug": "throw",
+    "definition": "Gâcher une victoire",
+    "categories": ["gaming"],
+    "examples": ["On a throw le match"]
+  },
+  {
+    "term": "TKT",
+    "slug": "tkt",
+    "definition": "T'inquiète",
+    "categories": ["internet", "argot"]
+  },
+  {
+    "term": "Touch grass",
+    "slug": "touch-grass",
+    "definition": "Sors dehors (conseil ironique)",
+    "categories": ["internet", "recent"],
+    "examples": ["Tu devrais touch grass"]
+  },
+  {
+    "term": "Troll",
+    "slug": "troll",
+    "definition": "Chercher la polémique",
+    "categories": ["internet"]
+  },
+  {
+    "term": "Tryhard",
+    "slug": "tryhard",
+    "definition": "Qui force trop",
+    "categories": ["gaming"],
+    "examples": ["Arrête de tryhard"]
+  },
+  {
+    "term": "VRMT",
+    "slug": "vrmt",
+    "definition": "Vraiment (abrév.)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "W",
+    "slug": "w",
+    "definition": "Victoire, win",
+    "categories": ["internet", "gaming"],
+    "examples": ["C'est un gros W"]
+  },
+  {
+    "term": "WP",
+    "slug": "wp",
+    "definition": "Bien joué (well played)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "WTF",
+    "slug": "wtf",
+    "definition": "Quoi ?! (surprise)",
+    "categories": ["internet", "langage"]
+  },
+  {
+    "term": "XPTDR",
+    "slug": "xptdr",
+    "definition": "Explosé de rire",
+    "examples": ["XPTDR c'est énorme !"],
+    "categories": ["internet"]
+  },
+  {
+    "term": "YOLO",
+    "slug": "yolo",
+    "definition": "On n'a qu'une vie",
+    "categories": ["internet", "slang"]
+  }
+]
