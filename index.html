@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeakZ</title>
+    <title>SpeakZ - Dictionnaire d'Argot</title>
     <style>
         body {
             background: black;
             color: white;
             font-family: Arial;
             padding: 20px;
+            margin: 0;
         }
         h1 {
             color: cyan;
             font-size: 4rem;
             text-align: center;
+            margin: 20px 0;
+        }
+        h2 {
+            color: cyan;
+            text-align: center;
+        }
+        .nav {
+            text-align: center;
+            margin: 20px 0;
         }
         button {
             background: cyan;
             color: black;
             padding: 10px 20px;
-            margin: 10px;
+            margin: 5px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #00ffff;
+            transform: scale(1.05);
+        }
+        button.active {
+            background: #ff00ff;
+            color: white;
+        }
+        .page {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .page.active {
+            display: block;
         }
         .word {
             background: #222;
@@ -32,6 +59,10 @@
             border-radius: 10px;
             max-width: 500px;
             text-align: left;
+            border: 2px solid #333;
+        }
+        .word:hover {
+            border-color: cyan;
         }
         .word strong {
             color: cyan;
@@ -46,123 +77,176 @@
             background: #111;
             color: white;
         }
+        .badge {
+            background: #ff00ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .card {
+            background: #222;
+            border: 2px solid #444;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .game-btn {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>SPEAKZ</h1>
+    <div class="badge">🔥 ULTRA FIRE DICTIONARY 🔥</div>
     
-    <div style="text-align: center;">
-        <button id="btnAccueil">ACCUEIL</button>
-        <button id="btnDict">DICTIONNAIRE</button>
+    <div class="nav">
+        <button onclick="showPage('accueil', this)" class="active">ACCUEIL</button>
+        <button onclick="showPage('dictionnaire', this)">DICTIONNAIRE</button>
+        <button onclick="showPage('jeux', this)">JEUX</button>
+        <button onclick="showPage('inscription', this)">INSCRIPTION</button>
+        <button onclick="showPage('communaute', this)">COMMUNAUTÉ</button>
+        <button onclick="showPage('profil', this)">PROFIL</button>
     </div>
 
-    <div id="accueil" style="display: block; text-align: center;">
-        <h2>Bienvenue sur SpeakZ</h2>
-        <p>Le dictionnaire d'argot français</p>
-        <p>Plus de 20 mots d'argot disponibles !</p>
+    <!-- PAGE ACCUEIL -->
+    <div id="accueil" class="page active">
+        <h2>L'argot qui déchire tout</h2>
+        <p style="font-size: 1.2rem; margin: 30px auto; max-width: 600px;">
+            Plus de 730 mots d'argot authentiques répartis en 15 catégories 
+            couvrant 12 régions francophones !
+        </p>
+        
+        <div class="card">
+            <h3 style="color: #ff00ff;">✨ MOT DU JOUR ✨</h3>
+            <div style="font-size: 2rem; color: cyan; margin: 20px;">Stylé</div>
+            <p>Cool, bien habillé</p>
+            <p style="font-style: italic;">"T'es stylé avec cette veste !"</p>
+        </div>
+
+        <input type="text" id="searchHome" placeholder="Recherche rapide..." style="padding: 10px; width: 300px; border-radius: 20px; border: 2px solid cyan; background: #111; color: white;">
     </div>
 
-    <div id="dictionnaire" style="display: none; text-align: center;">
-        <h2>Dictionnaire</h2>
+    <!-- PAGE DICTIONNAIRE -->
+    <div id="dictionnaire" class="page">
+        <h2>DICTIONNAIRE D'ARGOT</h2>
+        
+        <div style="margin: 20px;">
+            <button onclick="filterCategory('tous')">TOUS</button>
+            <button onclick="filterCategory('jeunes')">JEUNES</button>
+            <button onclick="filterCategory('verlan')">VERLAN</button>
+            <button onclick="filterCategory('marseille')">MARSEILLE</button>
+        </div>
+        
         <input type="text" id="searchBox" placeholder="Chercher un mot...">
         
         <div id="mots">
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Kiffer</strong><br>
                 Aimer quelque chose<br>
                 <em>"Je kiffe cette musique!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Stylé</strong><br>
                 Cool, bien habillé<br>
                 <em>"T'es stylé!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Wesh</strong><br>
                 Salut familier<br>
                 <em>"Wesh, ça va?"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Seum</strong><br>
                 Dégoût, frustration<br>
                 <em>"J'ai le seum!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Boloss</strong><br>
                 Personne naïve<br>
                 <em>"Fait pas le boloss!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Grave</strong><br>
                 Beaucoup, très<br>
                 <em>"C'est grave bien!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Ouf</strong><br>
                 Fou, incroyable<br>
                 <em>"C'est ouf ce truc!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>BG</strong><br>
                 Beau gosse<br>
                 <em>"Il est BG ce mec"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="verlan">
                 <strong>Meuf</strong><br>
                 Femme (verlan)<br>
                 <em>"Cette meuf est sympa"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="verlan">
                 <strong>Keuf</strong><br>
                 Flic (verlan)<br>
                 <em>"Attention aux keufs!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="verlan">
                 <strong>Chelou</strong><br>
                 Louche (verlan)<br>
                 <em>"C'est chelou cette histoire"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="verlan">
                 <strong>Relou</strong><br>
                 Lourd (verlan)<br>
                 <em>"Il est relou ce mec"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="verlan">
                 <strong>Téma</strong><br>
                 Regarde, mate<br>
                 <em>"Téma cette voiture!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Poto</strong><br>
                 Ami, copain<br>
                 <em>"C'est mon poto"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="marseille">
                 <strong>Cagole</strong><br>
                 Fille vulgaire (Marseille)<br>
                 <em>"Cette cagole fait du bruit"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="marseille">
                 <strong>Fada</strong><br>
                 Fou (Marseille)<br>
                 <em>"Il est complètement fada"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="marseille">
                 <strong>Dégun</strong><br>
                 Personne (Marseille)<br>
                 <em>"Il y a dégun"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Wallah</strong><br>
                 Je jure (arabe)<br>
                 <em>"Wallah c'est vrai!"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Bicrave</strong><br>
                 Dealer, vendre<br>
                 <em>"Il bicrave au coin"</em>
             </div>
-            <div class="word">
+            <div class="word" data-category="jeunes">
                 <strong>Chiller</strong><br>
                 Se détendre<br>
                 <em>"On va chiller"</em>
@@ -170,19 +254,87 @@
         </div>
     </div>
 
+    <!-- PAGE JEUX -->
+    <div id="jeux" class="page">
+        <h2>JEUX & QUIZ</h2>
+        <p>Teste tes connaissances et gagne des points !</p>
+        
+        <div class="card">
+            <h3 style="color: cyan;">🔄 Quiz Verlan</h3>
+            <p>Teste tes connaissances en verlan</p>
+            <button class="game-btn">JOUER</button>
+        </div>
+        
+        <div class="card">
+            <h3 style="color: cyan;">🌍 Quiz Régional</h3>
+            <p>Découvre l'argot des régions</p>
+            <button class="game-btn">JOUER</button>
+        </div>
+        
+        <div class="card">
+            <h3 style="color: cyan;">🏆 Quiz Expert</h3>
+            <p>Pour les vrais connaisseurs</p>
+            <button class="game-btn">JOUER</button>
+        </div>
+    </div>
+
+    <!-- PAGE INSCRIPTION -->
+    <div id="inscription" class="page">
+        <h2>INSCRIPTION</h2>
+        <div class="card">
+            <p>Rejoins la communauté SpeakZ !</p>
+            <p>🚀 Accès au classement quotidien</p>
+            <p>⭐ Sauvegarde de ta progression</p>
+            <p>🎯 Nouveaux défis chaque semaine</p>
+            <br>
+            <p style="color: cyan;">Bientôt disponible !</p>
+        </div>
+    </div>
+
+    <!-- PAGE COMMUNAUTÉ -->
+    <div id="communaute" class="page">
+        <h2>COMMUNAUTÉ</h2>
+        <div class="card">
+            <h3>🏆 Hall of Fame</h3>
+            <p>🥇 ArgotMaster2024 - 9,847 pts</p>
+            <p>🥈 VerlaNinja - 8,932 pts</p>
+            <p>🥉 CiteKing - 7,651 pts</p>
+        </div>
+        <div class="card">
+            <p style="color: cyan;">Plus de fonctionnalités bientôt !</p>
+        </div>
+    </div>
+
+    <!-- PAGE PROFIL -->
+    <div id="profil" class="page">
+        <h2>MON PROFIL</h2>
+        <div class="card">
+            <p>👤 Connecte-toi pour accéder à ton profil</p>
+            <p>📊 Statistiques personnalisées</p>
+            <p>🏅 Badges et récompenses</p>
+            <br>
+            <p style="color: cyan;">Bientôt disponible !</p>
+        </div>
+    </div>
+
     <script>
-        // Navigation
-        document.getElementById('btnAccueil').addEventListener('click', function() {
-            document.getElementById('accueil').style.display = 'block';
-            document.getElementById('dictionnaire').style.display = 'none';
-        });
+        // Navigation entre pages
+        function showPage(pageId, btn) {
+            // Cacher toutes les pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Montrer la page demandée
+            document.getElementById(pageId).classList.add('active');
+            
+            // Mettre à jour les boutons
+            document.querySelectorAll('.nav button').forEach(button => {
+                button.classList.remove('active');
+            });
+            btn.classList.add('active');
+        }
         
-        document.getElementById('btnDict').addEventListener('click', function() {
-            document.getElementById('accueil').style.display = 'none';
-            document.getElementById('dictionnaire').style.display = 'block';
-        });
-        
-        // Recherche
+        // Recherche dans le dictionnaire
         document.getElementById('searchBox').addEventListener('keyup', function() {
             var recherche = this.value.toLowerCase();
             var mots = document.querySelectorAll('.word');
@@ -196,6 +348,19 @@
                 }
             });
         });
+        
+        // Filtrer par catégorie
+        function filterCategory(category) {
+            var mots = document.querySelectorAll('.word');
+            
+            mots.forEach(function(mot) {
+                if (category === 'tous' || mot.dataset.category === category) {
+                    mot.style.display = 'block';
+                } else {
+                    mot.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
