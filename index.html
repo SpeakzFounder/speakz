@@ -39,13 +39,12 @@
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            text-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
-            animation: glow 2s ease-in-out infinite alternate;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
         
-        @keyframes glow {
-            from { filter: drop-shadow(0 0 20px rgba(0, 128, 255, 0.8)); }
-            to { filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8)); }
+        h1:hover {
+            filter: drop-shadow(0 10px 20px rgba(255, 20, 147, 0.8));
         }
         
         .fire-badge {
@@ -61,26 +60,21 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
-            animation: pulse 2s infinite;
             text-align: center;
             position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .fire-badge:hover {
+            filter: drop-shadow(0 10px 20px rgba(0, 191, 255, 0.8));
+            transform: translateY(-2px);
         }
         
         .fire-badge::before,
         .fire-badge::after {
             content: '🔥';
             margin: 0 10px;
-            animation: spin 3s linear infinite;
-        }
-        
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
         }
         
         .nav {
@@ -93,7 +87,7 @@
         
         .nav button {
             background: linear-gradient(45deg, #ff00ff, #00ffff);
-            color: black;
+            color: black !important;
             padding: 12px 25px;
             border: none;
             border-radius: 20px;
@@ -108,11 +102,12 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
             background: linear-gradient(45deg, #00ffff, #0080ff);
+            color: black !important;
         }
         
         .nav button.active {
             background: linear-gradient(45deg, #00ffff, #0080ff);
-            color: white;
+            color: black !important;
         }
         
         .page {
