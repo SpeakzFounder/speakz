@@ -1,1 +1,36 @@
-
+[
+  {
+    "term": "Ça joue",
+    "slug": "ca-joue",
+    "definition": "ça marche, d'accord (Marseille)",
+    "categories": ["argot", "regional"],
+    "examples": ["On se voit à 8h ? - Ça joue !"]
+  },
+  {
+    "term": "À l'arrache",
+    "slug": "a-l-arrache",
+    "definition": "Mal organisé, bâclé, fait à la va-vite",
+    "categories": ["argot"]
+  },
+  {
+    "term": "Être au taquet",
+    "slug": "etre-au-taquet",
+    "definition": "Être motivé, prêt",
+    "categories": ["argot", "sport"],
+    "examples": ["Je suis au taquet pour l'entraînement"]
+  },
+  {
+    "term": "Être au top",
+    "slug": "etre-au-top",
+    "definition": "Être au maximum",
+    "categories": ["argot"],
+    "examples": ["Il est au top aujourd'hui"]
+  },
+  {
+    "term": "Être dans la mouise",
+    "slug": "etre-dans-la-mouise",
+    "definition": "Être dans une situation difficile",
+    "categories": ["argot"],
+    "examples": ["Il est dans la mouise"]
+  }
+]
