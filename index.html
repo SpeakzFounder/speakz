@@ -35,8 +35,23 @@
         .word {
             background: #222;
             padding: 15px;
-            margin: 10px;
+            margin: 10px auto;
             border-radius: 10px;
+            max-width: 500px;
+            text-align: left;
+        }
+        .word strong {
+            color: cyan;
+            font-size: 1.2rem;
+        }
+        input {
+            padding: 10px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 20px;
+            border: 2px solid cyan;
+            background: #111;
+            color: white;
         }
     </style>
 </head>
@@ -51,25 +66,89 @@
     <div id="accueil" style="display: block;">
         <h2>Bienvenue sur SpeakZ</h2>
         <p>Le dictionnaire d'argot français</p>
+        <p>Plus de 20 mots d'argot disponibles !</p>
     </div>
 
     <div id="dictionnaire" style="display: none;">
         <h2>Dictionnaire</h2>
-        <div class="word">
-            <strong>Kiffer</strong><br>
-            Aimer quelque chose<br>
-            <em>"Je kiffe cette musique!"</em>
-        </div>
-        <div class="word">
-            <strong>Stylé</strong><br>
-            Cool, bien habillé<br>
-            <em>"T'es stylé!"</em>
-        </div>
-        <div class="word">
-            <strong>Wesh</strong><br>
-            Salut familier<br>
-            <em>"Wesh, ça va?"</em>
-        </div>
-    </div>
-</body>
-</html>
+        <input type="text" placeholder="Chercher un mot..." onkeyup="filtrer(this.value)">
+        
+        <div id="mots">
+            <div class="word">
+                <strong>Kiffer</strong><br>
+                Aimer quelque chose<br>
+                <em>"Je kiffe cette musique!"</em>
+            </div>
+            <div class="word">
+                <strong>Stylé</strong><br>
+                Cool, bien habillé<br>
+                <em>"T'es stylé!"</em>
+            </div>
+            <div class="word">
+                <strong>Wesh</strong><br>
+                Salut familier<br>
+                <em>"Wesh, ça va?"</em>
+            </div>
+            <div class="word">
+                <strong>Seum</strong><br>
+                Dégoût, frustration<br>
+                <em>"J'ai le seum!"</em>
+            </div>
+            <div class="word">
+                <strong>Boloss</strong><br>
+                Personne naïve<br>
+                <em>"Fait pas le boloss!"</em>
+            </div>
+            <div class="word">
+                <strong>Grave</strong><br>
+                Beaucoup, très<br>
+                <em>"C'est grave bien!"</em>
+            </div>
+            <div class="word">
+                <strong>Ouf</strong><br>
+                Fou, incroyable<br>
+                <em>"C'est ouf ce truc!"</em>
+            </div>
+            <div class="word">
+                <strong>BG</strong><br>
+                Beau gosse<br>
+                <em>"Il est BG ce mec"</em>
+            </div>
+            <div class="word">
+                <strong>Meuf</strong><br>
+                Femme (verlan)<br>
+                <em>"Cette meuf est sympa"</em>
+            </div>
+            <div class="word">
+                <strong>Keuf</strong><br>
+                Flic (verlan)<br>
+                <em>"Attention aux keufs!"</em>
+            </div>
+            <div class="word">
+                <strong>Chelou</strong><br>
+                Louche (verlan)<br>
+                <em>"C'est chelou cette histoire"</em>
+            </div>
+            <div class="word">
+                <strong>Relou</strong><br>
+                Lourd (verlan)<br>
+                <em>"Il est relou ce mec"</em>
+            </div>
+            <div class="word">
+                <strong>Téma</strong><br>
+                Regarde, mate<br>
+                <em>"Téma cette voiture!"</em>
+            </div>
+            <div class="word">
+                <strong>Poto</strong><br>
+                Ami, copain<br>
+                <em>"C'est mon poto"</em>
+            </div>
+            <div class="word">
+                <strong>Cagole</strong><br>
+                Fille vulgaire (Marseille)<br>
+                <em>"Cette cagole fait du bruit"</em>
+            </div>
+            <div class="word">
+                <strong>Fada</strong><br>
+                Fou (Marseille)<br>
