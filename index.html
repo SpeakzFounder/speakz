@@ -3,135 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeakZ - Dictionnaire d'Argot</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SpeakZ - Test</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: cyan;
+            font-size: 4rem;
+        }
+        button {
+            background: cyan;
+            color: black;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <main class="container">
-        <!-- Navigation principale -->
-        <div class="main-nav">
-            <button class="btn-base nav-btn btn-hover active" onclick="showSection('accueil')">ACCUEIL</button>
-            <button class="btn-base nav-btn btn-hover" onclick="showSection('dictionnaire')">DICTIONNAIRE</button>
-            <button class="btn-base nav-btn btn-hover" onclick="showSection('jeux')">JEUX</button>
-            <button class="btn-base nav-btn btn-hover" onclick="showSection('inscription')">INSCRIPTION</button>
-            <button class="btn-base nav-btn btn-hover" onclick="showSection('communaute')">COMMUNAUTÉ</button>
-            <button class="btn-base nav-btn btn-hover" onclick="showSection('profil')">PROFIL</button>
-        </div>
-
-        <!-- Section Accueil -->
-        <div id="accueil" class="section active">
-            <div class="hero-container">
-                <h1 class="hero-title">SPEAKZ</h1>
-                <div class="fire-badge">ULTRA FIRE DICTIONARY</div>
-                <h2 class="hero-subtitle">L'argot qui déchire tout</h2>
-                
-                <p style="text-align: center; color: white; font-size: 1.2rem; line-height: 1.6; max-width: 800px; margin: 0 auto 2rem auto;">
-                    Plus de 730 mots d'argot authentiques répartis en 15 catégories couvrant 12 
-                    régions francophones !
-                </p>
-            </div>
-
-            <!-- Barre de recherche -->
-            <div class="search-container">
-                <div class="search-icon">🔍</div>
-                <input type="text" class="search-input" placeholder="Cherche un mot d'argot..." id="home-search">
-            </div>
-
-            <!-- Conteneur pour les résultats -->
-            <div id="home-results-container" style="display: none;">
-                <div class="card-base">
-                    <h3 style="color: var(--primary-cyan); font-size: 1.5rem; margin-bottom: 1rem; text-align: center;">Résultats de la recherche</h3>
-                    <div class="dictionary-grid" id="home-results"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section Dictionnaire -->
-        <div id="dictionnaire" class="section">
-            <div class="hero-container">
-                <h1 style="font-size: 3rem; text-align: center; margin-bottom: 1rem; color: var(--primary-cyan);">DICTIONNAIRE D'ARGOT</h1>
-            </div>
-
-            <div class="search-container">
-                <div class="search-icon">🔍</div>
-                <input type="text" class="search-input" placeholder="Cherche un mot d'argot..." id="main-search">
-            </div>
-
-            <div class="card-base categories-section">
-                <h2 class="categories-title">Catégories</h2>
-                <div class="categories-grid">
-                    <button class="category-button" onclick="filterByCategory('tous')">
-                        <div class="category-name">TOUS</div>
-                        <div class="category-count" id="count-tous">(730+)</div>
-                    </button>
-                    <button class="category-button" onclick="filterByCategory('jeunes')">
-                        <div class="category-name">JEUNES</div>
-                        <div class="category-count" id="count-jeunes">(0)</div>
-                    </button>
-                    <button class="category-button" onclick="filterByCategory('verlan')">
-                        <div class="category-name">VERLAN</div>
-                        <div class="category-count" id="count-verlan">(0)</div>
-                    </button>
-                    <button class="category-button" onclick="filterByCategory('cite')">
-                        <div class="category-name">CITÉ</div>
-                        <div class="category-count" id="count-cite">(0)</div>
-                    </button>
-                    <button class="category-button" onclick="filterByCategory('marseille')">
-                        <div class="category-name">MARSEILLE</div>
-                        <div class="category-count" id="count-marseille">(0)</div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="results-container">
-                <div class="dictionary-grid" id="dictionary-results"></div>
-            </div>
-        </div>
-
-        <!-- Section Jeux -->
-        <div id="jeux" class="section">
-            <div class="card-base">
-                <h2 class="games-title">Jeux & Quiz</h2>
-                <p class="games-subtitle">Teste tes connaissances et gagne des points !</p>
-
-                <div class="games-grid">
-                    <div class="game-card verlan" onclick="startGame('verlan')">
-                        <div class="game-icon">🔄</div>
-                        <div class="game-title">Quiz Verlan</div>
-                        <button class="play-btn">Jouer</button>
-                    </div>
-
-                    <div class="game-card regional" onclick="startGame('regional')">
-                        <div class="game-icon">🌍</div>
-                        <div class="game-title">Quiz Régional</div>
-                        <button class="play-btn">Jouer</button>
-                    </div>
-
-                    <div class="game-card expert" onclick="startGame('expert')">
-                        <div class="game-icon">🏆</div>
-                        <div class="game-title">Quiz Expert</div>
-                        <button class="play-btn">Jouer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sections simplifiées pour l'instant -->
-        <div id="inscription" class="section">
-            <div class="card-base">
-                <h2 style="text-align: center; color: var(--primary-cyan);">INSCRIPTION</h2>
-                <p style="text-align: center; color: var(--text-secondary);">Bientôt disponible !</p>
-            </div>
-        </div>
-
-        <div id="communaute" class="section">
-            <div class="card-base">
-                <h2 style="text-align: center; color: var(--primary-cyan);">COMMUNAUTÉ</h2>
-                <p style="text-align: center; color: var(--text-secondary);">Bientôt disponible !</p>
-            </div>
-        </div>
-
-        <div id="profil" class="section">
-            <div class="card-base">
-                <h2 style="text-align: center; color: var(--primary-cyan);">MON PROFIL</h2>
-                <p style="text-align: center; color: var(--text-secondary);">Bien
+    <h1>SPEAKZ</h1>
+    <p>Site en construction - Test de base</p>
+    <button onclick="alert('Le JavaScript fonctionne!')">Cliquer pour tester</button>
+    
+    <div style="margin-top: 50px;">
+        <h2>Quelques mots d'argot:</h2>
+        <p><strong>Kiffer</strong> - Aimer quelque chose</p>
+        <p><strong>Stylé</strong> - Cool, bien habillé</p>
+        <p><strong>Wesh</strong> - Salut familier</p>
+    </div>
+</body>
+</html>
