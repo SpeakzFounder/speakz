@@ -3,122 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeakZ - Dictionnaire d'Argot</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SpeakZ</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial;
+            padding: 20px;
+        }
+        h1 {
+            color: cyan;
+            font-size: 4rem;
+            text-align: center;
+        }
+        .section {
+            display: none;
+            text-align: center;
+        }
+        .section.active {
+            display: block;
+        }
+        button {
+            background: cyan;
+            color: black;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .word {
+            background: #222;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <main class="container">
-        <!-- Navigation -->
-        <div class="main-nav">
-            <button class="btn-base nav-btn active" onclick="showSection('accueil', this)">ACCUEIL</button>
-            <button class="btn-base nav-btn" onclick="showSection('dictionnaire', this)">DICTIONNAIRE</button>
-            <button class="btn-base nav-btn" onclick="showSection('jeux', this)">JEUX</button>
+    <h1>SPEAKZ</h1>
+    
+    <div style="text-align: center;">
+        <button onclick="document.getElementById('accueil').style.display='block'; document.getElementById('dictionnaire').style.display='none';">ACCUEIL</button>
+        <button onclick="document.getElementById('dictionnaire').style.display='block'; document.getElementById('accueil').style.display='none';">DICTIONNAIRE</button>
+    </div>
+
+    <div id="accueil" style="display: block;">
+        <h2>Bienvenue sur SpeakZ</h2>
+        <p>Le dictionnaire d'argot français</p>
+    </div>
+
+    <div id="dictionnaire" style="display: none;">
+        <h2>Dictionnaire</h2>
+        <div class="word">
+            <strong>Kiffer</strong><br>
+            Aimer quelque chose<br>
+            <em>"Je kiffe cette musique!"</em>
         </div>
-
-        <!-- Section Accueil -->
-        <div id="accueil" class="section" style="display: block;">
-            <div class="hero-container">
-                <h1 class="hero-title">SPEAKZ</h1>
-                <div class="fire-badge">ULTRA FIRE DICTIONARY</div>
-                <h2 class="hero-subtitle">L'argot qui déchire tout</h2>
-                
-                <p style="text-align: center; color: white; font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem;">
-                    Plus de 50 mots d'argot authentiques !
-                </p>
-            </div>
-
-            <div class="search-container">
-                <div class="search-icon">🔍</div>
-                <input type="text" class="search-input" placeholder="Cherche un mot..." id="home-search" onkeyup="searchWords()">
-            </div>
+        <div class="word">
+            <strong>Stylé</strong><br>
+            Cool, bien habillé<br>
+            <em>"T'es stylé!"</em>
         </div>
-
-        <!-- Section Dictionnaire -->
-        <div id="dictionnaire" class="section" style="display: none;">
-            <h1 style="text-align: center; color: cyan; margin: 2rem 0;">DICTIONNAIRE</h1>
-            
-            <div class="search-container">
-                <div class="search-icon">🔍</div>
-                <input type="text" class="search-input" placeholder="Cherche un mot..." onkeyup="searchWords()">
-            </div>
-
-            <div id="dictionary-results" class="dictionary-grid"></div>
+        <div class="word">
+            <strong>Wesh</strong><br>
+            Salut familier<br>
+            <em>"Wesh, ça va?"</em>
         </div>
-
-        <!-- Section Jeux -->
-        <div id="jeux" class="section" style="display: none;">
-            <h1 style="text-align: center; color: cyan; margin: 2rem 0;">JEUX</h1>
-            <div style="text-align: center; padding: 3rem;">
-                <p style="font-size: 1.5rem;">Bientôt disponible !</p>
-            </div>
-        </div>
-    </main>
-
-    <script>
-        // Dictionnaire simple
-        const dictionary = [
-            { word: "Kiffer", definition: "Aimer quelque chose", example: "Je kiffe cette musique!" },
-            { word: "Stylé", definition: "Cool, bien habillé", example: "T'es stylé avec cette veste!" },
-            { word: "Wesh", definition: "Salut familier", example: "Wesh, ça va?" },
-            { word: "Ouf", definition: "Fou, incroyable", example: "C'est ouf ce truc!" },
-            { word: "Grave", definition: "Beaucoup, très", example: "C'est grave bien!" },
-            { word: "Seum", definition: "Dégoût, frustration", example: "J'ai le seum!" },
-            { word: "Boloss", definition: "Personne naïve", example: "Fait pas le boloss!" },
-            { word: "Meuf", definition: "Femme (verlan)", example: "Cette meuf est sympa" },
-            { word: "Keuf", definition: "Flic (verlan)", example: "Attention aux keufs!" },
-            { word: "Chelou", definition: "Louche (verlan)", example: "C'est chelou cette histoire" }
-        ];
-
-        // Navigation
-        function showSection(sectionId, button) {
-            // Cacher toutes les sections
-            document.querySelectorAll('.section').forEach(s => {
-                s.style.display = 'none';
-            });
-            
-            // Montrer la section demandée
-            document.getElementById(sectionId).style.display = 'block';
-            
-            // Mettre à jour les boutons
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            if (button) {
-                button.classList.add('active');
-            }
-
-            // Si dictionnaire, afficher les mots
-            if (sectionId === 'dictionnaire') {
-                displayWords();
-            }
-        }
-
-        // Afficher les mots
-        function displayWords(words = dictionary) {
-            const container = document.getElementById('dictionary-results');
-            container.innerHTML = words.map(word => 
-                '<div class="word-card">' +
-                    '<div class="word-title">' + word.word + '</div>' +
-                    '<div class="word-definition">' + word.definition + '</div>' +
-                    '<div class="word-example">' + word.example + '</div>' +
-                '</div>'
-            ).join('');
-        }
-
-        // Recherche
-        function searchWords() {
-            const searchTerm = event.target.value.toLowerCase();
-            if (searchTerm.length < 2) {
-                displayWords();
-                return;
-            }
-            
-            const filtered = dictionary.filter(word => 
-                word.word.toLowerCase().includes(searchTerm) || 
-                word.definition.toLowerCase().includes(searchTerm)
-            );
-            displayWords(filtered);
-        }
-    </script>
+    </div>
 </body>
 </html>
