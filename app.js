@@ -1,55 +1,7 @@
-// Base de données des mots d'argot
-const dictionary = [
-    // Jeunes
-    { word: "Kiffer", category: "jeunes", definition: "Aimer, apprécier quelque chose", example: "Je kiffe grave cette musique!" },
-    { word: "Stylé", category: "jeunes", definition: "Cool, bien habillé", example: "T'es stylé avec cette veste!" },
-    { word: "Swag", category: "jeunes", definition: "Avoir du style, être cool", example: "Il a trop de swag ce mec" },
-    { word: "Grave", category: "jeunes", definition: "Beaucoup, très", example: "C'est grave bien!" },
-    { word: "Ouf", category: "jeunes", definition: "Fou, incroyable", example: "C'est ouf ce truc!" },
-    { word: "Wesh", category: "jeunes", definition: "Salut, expression familière", example: "Wesh, ça va?" },
-    { word: "Déter", category: "jeunes", definition: "Déterminé, motivé", example: "Je suis déter pour réussir" },
-    { word: "Dar", category: "jeunes", definition: "Beaucoup, énormément", example: "Il y a dar de monde" },
-    { word: "BG", category: "jeunes", definition: "Beau gosse", example: "Il est BG ce mec" },
-    { word: "Bolos", category: "jeunes", definition: "Nul, pas cool", example: "C'est bolos cette soirée" },
+// Variable pour stocker les mots d'argot (chargés depuis mots.json)
+let dictionary = [];
 
-    // Verlan
-    { word: "Keuf", category: "verlan", definition: "Flic (verlan de flic)", example: "Attention aux keufs!" },
-    { word: "Meuf", category: "verlan", definition: "Femme (verlan de femme)", example: "Cette meuf est sympa" },
-    { word: "Chelou", category: "verlan", definition: "Louche (verlan de louche)", example: "Ce type est chelou" },
-    { word: "Relou", category: "verlan", definition: "Lourd (verlan de lourd)", example: "Il est relou ce mec" },
-    { word: "Teuf", category: "verlan", definition: "Fête (verlan de fête)", example: "On fait une teuf" },
-    { word: "Reup", category: "verlan", definition: "Père (verlan de père)", example: "Mon reup arrive" },
-    { word: "Reum", category: "verlan", definition: "Mère (verlan de mère)", example: "Ma reum cuisine" },
-    { word: "Vénère", category: "verlan", definition: "Énervé (verlan d'énervé)", example: "Il est vénère" },
-
-    // Cité
-    { word: "Seum", category: "cite", definition: "Dégoût, amertume, frustration", example: "J'ai le seum de pas avoir réussi" },
-    { word: "Boloss", category: "cite", definition: "Personne naïve", example: "Ne fais pas le boloss" },
-    { word: "Bicrave", category: "cite", definition: "Dealer, vendre de la drogue", example: "Il bicrave au coin de la rue" },
-    { word: "Raclo", category: "cite", definition: "Personne peu recommandable", example: "C'est un sacré raclo" },
-    { word: "Caillera", category: "cite", definition: "Racaille (verlan)", example: "Attention aux cailleras" },
-    { word: "Téma", category: "cite", definition: "Regarde, mate", example: "Téma cette voiture!" },
-
-    // Internet/SMS
-    { word: "MDR", category: "internet", definition: "Mort de rire", example: "MDR ta blague!" },
-    { word: "PTDR", category: "internet", definition: "Pété de rire", example: "PTDR j'y crois pas" },
-    { word: "LOL", category: "internet", definition: "Laughing out loud", example: "LOL c'est drôle" },
-    { word: "OKLM", category: "internet", definition: "Au calme", example: "Je suis OKLM ce soir" },
-    { word: "JSP", category: "internet", definition: "Je sais pas", example: "JSP où il est" },
-    { word: "YOLO", category: "internet", definition: "You Only Live Once", example: "YOLO on y va!" },
-
-    // Marseille
-    { word: "Cagole", category: "marseille", definition: "Fille un peu vulgaire (Marseille)", example: "Cette cagole fait du bruit" },
-    { word: "Pitchoune", category: "marseille", definition: "Petit enfant (Marseille)", example: "Viens ici pitchoune" },
-    { word: "Fada", category: "marseille", definition: "Fou (Marseille)", example: "Il est complètement fada" },
-
-    // Québec
-    { word: "Tabarnak", category: "quebec", definition: "Juron très fort (Québec)", example: "Tabarnak ! C'est cassé !" },
-    { word: "Ostie", category: "quebec", definition: "Juron (Québec)", example: "Ostie de temps de chien !" },
-    { word: "Blonde", category: "quebec", definition: "Petite amie (Québec)", example: "C'est ma blonde" }
-];
-
-// Base de données des questions
+// Base de données des questions (conservée)
 const questions = {
     verlan: [
         { question: 'Que signifie "Reup" ?', answers: ['Animal', 'Père', 'Nourriture', 'Couleur'], correct: 1 },
@@ -100,7 +52,7 @@ let dailyCurrentQuestion = 0;
 let dailyStartTime = 0;
 let dailyCorrectAnswers = 0;
 
-// Questions du jeu du jour
+// Questions du jeu du jour (conservées)
 const dailyQuestions = [
     { question: 'Que signifie "Kiffer" ?', answers: ['Aimer', 'Détester', 'Courir', 'Voler'], correct: 0 },
     { question: 'Que veut dire "Seum" ?', answers: ['Joie', 'Faim', 'Frustration', 'Sommeil'], correct: 2 },
@@ -108,6 +60,39 @@ const dailyQuestions = [
     { question: 'À Marseille, "Cagole" désigne :', answers: ['Une voiture', 'Une fille vulgaire', 'Un plat', 'Un quartier'], correct: 1 },
     { question: 'Que signifie "Chelou" ?', answers: ['Beau', 'Rapide', 'Cher', 'Louche'], correct: 3 }
 ];
+
+// Fonction pour charger les mots depuis mots.json
+async function loadDictionary() {
+    try {
+        const response = await fetch('mots.json');
+        const data = await response.json();
+        
+        // Convertir le format JSON vers le format utilisé dans l'app
+        dictionary = data.map(item => ({
+            word: item.term,
+            category: item.categories && item.categories.length > 0 ? item.categories[0] : 'argot',
+            definition: item.definition,
+            example: item.examples && item.examples.length > 0 ? item.examples[0] : `Exemple avec "${item.term}"`
+        }));
+        
+        console.log(`${dictionary.length} mots chargés depuis mots.json`);
+        
+        // Afficher les mots une fois chargés
+        if (document.getElementById('dictionnaire').classList.contains('active')) {
+            displayResults(dictionary);
+        }
+        
+    } catch (error) {
+        console.error('Erreur lors du chargement du dictionnaire:', error);
+        
+        // Fallback : quelques mots de base si le fichier ne charge pas
+        dictionary = [
+            { word: "Kiffer", category: "jeunes", definition: "Aimer, apprécier quelque chose", example: "Je kiffe grave cette musique!" },
+            { word: "Seum", category: "cite", definition: "Dégoût, amertume, frustration", example: "J'ai le seum de pas avoir réussi" },
+            { word: "Keuf", category: "verlan", definition: "Flic (verlan de flic)", example: "Attention aux keufs!" }
+        ];
+    }
+}
 
 // Navigation entre sections
 function showSection(sectionId) {
@@ -513,12 +498,18 @@ function getCategoryName(category) {
         'marseille': 'Marseille', 'quebec': 'Québec', 
         'belgique': 'Belgique', 'nord': 'Nord', 'suisse': 'Suisse',
         'senegal': 'Sénégal', 'cote-ivoire': 'Côte d\'Ivoire', 
-        'cameroun': 'Cameroun', 'slang': 'Slang'
+        'cameroun': 'Cameroun', 'slang': 'Slang', 'argot': 'Argot',
+        'sport': 'Sport', 'musique': 'Musique', 'beautÃ©': 'Beauté',
+        'cuisine': 'Cuisine', 'mode': 'Mode', 'travail': 'Travail',
+        'relationnel': 'Relationnel', 'scolaire': 'Scolaire',
+        'transport': 'Transport', 'santÃ©': 'Santé', 'fÃªte': 'Fête',
+        'animaux': 'Animaux', 'famille': 'Famille', 'argent': 'Argent',
+        'mÃ©tÃ©o': 'Météo', 'relations': 'Relations', 'culture': 'Culture'
     };
     return names[category] || category;
 }
 
-// Jeu du jour
+// Jeu du jour (toutes les fonctions conservées)
 function startDailyGame() {
     dailyGameActive = true;
     dailyCurrentQuestion = 0;
@@ -682,7 +673,10 @@ function updateCountdown() {
 }
 
 // Initialisation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+    // Charger le dictionnaire depuis mots.json
+    await loadDictionary();
+    
     const mainSearchInput = document.getElementById('main-search');
     const homeSearchInput = document.getElementById('home-search');
     
@@ -699,5 +693,8 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCountdown();
     setInterval(updateCountdown, 1000);
     
-    displayResults(dictionary);
+    // Afficher tous les mots au début si on est sur la page dictionnaire
+    if (document.getElementById('dictionnaire').classList.contains('active')) {
+        displayResults(dictionary);
+    }
 });
