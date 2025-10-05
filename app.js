@@ -436,15 +436,10 @@ function startGame(gameType) {
     currentQuestionIndex = 0;
     gameScore = 0;
     
-    let modal = document.getElementById('gameModal');
+    // Toujours recréer le modal pour éviter les problèmes
+    createOrUpdateGameModal();
     
-    // Si le modal n'existe pas, le créer
-    if (!modal) {
-        createGameModal();
-        modal = document.getElementById('gameModal');
-    }
-    
-    const modalTitle = document.getElementById('modalTitle');
+    const modal = document.getElementById('gameModal');
     
     // Définir le titre selon le type de jeu
     const titles = {
@@ -456,35 +451,109 @@ function startGame(gameType) {
         'generations': 'Ancien vs Nouveau ⏰'
     };
     
+    const modalTitle = document.getElementById('modalTitle');
     if (modalTitle) {
         modalTitle.textContent = titles[gameType] || 'Quiz';
     }
     
-    modal.style.display = 'flex';
+    if (modal) {
+        modal.style.display = 'flex';
+    }
     
     // Générer les questions selon le type
     generateGameQuestions(gameType);
-    showNextQuestion();
+    
+    // Petite pause pour s'assurer que le DOM est prêt
+    setTimeout(() => {
+        showNextQuestion();
+    }, 100);
 }
 
-// Créer le modal s'il n'existe pas
-function createGameModal() {
-    const modalHTML = `
-        <div class="modal" id="gameModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center;">
-            <div class="modal-content" style="background: var(--bg-card, #1a1a2e); border-radius: 20px; padding: 2rem; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto;">
-                <div class="modal-inner">
-                    <button class="close-btn" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">&times;</button>
-                    <div class="modal-title" id="modalTitle" style="text-align: center; font-size: 2rem; color: var(--primary-cyan, #00ffff); margin-bottom: 1.5rem; font-weight: bold;">Quiz</div>
-                    <div class="question" id="question" style="text-align: center; font-size: 1.3rem; color: white; margin-bottom: 2rem;">Question</div>
-                    <div class="answers" id="answers" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
-                    <div class="score" id="gameScore" style="text-align: center; color: var(--text-secondary, #888); margin-top: 2rem;">Score</div>
-                </div>
+// Créer ou mettre à jour le modal
+function createOrUpdateGameModal() {
+    // Supprimer l'ancien modal s'il existe
+    const existingModal = document.getElementById('gameModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Créer le nouveau modal
+    const modalDiv = document.createElement('div');
+    modalDiv.className = 'modal';
+    modalDiv.id = 'gameModal';
+    modalDiv.style.cssText = `
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(0,0,0,0.8); 
+        z-index: 1000; 
+        align-items: center; 
+        justify-content: center;
+    `;
+    
+    modalDiv.innerHTML = `
+        <div class="modal-content" style="
+            background: linear-gradient(135deg, #1a1a2e, #2a2a3e);
+            border-radius: 20px; 
+            padding: 2rem; 
+            max-width: 600px; 
+            width: 90%; 
+            max-height: 80vh; 
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 255, 255, 0.3);
+            border: 2px solid var(--primary-cyan, #00ffff);
+        ">
+            <div class="modal-inner">
+                <button class="close-btn" onclick="closeModal()" style="
+                    position: absolute; 
+                    top: 10px; 
+                    right: 20px; 
+                    background: none; 
+                    border: none; 
+                    color: white; 
+                    font-size: 2rem; 
+                    cursor: pointer;
+                    transition: transform 0.3s;
+                " onmouseover="this.style.transform='rotate(90deg)'" onmouseout="this.style.transform='rotate(0)'">&times;</button>
+                
+                <div class="modal-title" id="modalTitle" style="
+                    text-align: center; 
+                    font-size: 2rem; 
+                    color: var(--primary-cyan, #00ffff); 
+                    margin-bottom: 1.5rem; 
+                    font-weight: bold;
+                    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+                ">Quiz</div>
+                
+                <div class="question" id="question" style="
+                    text-align: center; 
+                    font-size: 1.3rem; 
+                    color: white; 
+                    margin-bottom: 2rem;
+                    min-height: 50px;
+                ">Chargement...</div>
+                
+                <div class="answers" id="answers" style="
+                    display: flex; 
+                    flex-direction: column; 
+                    gap: 0.5rem;
+                    min-height: 200px;
+                "></div>
+                
+                <div class="score" id="gameScore" style="
+                    text-align: center; 
+                    color: var(--text-secondary, #888); 
+                    margin-top: 2rem;
+                    font-size: 1.1rem;
+                ">Score: 0</div>
             </div>
         </div>
     `;
     
-    // Ajouter le modal au body
-    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    document.body.appendChild(modalDiv);
 }
 
 function generateGameQuestions(gameType) {
@@ -558,6 +627,17 @@ function generateQuizQuestions(count) {
 }
 
 function showNextQuestion() {
+    // Attendre que le modal soit prêt
+    const questionEl = document.getElementById('question');
+    const answersEl = document.getElementById('answers');
+    const scoreEl = document.getElementById('gameScore');
+    
+    // Si les éléments n'existent pas encore, attendre un peu et réessayer
+    if (!questionEl || !answersEl || !scoreEl) {
+        setTimeout(() => showNextQuestion(), 100);
+        return;
+    }
+    
     const words = generateGameQuestions(currentGameType);
     
     if (currentQuestionIndex >= 5 || words.length === 0) {
@@ -568,23 +648,12 @@ function showNextQuestion() {
     // Sélectionner un mot aléatoire
     const randomWord = words[Math.floor(Math.random() * words.length)];
     
-    // Générer la question
-    const questionEl = document.getElementById('question');
-    const answersEl = document.getElementById('answers');
-    const scoreEl = document.getElementById('gameScore');
-    
-    // Vérifier que les éléments existent
-    if (!questionEl || !answersEl || !scoreEl) {
-        console.error('Éléments du modal manquants');
-        return;
-    }
-    
     questionEl.textContent = `Que signifie "${randomWord.term}" ?`;
     scoreEl.textContent = `Question ${currentQuestionIndex + 1}/5 | Score: ${gameScore}`;
     
     // Créer les options de réponse
     const options = [randomWord.definition];
-    while (options.length < 4) {
+    while (options.length < 4 && dictionary.length >= 4) {
         const randomOption = dictionary[Math.floor(Math.random() * dictionary.length)];
         if (!options.includes(randomOption.definition)) {
             options.push(randomOption.definition);
@@ -607,37 +676,43 @@ function showNextQuestion() {
             width: 100%; 
             padding: 1rem; 
             margin: 0.5rem 0; 
-            background: var(--bg-card, #2a2a3e); 
-            color: var(--text-primary, white); 
-            border: 2px solid var(--primary-cyan, #00ffff); 
+            background: linear-gradient(135deg, #2a2a3e, #1a1a2e); 
+            color: white; 
+            border: 2px solid #00ffff; 
             border-radius: 10px; 
             cursor: pointer; 
             transition: all 0.3s ease;
-            animation: slideInAnswer ${0.3 + index * 0.1}s ease-out forwards;
             opacity: 0;
             transform: translateX(-30px);
+            font-size: 1rem;
+            font-weight: 500;
         `;
+        
         btn.onmouseover = () => {
             if (!btn.disabled) {
-                btn.style.background = 'linear-gradient(45deg, var(--primary-cyan, #00ffff), var(--accent-pink, #ff0080))';
+                btn.style.background = 'linear-gradient(45deg, #00ffff, #ff0080)';
                 btn.style.transform = 'scale(1.02)';
                 btn.style.boxShadow = '0 5px 15px rgba(0, 255, 255, 0.3)';
+                btn.style.color = 'black';
             }
         };
+        
         btn.onmouseout = () => {
-            if (!btn.disabled) {
-                btn.style.background = 'var(--bg-card, #2a2a3e)';
+            if (!btn.disabled && btn.dataset.correct !== 'shown') {
+                btn.style.background = 'linear-gradient(135deg, #2a2a3e, #1a1a2e)';
                 btn.style.transform = 'scale(1)';
                 btn.style.boxShadow = 'none';
+                btn.style.color = 'white';
             }
         };
+        
         answersEl.appendChild(btn);
         
         // Animation d'apparition
         setTimeout(() => {
             btn.style.opacity = '1';
             btn.style.transform = 'translateX(0)';
-        }, 100 * index);
+        }, 100 * (index + 1));
     });
     
     setTimeout(() => {
@@ -646,6 +721,9 @@ function showNextQuestion() {
 }
 
 function checkAnswer(isCorrect, button) {
+    // Vérifier que le bouton existe
+    if (!button) return;
+    
     // Désactiver tous les boutons
     const allButtons = document.querySelectorAll('.answer-btn');
     allButtons.forEach(btn => {
@@ -659,6 +737,7 @@ function checkAnswer(isCorrect, button) {
         button.style.background = 'linear-gradient(45deg, #00ff00, #00cc00)';
         button.style.transform = 'scale(1.05)';
         button.style.boxShadow = '0 0 20px rgba(0, 255, 0, 0.5)';
+        button.style.color = 'white';
         
         // Effet de particules
         createParticles(button, 'success');
@@ -668,6 +747,7 @@ function checkAnswer(isCorrect, button) {
     } else {
         // Animation de mauvaise réponse
         button.style.background = 'linear-gradient(45deg, #ff0000, #cc0000)';
+        button.style.color = 'white';
         button.classList.add('shake');
         
         // Montrer la bonne réponse
@@ -675,6 +755,8 @@ function checkAnswer(isCorrect, button) {
             if (btn.dataset.correct === 'true') {
                 btn.style.background = 'linear-gradient(45deg, #00ff00, #00cc00)';
                 btn.style.transform = 'scale(1.02)';
+                btn.style.color = 'white';
+                btn.dataset.correct = 'shown';
             }
         });
         
@@ -687,14 +769,18 @@ function checkAnswer(isCorrect, button) {
         setTimeout(() => {
             // Animation de transition
             const container = document.getElementById('answers');
-            container.style.opacity = '0';
-            container.style.transform = 'translateX(50px)';
-            
-            setTimeout(() => {
-                showNextQuestion();
-                container.style.opacity = '1';
-                container.style.transform = 'translateX(0)';
-            }, 300);
+            if (container) {
+                container.style.opacity = '0';
+                container.style.transform = 'translateX(50px)';
+                
+                setTimeout(() => {
+                    showNextQuestion();
+                    if (container) {
+                        container.style.opacity = '1';
+                        container.style.transform = 'translateX(0)';
+                    }
+                }, 300);
+            }
         }, 1500);
     } else {
         setTimeout(() => endGame(), 1500);
