@@ -436,7 +436,14 @@ function startGame(gameType) {
     currentQuestionIndex = 0;
     gameScore = 0;
     
-    const modal = document.getElementById('gameModal');
+    let modal = document.getElementById('gameModal');
+    
+    // Si le modal n'existe pas, le créer
+    if (!modal) {
+        createGameModal();
+        modal = document.getElementById('gameModal');
+    }
+    
     const modalTitle = document.getElementById('modalTitle');
     
     // Définir le titre selon le type de jeu
@@ -449,12 +456,35 @@ function startGame(gameType) {
         'generations': 'Ancien vs Nouveau ⏰'
     };
     
-    modalTitle.textContent = titles[gameType] || 'Quiz';
+    if (modalTitle) {
+        modalTitle.textContent = titles[gameType] || 'Quiz';
+    }
+    
     modal.style.display = 'flex';
     
     // Générer les questions selon le type
     generateGameQuestions(gameType);
     showNextQuestion();
+}
+
+// Créer le modal s'il n'existe pas
+function createGameModal() {
+    const modalHTML = `
+        <div class="modal" id="gameModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center;">
+            <div class="modal-content" style="background: var(--bg-card, #1a1a2e); border-radius: 20px; padding: 2rem; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                <div class="modal-inner">
+                    <button class="close-btn" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">&times;</button>
+                    <div class="modal-title" id="modalTitle" style="text-align: center; font-size: 2rem; color: var(--primary-cyan, #00ffff); margin-bottom: 1.5rem; font-weight: bold;">Quiz</div>
+                    <div class="question" id="question" style="text-align: center; font-size: 1.3rem; color: white; margin-bottom: 2rem;">Question</div>
+                    <div class="answers" id="answers" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+                    <div class="score" id="gameScore" style="text-align: center; color: var(--text-secondary, #888); margin-top: 2rem;">Score</div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Ajouter le modal au body
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
 }
 
 function generateGameQuestions(gameType) {
@@ -543,6 +573,12 @@ function showNextQuestion() {
     const answersEl = document.getElementById('answers');
     const scoreEl = document.getElementById('gameScore');
     
+    // Vérifier que les éléments existent
+    if (!questionEl || !answersEl || !scoreEl) {
+        console.error('Éléments du modal manquants');
+        return;
+    }
+    
     questionEl.textContent = `Que signifie "${randomWord.term}" ?`;
     scoreEl.textContent = `Question ${currentQuestionIndex + 1}/5 | Score: ${gameScore}`;
     
@@ -571,9 +607,9 @@ function showNextQuestion() {
             width: 100%; 
             padding: 1rem; 
             margin: 0.5rem 0; 
-            background: var(--bg-card); 
-            color: var(--text-primary); 
-            border: 2px solid var(--primary-cyan); 
+            background: var(--bg-card, #2a2a3e); 
+            color: var(--text-primary, white); 
+            border: 2px solid var(--primary-cyan, #00ffff); 
             border-radius: 10px; 
             cursor: pointer; 
             transition: all 0.3s ease;
@@ -583,14 +619,14 @@ function showNextQuestion() {
         `;
         btn.onmouseover = () => {
             if (!btn.disabled) {
-                btn.style.background = 'linear-gradient(45deg, var(--primary-cyan), var(--accent-pink))';
+                btn.style.background = 'linear-gradient(45deg, var(--primary-cyan, #00ffff), var(--accent-pink, #ff0080))';
                 btn.style.transform = 'scale(1.02)';
                 btn.style.boxShadow = '0 5px 15px rgba(0, 255, 255, 0.3)';
             }
         };
         btn.onmouseout = () => {
             if (!btn.disabled) {
-                btn.style.background = 'var(--bg-card)';
+                btn.style.background = 'var(--bg-card, #2a2a3e)';
                 btn.style.transform = 'scale(1)';
                 btn.style.boxShadow = 'none';
             }
@@ -718,7 +754,23 @@ function showFeedback(message, type) {
 
 function endGame() {
     const modal = document.getElementById('gameModal');
-    const modalContent = modal.querySelector('.modal-inner');
+    
+    if (!modal) {
+        console.error('Modal non trouvé');
+        return;
+    }
+    
+    let modalContent = modal.querySelector('.modal-inner');
+    
+    // Si modal-inner n'existe pas, le créer
+    if (!modalContent) {
+        modalContent = modal.querySelector('.modal-content');
+        if (!modalContent) {
+            modalContent = document.createElement('div');
+            modalContent.className = 'modal-content';
+            modal.appendChild(modalContent);
+        }
+    }
     
     const percentage = (gameScore / 5) * 100;
     let message = '';
@@ -734,22 +786,22 @@ function endGame() {
     else message = '📚 Il faut réviser un peu plus !';
     
     modalContent.innerHTML = `
-        <button class="close-btn" onclick="closeModal()">&times;</button>
-        <div class="modal-title">Résultats</div>
+        <button class="close-btn" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">&times;</button>
+        <div class="modal-title" style="text-align: center; font-size: 2rem; color: var(--primary-cyan, #00ffff); margin-bottom: 1rem;">Résultats</div>
         <div style="text-align: center; padding: 2rem;">
-            <div style="font-size: 3rem; font-weight: bold; color: var(--primary-cyan); animation: scoreZoom 0.5s ease-out;">
+            <div style="font-size: 3rem; font-weight: bold; color: var(--primary-cyan, #00ffff); animation: scoreZoom 0.5s ease-out;">
                 ${gameScore}/5
             </div>
-            <div style="font-size: 1.5rem; color: var(--accent-pink); margin: 1rem 0; animation: slideIn 0.6s ease-out;">
+            <div style="font-size: 1.5rem; color: var(--accent-pink, #ff0080); margin: 1rem 0; animation: slideIn 0.6s ease-out;">
                 ${percentage}%
             </div>
-            <div style="color: var(--text-primary); margin: 1rem 0; animation: slideIn 0.7s ease-out;">
+            <div style="color: var(--text-primary, white); margin: 1rem 0; animation: slideIn 0.7s ease-out;">
                 ${message}
             </div>
-            <div class="progress-bar" style="width: 100%; height: 20px; background: var(--bg-card); border-radius: 10px; overflow: hidden; margin: 1rem 0;">
-                <div style="width: ${percentage}%; height: 100%; background: linear-gradient(90deg, var(--primary-cyan), var(--accent-pink)); transition: width 1s ease-out;"></div>
+            <div class="progress-bar" style="width: 100%; height: 20px; background: var(--bg-card, #2a2a3e); border-radius: 10px; overflow: hidden; margin: 1rem 0;">
+                <div style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--primary-cyan, #00ffff), var(--accent-pink, #ff0080)); transition: width 1s ease-out;"></div>
             </div>
-            <button class="play-btn" onclick="closeModal()" style="margin-top: 1rem; color: black !important; animation: slideIn 0.8s ease-out;">
+            <button class="play-btn" onclick="closeModal()" style="margin-top: 1rem; padding: 1rem 2rem; background: linear-gradient(45deg, var(--primary-cyan, #00ffff), var(--accent-pink, #ff0080)); color: black !important; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; animation: slideIn 0.8s ease-out;">
                 Fermer
             </button>
         </div>
@@ -796,7 +848,9 @@ function launchConfetti() {
 
 function closeModal() {
     const modal = document.getElementById('gameModal');
-    modal.style.display = 'none';
+    if (modal) {
+        modal.style.display = 'none';
+    }
 }
 
 function updateUserPoints(points) {
