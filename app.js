@@ -29,6 +29,41 @@ function filterDictionary() {
     displayResults(filtered);
 }
 
+// Fonction de recherche accueil
+function filterHomeSearch() {
+    const searchTerm = document.getElementById('home-search').value.toLowerCase();
+    
+    let filtered = dictionary.filter(item => {
+        return item.term.toLowerCase().includes(searchTerm) ||
+               item.definition.toLowerCase().includes(searchTerm);
+    });
+    
+    displayHomeResults(filtered);
+}
+
+// Affichage résultats accueil
+function displayHomeResults(results) {
+    const container = document.getElementById('home-results');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    if (results.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: #666;">Aucun mot trouvé</p>';
+        return;
+    }
+    
+    results.slice(0, 5).forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'word-card';
+        card.innerHTML = `
+            <h3>${item.term}</h3>
+            <p>${item.definition}</p>
+        `;
+        container.appendChild(card);
+    });
+}
+
 // Fonction d'affichage des résultats
 function displayResults(results) {
     const container = document.getElementById('dictionary-results');
@@ -76,11 +111,12 @@ function filterByCategory(category) {
     currentCategory = category;
     filterDictionary();
     
-    // Mettre à jour les boutons actifs
     document.querySelectorAll('.category-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    event.target.classList.add('active');
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
 }
 
 // Navigation entre sections
@@ -91,10 +127,15 @@ function showSection(sectionId) {
     document.getElementById(sectionId).classList.add('active');
 }
 
-// Initialisation au chargement de la page
+// Initialisation
 document.addEventListener('DOMContentLoaded', function() {
     const mainSearchInput = document.getElementById('main-search');
+    const homeSearchInput = document.getElementById('home-search');
+    
     if (mainSearchInput) {
         mainSearchInput.addEventListener('input', filterDictionary);
+    }
+    if (homeSearchInput) {
+        homeSearchInput.addEventListener('input', filterHomeSearch);
     }
 });
