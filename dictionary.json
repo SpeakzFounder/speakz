@@ -1,5 +1,12 @@
 [
   {
+    "term": "A+",
+    "slug": "a-plus",
+    "definition": "À plus tard",
+    "categories": ["internet"],
+    "examples": ["A+ les amis !"]
+  },
+  {
     "term": "À l'arrache",
     "slug": "a-l-arrache",
     "definition": "Mal organisé, bâclé, fait à la va-vite",
@@ -378,6 +385,13 @@
     "examples": []
   },
   {
+    "term": "BCP",
+    "slug": "bcp",
+    "definition": "Beaucoup",
+    "categories": ["internet"],
+    "examples": ["Merci bcp !"]
+  },
+  {
     "term": "Beat",
     "slug": "beat",
     "definition": "Rythme, instrumental",
@@ -679,6 +693,13 @@
     "examples": ["Le bizutage est interdit"]
   },
   {
+    "term": "BJR",
+    "slug": "bjr",
+    "definition": "Bonjour",
+    "categories": ["internet"],
+    "examples": ["Bjr tout le monde"]
+  },
+  {
     "term": "Black",
     "slug": "black",
     "definition": "Homme de couleur noire",
@@ -861,6 +882,13 @@
     "examples": ["Il est branque ce type"]
   },
   {
+    "term": "BRB",
+    "slug": "brb",
+    "definition": "Je reviens (Be Right Back)",
+    "categories": ["internet"],
+    "examples": ["BRB 5 min"]
+  },
+  {
     "term": "Bro",
     "slug": "bro",
     "definition": "Frère, pote",
@@ -880,6 +908,13 @@
     "definition": "Être déprimé",
     "categories": ["argot"],
     "examples": ["Il broie du noir depuis hier"]
+  },
+  {
+    "term": "BSR",
+    "slug": "bsr",
+    "definition": "Bonsoir",
+    "categories": ["internet"],
+    "examples": ["Bsr à tous"]
   },
   {
     "term": "Buff",
@@ -1701,6 +1736,13 @@
     "examples": ["La descente est dure"]
   },
   {
+    "term": "DÉSO",
+    "slug": "deso",
+    "definition": "Désolé",
+    "categories": ["internet"],
+    "examples": ["Déso je suis en retard"]
+  },
+  {
     "term": "Détaler",
     "slug": "detaler",
     "definition": "Fuir",
@@ -1748,6 +1790,13 @@
     "definition": "Salut (swahili)",
     "categories": ["argot", "regional"],
     "examples": ["Djambo mon frère !"]
+  },
+  {
+    "term": "DM",
+    "slug": "dm",
+    "definition": "Message privé (Direct Message)",
+    "categories": ["internet"],
+    "examples": ["Envoie-moi un DM"]
   },
   {
     "term": "Doudou",
@@ -2044,6 +2093,13 @@
     "examples": ["C'est un flop total"]
   },
   {
+    "term": "FR",
+    "slug": "fr",
+    "definition": "Pour de vrai (For Real)",
+    "categories": ["internet"],
+    "examples": ["FR c'est incroyable"]
+  },
+  {
     "term": "Fuckboy",
     "slug": "fuckboy",
     "definition": "Homme volage",
@@ -2056,6 +2112,13 @@
     "definition": "Femme volage",
     "categories": ["argot", "relationnel"],
     "examples": ["Attention, fuckgirl"]
+  },
+  {
+    "term": "FYI",
+    "slug": "fyi",
+    "definition": "Pour info (For Your Information)",
+    "categories": ["internet"],
+    "examples": ["FYI, la réunion est annulée"]
   },
   {
     "term": "Galoper",
@@ -2084,6 +2147,13 @@
     "definition": "Vomir",
     "categories": ["argot"],
     "examples": ["Il va gerber"]
+  },
+  {
+    "term": "GG",
+    "slug": "gg",
+    "definition": "Bien joué (Good Game)",
+    "categories": ["gaming", "internet"],
+    "examples": ["GG les gars !"]
   },
   {
     "term": "Ghoster",
@@ -2198,6 +2268,20 @@
     "examples": ["Il y a de la hype autour"]
   },
   {
+    "term": "IDC",
+    "slug": "idc",
+    "definition": "Je m'en fiche (I Don't Care)",
+    "categories": ["internet"],
+    "examples": ["IDC de son avis"]
+  },
+  {
+    "term": "IDK",
+    "slug": "idk",
+    "definition": "Je ne sais pas (I Don't Know)",
+    "categories": ["internet"],
+    "examples": ["IDK où il est"]
+  },
+  {
     "term": "Il fait un froid de canard",
     "slug": "froid-de-canard",
     "definition": "Il fait très froid",
@@ -2205,11 +2289,25 @@
     "examples": ["Il fait un froid de canard"]
   },
   {
+    "term": "IMO",
+    "slug": "imo",
+    "definition": "À mon avis (In My Opinion)",
+    "categories": ["internet"],
+    "examples": ["IMO c'est nul"]
+  },
+  {
     "term": "Int",
     "slug": "int",
     "definition": "Se suicider en jeu",
     "categories": ["gaming"],
     "examples": []
+  },
+  {
+    "term": "IRL",
+    "slug": "irl",
+    "definition": "Dans la vraie vie (In Real Life)",
+    "categories": ["internet"],
+    "examples": ["IRL c'est différent"]
   },
   {
     "term": "It's giving",
@@ -2231,6 +2329,20 @@
     "definition": "J'en peux plus",
     "categories": ["internet", "argot"],
     "examples": []
+  },
+  {
+    "term": "JSP",
+    "slug": "jsp",
+    "definition": "Je sais pas",
+    "categories": ["internet"],
+    "examples": ["Jsp où il est"]
+  },
+  {
+    "term": "JSPR",
+    "slug": "jspr",
+    "definition": "J'espère",
+    "categories": ["internet"],
+    "examples": ["Jspr que ça va marcher"]
   },
   {
     "term": "Ken",
@@ -2296,11 +2408,18 @@
     "examples": ["Cette soirée était lit"]
   },
   {
+    "term": "LMAO",
+    "slug": "lmao",
+    "definition": "Mort de rire (Laughing My Ass Off)",
+    "categories": ["internet"],
+    "examples": ["LMAO c'est drôle"]
+  },
+  {
     "term": "LOL",
     "slug": "lol",
-    "definition": "Rire",
+    "definition": "Rire (Laughing Out Loud)",
     "categories": ["internet"],
-    "examples": ["LOL c'est drôle !"]
+    "examples": ["LOL c'est trop drôle !"]
   },
   {
     "term": "Loot",
@@ -2471,6 +2590,13 @@
     "examples": ["Quel noob !"]
   },
   {
+    "term": "NP",
+    "slug": "np",
+    "definition": "Pas de problème (No Problem)",
+    "categories": ["internet"],
+    "examples": ["Merci ! - NP"]
+  },
+  {
     "term": "NPC",
     "slug": "npc",
     "definition": "Personne sans personnalité",
@@ -2478,11 +2604,25 @@
     "examples": ["Il agit comme un NPC"]
   },
   {
+    "term": "NVM",
+    "slug": "nvm",
+    "definition": "Laisse tomber (Never Mind)",
+    "categories": ["internet"],
+    "examples": ["NVM j'ai trouvé"]
+  },
+  {
     "term": "Ohio",
     "slug": "ohio",
     "definition": "Bizarre, étrange",
     "categories": ["internet"],
     "examples": ["C'est Ohio"]
+  },
+  {
+    "term": "OMG",
+    "slug": "omg",
+    "definition": "Oh mon dieu (Oh My God)",
+    "categories": ["internet"],
+    "examples": ["OMG j'y crois pas !"]
   },
   {
     "term": "One shot",
@@ -2569,6 +2709,13 @@
     "examples": ["Il s'est fait pigeonner"]
   },
   {
+    "term": "PK",
+    "slug": "pk",
+    "definition": "Pourquoi",
+    "categories": ["internet"],
+    "examples": ["Pk tu dis ça ?"]
+  },
+  {
     "term": "Plane",
     "slug": "plane",
     "definition": "Effet planant des drogues",
@@ -2604,11 +2751,25 @@
     "examples": ["Je potasse mes maths"]
   },
   {
+    "term": "PSQ",
+    "slug": "psq",
+    "definition": "Parce que",
+    "categories": ["internet"],
+    "examples": ["Psq j'ai raison"]
+  },
+  {
     "term": "PTDR",
     "slug": "ptdr",
     "definition": "Pété de rire",
     "categories": ["internet"],
     "examples": ["PTDR ton histoire !"]
+  },
+  {
+    "term": "PTN",
+    "slug": "ptn",
+    "definition": "Putain",
+    "categories": ["internet", "argot"],
+    "examples": []
   },
   {
     "term": "Pwned",
@@ -2646,6 +2807,13 @@
     "examples": ["Il s'est fait ratio"]
   },
   {
+    "term": "RDV",
+    "slug": "rdv",
+    "definition": "Rendez-vous",
+    "categories": ["internet"],
+    "examples": ["J'ai RDV demain"]
+  },
+  {
     "term": "Reboot",
     "slug": "reboot",
     "definition": "Redémarrer",
@@ -2679,6 +2847,13 @@
     "definition": "Charisme, pouvoir de séduction",
     "categories": ["slang"],
     "examples": ["Il a du rizz"]
+  },
+  {
+    "term": "RN",
+    "slug": "rn",
+    "definition": "En ce moment (Right Now)",
+    "categories": ["internet"],
+    "examples": ["Je suis occupé rn"]
   },
   {
     "term": "Rouler",
@@ -2793,6 +2968,20 @@
     "examples": ["Elle slay dans cette robe"]
   },
   {
+    "term": "SLT",
+    "slug": "slt",
+    "definition": "Salut",
+    "categories": ["internet"],
+    "examples": ["Slt ça va ?"]
+  },
+  {
+    "term": "SMH",
+    "slug": "smh",
+    "definition": "Secouer la tête (désapprobation)",
+    "categories": ["internet"],
+    "examples": []
+  },
+  {
     "term": "Smurf",
     "slug": "smurf",
     "definition": "Jouer sur un petit compte",
@@ -2828,6 +3017,13 @@
     "examples": ["Ma squad arrive"]
   },
   {
+    "term": "SRX",
+    "slug": "srx",
+    "definition": "Sérieux",
+    "categories": ["internet"],
+    "examples": ["Srx tu penses ça ?"]
+  },
+  {
     "term": "Stan",
     "slug": "stan",
     "definition": "Fan absolu",
@@ -2842,6 +3038,13 @@
     "examples": []
   },
   {
+    "term": "STP",
+    "slug": "stp",
+    "definition": "S'il te plaît",
+    "categories": ["internet"],
+    "examples": ["Aide-moi stp"]
+  },
+  {
     "term": "Sus",
     "slug": "sus",
     "definition": "Suspect, louche",
@@ -2854,6 +3057,13 @@
     "definition": "Comprendre, cerner",
     "categories": ["slang"],
     "examples": ["J'ai suss son plan"]
+  },
+  {
+    "term": "SVP",
+    "slug": "svp",
+    "definition": "S'il vous plaît",
+    "categories": ["internet"],
+    "examples": ["Répondez SVP"]
   },
   {
     "term": "Swag",
@@ -2889,6 +3099,13 @@
     "definition": "Tout à l'heure (québécois)",
     "categories": ["argot", "quebec"],
     "examples": ["On se voit tantôt"]
+  },
+  {
+    "term": "TBH",
+    "slug": "tbh",
+    "definition": "Pour être honnête (To Be Honest)",
+    "categories": ["internet"],
+    "examples": ["TBH je suis d'accord"]
   },
   {
     "term": "TD",
@@ -3003,6 +3220,13 @@
     "examples": ["Mon vieux rentre tard"]
   },
   {
+    "term": "VRMT",
+    "slug": "vrmt",
+    "definition": "Vraiment",
+    "categories": ["internet"],
+    "examples": ["C'est vrmt bien"]
+  },
+  {
     "term": "W",
     "slug": "w",
     "definition": "Victoire, win",
@@ -3031,11 +3255,25 @@
     "examples": []
   },
   {
+    "term": "WP",
+    "slug": "wp",
+    "definition": "Bien joué (Well Played)",
+    "categories": ["gaming", "internet"],
+    "examples": []
+  },
+  {
     "term": "WSH",
     "slug": "wsh",
     "definition": "Interjection (wesh)",
     "categories": ["internet", "argot"],
     "examples": []
+  },
+  {
+    "term": "WTF",
+    "slug": "wtf",
+    "definition": "Quoi ?! (surprise)",
+    "categories": ["internet"],
+    "examples": ["WTF tu fais quoi ?"]
   },
   {
     "term": "XPTDR",
