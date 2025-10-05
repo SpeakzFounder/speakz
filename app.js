@@ -2,7 +2,7 @@
 let dictionary = [];
 
 // Charger les mots depuis le fichier JSON
-fetch('mots.json')
+fetch('dictionary.json')
   .then(response => response.json())
   .then(data => {
     dictionary = data;
