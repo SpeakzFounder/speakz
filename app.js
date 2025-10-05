@@ -9,16 +9,13 @@ let dailyGameQuestions = [];
 let dailyTimer = null;
 let dailyStartTime = null;
 
-// Charger les mots depuis le fichier JSON
-fetch('dictionary.json')
-  .then(response => response.json())
-  .then(data => {
-    dictionary = data;
-    displayResults(dictionary);
-    updateStats();
-    initializeDailyWord();
-  })
-  .catch(error => console.error('Erreur chargement:', error));
+// Empêcher le FOUC (Flash of Unstyled Content)
+if (document.readyState === 'loading') {
+    document.documentElement.style.visibility = 'hidden';
+    document.addEventListener('DOMContentLoaded', () => {
+        document.documentElement.style.visibility = 'visible';
+    });
+}
 
 // ==================== NAVIGATION ====================
 function showSection(sectionId) {
@@ -972,43 +969,111 @@ function startCountdown() {
 
 // ==================== INITIALISATION ====================
 document.addEventListener('DOMContentLoaded', function() {
-    // Injecter les styles d'animation
-    injectAnimationStyles();
-    
-    // Initialiser les écouteurs de recherche
-    const mainSearchInput = document.getElementById('main-search');
-    const homeSearchInput = document.getElementById('home-search');
-    
-    if (mainSearchInput) {
-        mainSearchInput.addEventListener('input', filterDictionary);
-    }
-    if (homeSearchInput) {
-        homeSearchInput.addEventListener('input', filterHomeSearch);
-    }
-    
-    // Démarrer le countdown
-    startCountdown();
-    
-    // Charger les points de l'utilisateur
-    const savedPoints = localStorage.getItem('userPoints') || '245';
-    const pointsEl = document.getElementById('userPoints');
-    if (pointsEl) {
-        pointsEl.textContent = `${savedPoints} points`;
-    }
-    
-    // Fermer le modal si on clique en dehors
-    window.onclick = function(event) {
-        const modal = document.getElementById('gameModal');
-        if (event.target === modal) {
-            closeModal();
-        }
+    // Attendre que tout soit chargé avant d'initialiser
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    } else {
+        initializeApp();
     }
 });
 
+// Fonction d'initialisation principale
+function initializeApp() {
+    // Injecter les styles d'animation en premier
+    injectAnimationStyles();
+    
+    // Attendre un peu pour que les styles soient appliqués
+    requestAnimationFrame(() => {
+        // Charger le dictionnaire
+        loadDictionary();
+        
+        // Initialiser les écouteurs de recherche
+        const mainSearchInput = document.getElementById('main-search');
+        const homeSearchInput = document.getElementById('home-search');
+        
+        if (mainSearchInput) {
+            mainSearchInput.addEventListener('input', filterDictionary);
+        }
+        if (homeSearchInput) {
+            homeSearchInput.addEventListener('input', filterHomeSearch);
+        }
+        
+        // Démarrer le countdown
+        startCountdown();
+        
+        // Charger les points de l'utilisateur
+        const savedPoints = localStorage.getItem('userPoints') || '245';
+        const pointsEl = document.getElementById('userPoints');
+        if (pointsEl) {
+            pointsEl.textContent = `${savedPoints} points`;
+        }
+        
+        // Fermer le modal si on clique en dehors
+        window.onclick = function(event) {
+            const modal = document.getElementById('gameModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    });
+}
+
+// Charger le dictionnaire de manière asynchrone
+function loadDictionary() {
+    // Afficher un loader pendant le chargement
+    const containers = document.querySelectorAll('#dictionary-results, #home-results');
+    containers.forEach(container => {
+        if (container) {
+            container.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">Chargement du dictionnaire...</p>';
+        }
+    });
+    
+    fetch('dictionary.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur de chargement du dictionnaire');
+            }
+            return response.json();
+        })
+        .then(data => {
+            dictionary = data;
+            // Attendre que le DOM soit prêt
+            requestAnimationFrame(() => {
+                displayResults(dictionary);
+                updateStats();
+                initializeDailyWord();
+            });
+        })
+        .catch(error => {
+            console.error('Erreur chargement:', error);
+            containers.forEach(container => {
+                if (container) {
+                    container.innerHTML = '<p style="text-align: center; color: red;">Erreur de chargement du dictionnaire</p>';
+                }
+            });
+        });
+}
+
 // Injecter les styles CSS pour les animations
 function injectAnimationStyles() {
+    // Vérifier si les styles ont déjà été injectés
+    if (document.getElementById('speakz-animation-styles')) {
+        return;
+    }
+    
     const style = document.createElement('style');
+    style.id = 'speakz-animation-styles';
     style.textContent = `
+        /* Prévenir le FOUC */
+        body {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        body.loaded {
+            opacity: 1;
+        }
+        
         @keyframes slideInAnswer {
             from {
                 opacity: 0;
@@ -1089,6 +1154,24 @@ function injectAnimationStyles() {
             }
         }
         
+        @keyframes scoreZoom {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .game-card {
+            transition: all 0.3s ease;
+        }
+        
         .game-card:hover {
             animation: pulse 1s infinite;
         }
@@ -1106,6 +1189,11 @@ function injectAnimationStyles() {
         }
         
         /* Effet de brillance sur les boutons */
+        .btn-base {
+            position: relative;
+            overflow: hidden;
+        }
+        
         .btn-base::before {
             content: '';
             position: absolute;
@@ -1115,6 +1203,7 @@ function injectAnimationStyles() {
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
+            pointer-events: none;
         }
         
         .btn-base:hover::before {
@@ -1140,32 +1229,6 @@ function injectAnimationStyles() {
             to {
                 opacity: 1;
                 transform: translateY(0);
-            }
-        }
-        
-        /* Effet de progression */
-        .progress-bar {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .progress-bar::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            animation: shimmer 2s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(100%);
             }
         }
         
@@ -1199,5 +1262,19 @@ function injectAnimationStyles() {
             animation: confetti-fall 3s linear forwards;
         }
     `;
-    document.head.appendChild(style);
+    
+    // Injecter dans le head en priorité
+    if (document.head) {
+        document.head.insertBefore(style, document.head.firstChild);
+    } else {
+        // Fallback si head n'est pas prêt
+        document.addEventListener('DOMContentLoaded', () => {
+            document.head.insertBefore(style, document.head.firstChild);
+        });
+    }
+    
+    // Marquer le body comme chargé après un court délai
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 100);
 }
