@@ -1,5 +1,161 @@
+// ==================== DICTIONNAIRE INTÉGRÉ ====================
+const dictionary = [
+  // JEUNES
+  { term: "Askip", definition: "À ce qu'il paraît", categories: ["jeunes"], examples: ["Askip il a quitté la soirée tôt"] },
+  { term: "Bail", definition: "Plan, truc", categories: ["jeunes"], examples: ["C'est quoi le bail ce soir ?"] },
+  { term: "BG", definition: "Beau gosse", categories: ["jeunes"], examples: ["Il est BG ce mec"] },
+  { term: "Boloss", definition: "Victime, nul", categories: ["jeunes"], examples: ["T'es un boloss"] },
+  { term: "Charo", definition: "Dragueur", categories: ["jeunes"], examples: ["Arrête de faire le charo"] },
+  { term: "Daron", definition: "Père", categories: ["jeunes"], examples: ["Mon daron est cool"] },
+  { term: "Daronne", definition: "Mère", categories: ["jeunes"], examples: ["Ma daronne fait bien à manger"] },
+  { term: "Frérot", definition: "Frère, ami proche", categories: ["jeunes"], examples: ["Salut frérot !"] },
+  { term: "Go", definition: "Fille", categories: ["jeunes"], examples: ["Cette go est stylée"] },
+  { term: "Iench", definition: "Chien", categories: ["jeunes"], examples: ["Ton iench est mignon"] },
+  { term: "Ken", definition: "Faire l'amour", categories: ["jeunes"], examples: ["Ils ont ken"] },
+  { term: "Miff", definition: "Dégoût", categories: ["jeunes"], examples: ["Ça me miff"] },
+  { term: "Poucave", definition: "Balance, dénonciatrice", categories: ["jeunes"], examples: ["C'est une poucave"] },
+  { term: "Sah", definition: "Sérieusement", categories: ["jeunes"], examples: ["Sah tu dis vrai ?"] },
+  { term: "Stylé", definition: "Cool, bien", categories: ["jeunes"], examples: ["C'est stylé !"] },
+  { term: "Thug", definition: "Voyou, gangster", categories: ["jeunes"], examples: ["Il fait le thug"] },
+  { term: "Wesh", definition: "Salut (de l'arabe)", categories: ["jeunes"], examples: ["Wesh bien ou bien ?"] },
+  { term: "Yep", definition: "Ouais", categories: ["jeunes"], examples: ["Yep, je viens"] },
+  { term: "Zouz", definition: "Fille", categories: ["jeunes"], examples: ["Cette zouz est belle"] },
+  
+  // VERLAN
+  { term: "Cainri", definition: "Africain", categories: ["verlan"], examples: ["Il est cainri"] },
+  { term: "Céfran", definition: "Français", categories: ["verlan"], examples: ["Les céfrans"] },
+  { term: "Chanmé", definition: "Méchant (bien)", categories: ["verlan"], examples: ["C'est chanmé !"] },
+  { term: "Chelou", definition: "Louche", categories: ["verlan"], examples: ["C'est chelou cette histoire"] },
+  { term: "Cheum", definition: "Moche", categories: ["verlan"], examples: ["Il est cheum"] },
+  { term: "Meuf", definition: "Femme", categories: ["verlan"], examples: ["Cette meuf est cool"] },
+  { term: "Ouf", definition: "Fou", categories: ["verlan"], examples: ["C'est ouf !"] },
+  { term: "Pécho", definition: "Choper, attraper", categories: ["verlan"], examples: ["J'ai pécho son num"] },
+  { term: "Relou", definition: "Lourd, pénible", categories: ["verlan"], examples: ["T'es relou"] },
+  { term: "Reuf", definition: "Frère", categories: ["verlan"], examples: ["Mon reuf"] },
+  { term: "Reum", definition: "Mère", categories: ["verlan"], examples: ["Ma reum"] },
+  { term: "Reup", definition: "Père", categories: ["verlan"], examples: ["Mon reup"] },
+  { term: "Teubé", definition: "Bête", categories: ["verlan"], examples: ["T'es teubé ou quoi ?"] },
+  { term: "Teuf", definition: "Fête", categories: ["verlan"], examples: ["On va en teuf"] },
+  { term: "Tise", definition: "Sortie", categories: ["verlan"], examples: ["On fait une tise"] },
+  { term: "Vénère", definition: "Énervé", categories: ["verlan"], examples: ["Je suis vénère"] },
+  { term: "Zarbi", definition: "Bizarre", categories: ["verlan"], examples: ["C'est zarbi"] },
+  { term: "Zbeul", definition: "Bordel, bagarre", categories: ["verlan"], examples: ["C'est le zbeul"] },
+  
+  // CITÉ
+  { term: "Bader", definition: "Déprimer", categories: ["cite"], examples: ["Je bade grave"] },
+  { term: "Bicrave", definition: "Vendre", categories: ["cite"], examples: ["Il bicrave des trucs"] },
+  { term: "Biff", definition: "Argent", categories: ["cite"], examples: ["J'ai plus de biff"] },
+  { term: "Blase", definition: "Nom", categories: ["cite"], examples: ["C'est quoi ton blase ?"] },
+  { term: "Bled", definition: "Pays d'origine", categories: ["cite"], examples: ["Je pars au bled"] },
+  { term: "Bolosse", definition: "Victime", categories: ["cite"], examples: ["Quel bolosse"] },
+  { term: "Caillera", definition: "Racaille", categories: ["cite"], examples: ["C'est une caillera"] },
+  { term: "Charbonner", definition: "Travailler dur", categories: ["cite"], examples: ["Je charbonne toute la journée"] },
+  { term: "Condé", definition: "Policier", categories: ["cite"], examples: ["Les condés arrivent"] },
+  { term: "Crari", definition: "Craindre", categories: ["cite"], examples: ["Ça crari"] },
+  { term: "Daron", definition: "Père, patron", categories: ["cite"], examples: ["Le daron du quartier"] },
+  { term: "Déter", definition: "Déterminé", categories: ["cite"], examples: ["Il est déter"] },
+  { term: "Gadji", definition: "Fille (du romani)", categories: ["cite"], examples: ["Cette gadji est belle"] },
+  { term: "Gamos", definition: "Voiture", categories: ["cite"], examples: ["Belle gamos"] },
+  { term: "Hass", definition: "Misère", categories: ["cite"], examples: ["C'est la hass"] },
+  { term: "Hlel", definition: "Licite, halal", categories: ["cite"], examples: ["C'est hlel"] },
+  { term: "Kiffer", definition: "Aimer", categories: ["cite"], examples: ["Je kiffe cette musique"] },
+  { term: "Miskine", definition: "Pauvre (de l'arabe)", categories: ["cite"], examples: ["Le miskine"] },
+  { term: "Pecho", definition: "Attraper", categories: ["cite"], examples: ["Je vais le pécho"] },
+  { term: "Schlag", definition: "Fatigué", categories: ["cite"], examples: ["Je suis schlag"] },
+  { term: "Tess", definition: "Cité", categories: ["cite"], examples: ["Dans ma tess"] },
+  { term: "Tieks", definition: "Quartier", categories: ["cite"], examples: ["Mon tieks"] },
+  { term: "Wesh", definition: "Salut", categories: ["cite"], examples: ["Wesh alors !"] },
+  { term: "Zoulou", definition: "Individu", categories: ["cite"], examples: ["Ce zoulou"] },
+  
+  // ANCIEN
+  { term: "Bagnole", definition: "Voiture", categories: ["ancien"], examples: ["Ma vieille bagnole"] },
+  { term: "Bahut", definition: "Lycée", categories: ["ancien"], examples: ["Je vais au bahut"] },
+  { term: "Baraque", definition: "Maison", categories: ["ancien"], examples: ["Belle baraque"] },
+  { term: "Boulot", definition: "Travail", categories: ["ancien"], examples: ["J'ai du boulot"] },
+  { term: "Clope", definition: "Cigarette", categories: ["ancien"], examples: ["Une clope ?"] },
+  { term: "Clebs", definition: "Chien", categories: ["ancien"], examples: ["Sale clebs"] },
+  { term: "Dingue", definition: "Fou", categories: ["ancien"], examples: ["T'es dingue"] },
+  { term: "Fric", definition: "Argent", categories: ["ancien"], examples: ["J'ai pas de fric"] },
+  { term: "Gamin", definition: "Enfant", categories: ["ancien"], examples: ["Ce gamin"] },
+  { term: "Godasse", definition: "Chaussure", categories: ["ancien"], examples: ["Mes godasses"] },
+  { term: "Gonzesse", definition: "Fille", categories: ["ancien"], examples: ["Cette gonzesse"] },
+  { term: "Mec", definition: "Homme", categories: ["ancien"], examples: ["Ce mec"] },
+  { term: "Nana", definition: "Fille", categories: ["ancien"], examples: ["Cette nana"] },
+  { term: "Piaule", definition: "Chambre", categories: ["ancien"], examples: ["Dans ma piaule"] },
+  { term: "Pognon", definition: "Argent", categories: ["ancien"], examples: ["Plein de pognon"] },
+  { term: "Pot", definition: "Chance", categories: ["ancien"], examples: ["Coup de pot"] },
+  { term: "Taffe", definition: "Travail", categories: ["ancien"], examples: ["J'ai un taffe"] },
+  { term: "Taulard", definition: "Prisonnier", categories: ["ancien"], examples: ["Un ancien taulard"] },
+  { term: "Thune", definition: "Argent", categories: ["ancien"], examples: ["Pas de thune"] },
+  { term: "Toubib", definition: "Médecin", categories: ["ancien"], examples: ["Voir le toubib"] },
+  { term: "Zinc", definition: "Comptoir", categories: ["ancien"], examples: ["Au zinc du bar"] },
+  
+  // MARSEILLE
+  { term: "Dégun", definition: "Personne", categories: ["marseille"], examples: ["Y'a dégun"] },
+  { term: "Emboucaner", definition: "Embrouiller", categories: ["marseille"], examples: ["Tu m'emboucanes"] },
+  { term: "Engatser", definition: "Insulter", categories: ["marseille"], examples: ["Je vais t'engatser"] },
+  { term: "Fada", definition: "Fou", categories: ["marseille"], examples: ["T'es fada"] },
+  { term: "Minot", definition: "Enfant", categories: ["marseille"], examples: ["Le minot"] },
+  { term: "Peuchère", definition: "Le pauvre", categories: ["marseille"], examples: ["Peuchère !"] },
+  { term: "Tarpin", definition: "Beaucoup", categories: ["marseille"], examples: ["Tarpin bien"] },
+  
+  // QUÉBEC
+  { term: "Blonde", definition: "Petite amie", categories: ["quebec"], examples: ["Ma blonde"] },
+  { term: "Char", definition: "Voiture", categories: ["quebec"], examples: ["Mon char"] },
+  { term: "Chum", definition: "Ami, copain", categories: ["quebec"], examples: ["Mon chum"] },
+  { term: "Magasiner", definition: "Faire du shopping", categories: ["quebec"], examples: ["Aller magasiner"] },
+  { term: "Pantoute", definition: "Pas du tout", categories: ["quebec"], examples: ["Pantoute !"] },
+  { term: "Pogner", definition: "Attraper", categories: ["quebec"], examples: ["Pogner quelqu'un"] },
+  { term: "Tabarnak", definition: "Juron", categories: ["quebec"], examples: ["Tabarnak !"] },
+  
+  // BELGIQUE
+  { term: "Brol", definition: "Désordre", categories: ["belgique"], examples: ["C'est du brol"] },
+  { term: "Drache", definition: "Pluie forte", categories: ["belgique"], examples: ["Il drache"] },
+  { term: "Kot", definition: "Chambre d'étudiant", categories: ["belgique"], examples: ["Mon kot"] },
+  { term: "Nonante", definition: "Quatre-vingt-dix", categories: ["belgique"], examples: ["Nonante euros"] },
+  
+  // SUISSE
+  { term: "Natel", definition: "Téléphone portable", categories: ["suisse"], examples: ["Mon natel"] },
+  { term: "Panosse", definition: "Serpillière", categories: ["suisse"], examples: ["Passer la panosse"] },
+  { term: "Septante", definition: "Soixante-dix", categories: ["suisse"], examples: ["Septante francs"] },
+  
+  // INTERNET & GAMING
+  { term: "AFK", definition: "Absent du clavier", categories: ["internet"], examples: ["Je suis AFK"] },
+  { term: "BRB", definition: "Je reviens", categories: ["internet"], examples: ["BRB 5 min"] },
+  { term: "GG", definition: "Bien joué", categories: ["gaming"], examples: ["GG mec !"] },
+  { term: "LOL", definition: "Mort de rire", categories: ["internet"], examples: ["LOL c'est drôle"] },
+  { term: "MDR", definition: "Mort de rire", categories: ["internet"], examples: ["MDR !"] },
+  { term: "Noob", definition: "Débutant", categories: ["gaming"], examples: ["T'es un noob"] },
+  { term: "OMG", definition: "Oh mon dieu", categories: ["internet"], examples: ["OMG !"] },
+  { term: "PTDR", definition: "Pété de rire", categories: ["internet"], examples: ["PTDR !"] },
+  { term: "WTF", definition: "C'est quoi ce bordel", categories: ["internet"], examples: ["WTF ?!"] },
+  
+  // MOTS SUPPLÉMENTAIRES
+  { term: "Avoir le seum", definition: "Être dégoûté", categories: ["jeunes"], examples: ["J'ai le seum"] },
+  { term: "Bader", definition: "Déprimer", categories: ["jeunes"], examples: ["Je bade"] },
+  { term: "Belek", definition: "Fais attention", categories: ["cite"], examples: ["Belek !"] },
+  { term: "Ça passe crème", definition: "C'est facile", categories: ["jeunes"], examples: ["Ça passe crème"] },
+  { term: "Chiller", definition: "Se détendre", categories: ["jeunes"], examples: ["On chill"] },
+  { term: "Claqué", definition: "Fatigué", categories: ["jeunes"], examples: ["Je suis claqué"] },
+  { term: "Dalleux", definition: "Affamé", categories: ["jeunes"], examples: ["J'ai trop les dalleux"] },
+  { term: "Frais", definition: "Cool, stylé", categories: ["jeunes"], examples: ["T'es frais"] },
+  { term: "Ghoster", definition: "Disparaître", categories: ["internet"], examples: ["Il m'a ghosté"] },
+  { term: "Hype", definition: "Excitation", categories: ["internet"], examples: ["Trop hype !"] },
+  { term: "Khey", definition: "Frère (de l'arabe)", categories: ["cite"], examples: ["Salut khey"] },
+  { term: "La base", definition: "Normal, évident", categories: ["jeunes"], examples: ["C'est la base"] },
+  { term: "Miskine", definition: "Pauvre", categories: ["cite"], examples: ["Le pauvre miskine"] },
+  { term: "Nawak", definition: "N'importe quoi", categories: ["jeunes"], examples: ["C'est nawak"] },
+  { term: "Oklm", definition: "Au calme", categories: ["jeunes"], examples: ["Je suis oklm"] },
+  { term: "Prank", definition: "Blague, canular", categories: ["internet"], examples: ["C'est un prank"] },
+  { term: "Seum", definition: "Rage, dégoût", categories: ["jeunes"], examples: ["Le seum !"] },
+  { term: "Swag", definition: "Style", categories: ["jeunes"], examples: ["Il a du swag"] },
+  { term: "Tcheck", definition: "Salut (check)", categories: ["jeunes"], examples: ["Tcheck !"] },
+  { term: "Validé", definition: "Approuvé", categories: ["jeunes"], examples: ["C'est validé"] },
+  { term: "Y'a R", definition: "Il n'y a rien", categories: ["jeunes"], examples: ["Y'a R à faire"] },
+  { term: "Zapper", definition: "Oublier", categories: ["jeunes"], examples: ["J'ai zappé"] }
+];
+
 // ==================== VARIABLES GLOBALES ====================
-let dictionary = [];
 let currentCategory = 'tous';
 let currentGameType = '';
 let currentQuestionIndex = 0;
@@ -10,46 +166,24 @@ let dailyTimer = null;
 let dailyStartTime = null;
 let usedQuestions = [];
 
-// ==================== CHARGEMENT INITIAL ====================
-// Charger le dictionnaire au démarrage
-fetch('dictionary.json')
-    .then(response => response.json())
-    .then(data => {
-        dictionary = data;
-        console.log('Dictionnaire chargé:', dictionary.length, 'mots');
-        displayResults(dictionary);
-        updateStats();
-        initializeDailyWord();
-    })
-    .catch(error => {
-        console.error('Erreur chargement dictionnaire:', error);
-        // Afficher un message d'erreur
-        const container = document.getElementById('dictionary-results');
-        if (container) {
-            container.innerHTML = '<p style="color: red; text-align: center;">Erreur de chargement du dictionnaire</p>';
-        }
-    });
-
 // ==================== NAVIGATION ====================
 function showSection(sectionId) {
-    // Masquer toutes les sections
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
     });
     
-    // Afficher la section demandée
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
         targetSection.classList.add('active');
     }
     
-    // Mettre à jour les boutons de navigation
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     
-    // Activer le bon bouton
-    event.target.classList.add('active');
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
 }
 
 // ==================== RECHERCHE ====================
@@ -183,11 +317,12 @@ function filterByCategory(category) {
     
     displayResults(filtered);
     
-    // Mettre à jour l'apparence des boutons
     document.querySelectorAll('.category-button').forEach(btn => {
         btn.classList.remove('active');
     });
-    event.target.classList.add('active');
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
 }
 
 // ==================== MOT DU JOUR ====================
@@ -245,7 +380,7 @@ function startDailyGame() {
     currentQuestionIndex = 0;
     gameScore = 0;
     
-    // Générer 10 questions aléatoires
+    // Générer 10 questions
     dailyGameQuestions = [];
     const usedIndexes = new Set();
     
@@ -258,7 +393,6 @@ function startDailyGame() {
         usedIndexes.add(randomIndex);
         const word = dictionary[randomIndex];
         
-        // Créer les options
         const options = [word.definition];
         const optionIndexes = new Set([randomIndex]);
         
@@ -282,11 +416,8 @@ function startDailyGame() {
         });
     }
     
-    // Démarrer le timer
     dailyStartTime = Date.now();
     startDailyTimer();
-    
-    // Afficher la première question
     showDailyQuestion();
 }
 
@@ -336,23 +467,9 @@ function showDailyQuestion() {
         question.options.forEach((option, index) => {
             const btn = document.createElement('button');
             btn.className = 'btn-base nav-btn btn-hover';
-            btn.style.cssText = 'width: 100%; margin: 0.5rem 0; padding: 1rem; color: black !important; transition: all 0.3s;';
+            btn.style.cssText = 'width: 100%; margin: 0.5rem 0; padding: 1rem; color: black !important;';
             btn.textContent = option;
             btn.onclick = () => checkDailyAnswer(index === question.correctIndex, btn);
-            
-            btn.onmouseover = () => {
-                if (!btn.disabled) {
-                    btn.style.transform = 'translateY(-2px)';
-                    btn.style.boxShadow = '0 5px 15px rgba(255, 0, 255, 0.3)';
-                }
-            };
-            btn.onmouseout = () => {
-                if (!btn.disabled) {
-                    btn.style.transform = 'translateY(0)';
-                    btn.style.boxShadow = 'none';
-                }
-            };
-            
             optionsDiv.appendChild(btn);
         });
     }
@@ -373,13 +490,11 @@ function checkDailyAnswer(isCorrect, button) {
     if (isCorrect) {
         gameScore++;
         button.style.background = 'linear-gradient(45deg, #00ff00, #00cc00)';
-        button.style.transform = 'scale(1.05)';
         button.innerHTML = button.textContent + ' ✅';
     } else {
         button.style.background = 'linear-gradient(45deg, #ff0000, #cc0000)';
         button.innerHTML = button.textContent + ' ❌';
         
-        // Montrer la bonne réponse
         allButtons.forEach((btn, index) => {
             if (dailyGameQuestions[currentQuestionIndex].correctIndex === index) {
                 btn.style.background = 'linear-gradient(45deg, #00ff00, #00cc00)';
@@ -424,7 +539,6 @@ function endDailyGame() {
         `;
     }
     
-    // Sauvegarder le score
     const today = new Date().toDateString();
     const scores = JSON.parse(localStorage.getItem('dailyScores') || '[]');
     scores.push({
@@ -435,10 +549,10 @@ function endDailyGame() {
     localStorage.setItem('dailyScores', JSON.stringify(scores));
 }
 
-// ==================== JEUX SECTION ====================
+// ==================== JEUX ====================
 function startGame(gameType) {
     if (!dictionary || dictionary.length === 0) {
-        alert('Le dictionnaire n\'est pas encore chargé. Réessayez dans quelques secondes.');
+        alert('Erreur : le dictionnaire n\'est pas chargé');
         return;
     }
     
@@ -447,7 +561,6 @@ function startGame(gameType) {
     gameScore = 0;
     usedQuestions = [];
     
-    // Créer le modal s'il n'existe pas
     let modal = document.getElementById('gameModal');
     if (!modal) {
         createGameModal();
@@ -501,7 +614,6 @@ function createGameModal() {
     
     document.body.appendChild(modal);
     
-    // Fermer si on clique en dehors
     modal.onclick = function(e) {
         if (e.target === modal) {
             closeModal();
@@ -524,35 +636,10 @@ function showNextQuestion() {
     scoreEl.textContent = `Question ${currentQuestionIndex + 1}/5 | Score: ${gameScore}`;
     answersEl.innerHTML = '';
     
-    // Générer une question selon le type de jeu
-    let questionData;
-    
-    switch(currentGameType) {
-        case 'mystery':
-            questionData = generateMysteryQuestion();
-            break;
-        case 'challenge':
-            questionData = generateChallengeQuestion();
-            break;
-        case 'generations':
-            questionData = generateGenerationsQuestion();
-            break;
-        case 'verlan':
-            questionData = generateVerlanQuestion();
-            break;
-        case 'regional':
-            questionData = generateRegionalQuestion();
-            break;
-        case 'expert':
-            questionData = generateExpertQuestion();
-            break;
-        default:
-            questionData = generateBasicQuestion();
-    }
+    let questionData = generateBasicQuestion();
     
     questionEl.innerHTML = questionData.question;
     
-    // Créer les boutons de réponse
     questionData.options.forEach((option, index) => {
         const btn = document.createElement('button');
         btn.style.cssText = `
@@ -575,14 +662,12 @@ function showNextQuestion() {
             if (!btn.disabled) {
                 btn.style.background = 'var(--primary-cyan)';
                 btn.style.color = 'black';
-                btn.style.transform = 'scale(1.02)';
             }
         };
         btn.onmouseout = () => {
             if (!btn.disabled) {
                 btn.style.background = 'var(--bg-card)';
                 btn.style.color = 'white';
-                btn.style.transform = 'scale(1)';
             }
         };
         
@@ -590,269 +675,7 @@ function showNextQuestion() {
     });
 }
 
-// ==================== GÉNÉRATEURS DE QUESTIONS PAR TYPE ====================
-
-function generateMysteryQuestion() {
-    // Le Mot Mystère : deviner avec des indices
-    let word;
-    do {
-        word = dictionary[Math.floor(Math.random() * dictionary.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    const question = `
-        <div style="color: var(--accent-pink);">🕵️ TROUVE LE MOT MYSTÈRE</div>
-        <div style="margin-top: 1rem; text-align: left; background: rgba(0,255,255,0.1); padding: 1rem; border-radius: 10px;">
-            <div>📝 Définition : "${word.definition}"</div>
-            <div>🔤 ${word.term.length} lettres</div>
-            <div>🔡 Commence par "${word.term[0].toUpperCase()}"</div>
-        </div>
-    `;
-    
-    const options = [word.term];
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        if (!options.includes(other.term)) {
-            options.push(other.term);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(word.term)
-    };
-}
-
-function generateChallengeQuestion() {
-    // Challenge : défi varié
-    const challengeTypes = ['synonym', 'opposite', 'category'];
-    const type = challengeTypes[Math.floor(Math.random() * challengeTypes.length)];
-    
-    let word;
-    do {
-        word = dictionary[Math.floor(Math.random() * dictionary.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    let question, correctAnswer;
-    
-    switch(type) {
-        case 'synonym':
-            question = `<div style="color: var(--primary-cyan);">🎯 TROUVE LE SYNONYME</div>
-                       <div style="margin-top: 1rem;">Quel mot a un sens proche de <strong>"${word.term}"</strong> ?</div>
-                       <div style="color: var(--text-secondary); font-size: 0.9rem;">(${word.definition})</div>`;
-            correctAnswer = word.definition;
-            break;
-        case 'category':
-            const category = word.categories && word.categories[0] ? word.categories[0] : 'argot';
-            question = `<div style="color: var(--accent-green);">🎯 TROUVE LA CATÉGORIE</div>
-                       <div style="margin-top: 1rem;">Dans quelle catégorie classe-t-on <strong>"${word.term}"</strong> ?</div>`;
-            correctAnswer = category.toUpperCase();
-            break;
-        default:
-            question = `<div style="color: var(--accent-pink);">🎯 DÉFI</div>
-                       <div style="margin-top: 1rem;">Que signifie <strong>"${word.term}"</strong> ?</div>`;
-            correctAnswer = word.definition;
-    }
-    
-    const options = type === 'category' ? 
-        ['VERLAN', 'JEUNES', 'ANCIEN', 'RÉGIONAL'] :
-        [correctAnswer];
-    
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        const opt = type === 'category' ? 
-            (other.categories && other.categories[0] ? other.categories[0].toUpperCase() : 'ARGOT') :
-            other.definition;
-        if (!options.includes(opt)) {
-            options.push(opt);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(correctAnswer)
-    };
-}
-
-function generateGenerationsQuestion() {
-    // Ancien vs Nouveau
-    const oldWords = dictionary.filter(w => w.categories && w.categories.includes('ancien'));
-    const newWords = dictionary.filter(w => w.categories && (w.categories.includes('jeunes') || w.categories.includes('internet')));
-    
-    const isOld = Math.random() < 0.5;
-    const pool = isOld ? oldWords : newWords;
-    
-    if (pool.length === 0) {
-        return generateBasicQuestion();
-    }
-    
-    let word;
-    do {
-        word = pool[Math.floor(Math.random() * pool.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    const badge = isOld ? 
-        '<span style="background: #ffd700; color: black; padding: 0.5rem; border-radius: 10px;">👴 ANCIEN</span>' :
-        '<span style="background: #00ffff; color: black; padding: 0.5rem; border-radius: 10px;">🆕 MODERNE</span>';
-    
-    const question = `
-        <div>${badge}</div>
-        <div style="margin-top: 1rem;">Que signifie <strong>"${word.term}"</strong> ?</div>
-    `;
-    
-    const options = [word.definition];
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        if (!options.includes(other.definition)) {
-            options.push(other.definition);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(word.definition)
-    };
-}
-
-function generateVerlanQuestion() {
-    const verlanWords = dictionary.filter(w => w.categories && w.categories.includes('verlan'));
-    
-    if (verlanWords.length === 0) {
-        return generateBasicQuestion();
-    }
-    
-    let word;
-    do {
-        word = verlanWords[Math.floor(Math.random() * verlanWords.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    const question = `
-        <div style="background: linear-gradient(45deg, #ff0080, #00ffff); padding: 0.5rem; border-radius: 10px; color: black;">
-            🔄 VERLAN
-        </div>
-        <div style="margin-top: 1rem; font-size: 2rem; color: var(--accent-pink);">"${word.term}"</div>
-        <div style="color: var(--text-secondary);">C'est quoi en français ?</div>
-    `;
-    
-    const options = [word.definition];
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        if (!options.includes(other.definition)) {
-            options.push(other.definition);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(word.definition)
-    };
-}
-
-function generateRegionalQuestion() {
-    const regions = ['marseille', 'quebec', 'belgique', 'suisse', 'senegal', 'nord'];
-    const regionalWords = dictionary.filter(w => 
-        w.categories && w.categories.some(cat => regions.includes(cat))
-    );
-    
-    if (regionalWords.length === 0) {
-        return generateBasicQuestion();
-    }
-    
-    let word;
-    do {
-        word = regionalWords[Math.floor(Math.random() * regionalWords.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    const region = word.categories.find(cat => regions.includes(cat));
-    const regionEmoji = {
-        'marseille': '🌊 MARSEILLE',
-        'quebec': '🍁 QUÉBEC',
-        'belgique': '🍟 BELGIQUE',
-        'suisse': '🏔️ SUISSE',
-        'senegal': '🦁 SÉNÉGAL',
-        'nord': '⛏️ NORD'
-    };
-    
-    const question = `
-        <div style="background: var(--gradient-primary); color: black; padding: 0.5rem; border-radius: 10px;">
-            ${regionEmoji[region] || '🌍 RÉGIONAL'}
-        </div>
-        <div style="margin-top: 1rem;">Que signifie <strong>"${word.term}"</strong> ?</div>
-    `;
-    
-    const options = [word.definition];
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        if (!options.includes(other.definition)) {
-            options.push(other.definition);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(word.definition)
-    };
-}
-
-function generateExpertQuestion() {
-    // Questions difficiles avec des mots rares
-    const difficultWords = dictionary.filter(w => 
-        w.categories && (w.categories.includes('ancien') || w.categories.includes('cite'))
-    );
-    
-    const pool = difficultWords.length > 0 ? difficultWords : dictionary;
-    
-    let word;
-    do {
-        word = pool[Math.floor(Math.random() * pool.length)];
-    } while (usedQuestions.includes(word.term));
-    usedQuestions.push(word.term);
-    
-    const question = `
-        <div style="background: linear-gradient(45deg, #ffd700, #ff6b6b); color: black; padding: 0.5rem; border-radius: 10px;">
-            🏆 NIVEAU EXPERT
-        </div>
-        <div style="margin-top: 1rem;">Que signifie <strong>"${word.term}"</strong> ?</div>
-    `;
-    
-    const options = [word.definition];
-    while (options.length < 4) {
-        const other = dictionary[Math.floor(Math.random() * dictionary.length)];
-        if (!options.includes(other.definition)) {
-            options.push(other.definition);
-        }
-    }
-    
-    const shuffled = options.sort(() => Math.random() - 0.5);
-    
-    return {
-        question: question,
-        options: shuffled,
-        correctIndex: shuffled.indexOf(word.definition)
-    };
-}
-
 function generateBasicQuestion() {
-    // Question basique de secours
     let word;
     do {
         word = dictionary[Math.floor(Math.random() * dictionary.length)];
@@ -879,7 +702,6 @@ function generateBasicQuestion() {
 }
 
 function checkAnswer(isCorrect, button) {
-    // Désactiver tous les boutons
     const allButtons = document.querySelectorAll('#answers button');
     allButtons.forEach(btn => {
         btn.disabled = true;
@@ -894,7 +716,6 @@ function checkAnswer(isCorrect, button) {
         button.style.background = 'linear-gradient(45deg, #ff0000, #cc0000)';
         button.innerHTML = button.textContent + ' ❌';
         
-        // Montrer la bonne réponse
         allButtons.forEach(btn => {
             if (btn.dataset.correct === 'true') {
                 btn.style.background = 'linear-gradient(45deg, #00ff00, #00cc00)';
@@ -942,7 +763,6 @@ function endGame() {
         </div>
     `;
     
-    // Sauvegarder les points
     const points = parseInt(localStorage.getItem('userPoints') || '0') + (gameScore * 10);
     localStorage.setItem('userPoints', points.toString());
     
@@ -981,20 +801,24 @@ function startCountdown() {
 
 // ==================== INITIALISATION ====================
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM chargé - Initialisation...');
+    console.log('Initialisation Speakz...');
+    console.log('Dictionnaire chargé:', dictionary.length, 'mots');
+    
+    // Afficher tous les mots au démarrage
+    displayResults(dictionary);
+    updateStats();
+    initializeDailyWord();
     
     // Recherche principale
     const mainSearchInput = document.getElementById('main-search');
     if (mainSearchInput) {
         mainSearchInput.addEventListener('input', filterDictionary);
-        console.log('Recherche dictionnaire activée');
     }
     
     // Recherche accueil
     const homeSearchInput = document.getElementById('home-search');
     if (homeSearchInput) {
         homeSearchInput.addEventListener('input', filterHomeSearch);
-        console.log('Recherche accueil activée');
     }
     
     // Countdown
@@ -1007,5 +831,5 @@ document.addEventListener('DOMContentLoaded', function() {
         pointsEl.textContent = `${savedPoints} points`;
     }
     
-    console.log('Initialisation terminée');
+    console.log('Initialisation terminée - Tout fonctionne !');
 });
